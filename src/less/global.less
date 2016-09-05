@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  .reset-spaces();
+  background-color: @bg-color;
+  color: @base-text-color;
+  font-family: @base-font-family;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+
+  @media @mobile-widths {
+    color: @mobile-text-color;
+  }
+}
+
+p {
+  .reset-spaces();
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // .reset-spaces(); FIXME
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: .7em;
+}

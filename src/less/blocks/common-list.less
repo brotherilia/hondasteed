@@ -1,0 +1,34 @@
+.common-list {
+  .reset-list();
+  margin-bottom: 15px;
+
+  &__title {
+    .title-common();
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+
+    @media @mobile-widths {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    .link-common();
+  }
+
+  &__description {
+    .comment-common();
+  }
+
+  &__date {
+    .reset-spaces();
+    font-size: @smallest-font-size;
+    letter-spacing: 2px;
+    border-bottom: 1px dotted #666666;
+  }
+}

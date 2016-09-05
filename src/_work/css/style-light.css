@@ -1,0 +1,129 @@
+/* CSS file for HONDA STEED project (light pages) */
+
+body {
+	color: #444444;
+}
+
+.link,
+.link:visited {
+	text-decoration: none;
+	color: #9A2F25;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: #999999;
+}
+
+.link:active {
+	color: #444444;
+}
+
+.gallery-figure:hover > .gallery__title .link {
+	color: #999999;
+}
+
+.gallery-figure:active > .gallery__title .link {
+	color: #444444;
+}
+
+.gallery__link,
+.img-border {
+	border: 1px solid #888888;	
+}
+
+.menu--vert__item:hover > .menu__link {
+	color: #f2eeed;
+}
+
+.menu--vert__item:active > .menu__link {
+	color: #222222;
+}
+
+.menu__link,
+.menu__link:visited,
+.submenu__link,
+.submenu__link:visited {
+	color: #444444;
+}
+
+.menu__link:hover,
+.submenu__link:hover,
+.btn:hover {
+	color: #f2eeed;
+}
+
+.menu__link:active,
+.submenu__link:active,
+.btn:active {
+	color: #222222;
+}
+
+.submenu__link {
+	display: block;
+	height: 100%;
+}
+
+.main-content {
+	background-color: #f2eeed;
+	padding: 20px 30px; 
+	border: none;	
+	border-radius: 5px;
+	box-shadow: inset 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.comment {
+	border: 1px solid #cccccc;
+}
+
+.comment-1 {
+	border: 1px solid #cccccc;
+	background-color: #cccccc;
+}
+
+.comment-2 {
+	border-left: 2px solid #cccccc;
+}
+
+.vendor-info {
+	line-height: 50px;
+	color: #999999;
+}
+
+.vendor-info__link,
+.vendor-info__link:visited {	
+	color: #444444;
+}
+
+.vendor-info__link:hover {
+	color: #f2eeed;
+}
+
+.vendor-info__link:active {
+	color: #222222;
+}
+
+.ilya-img {
+	display: none;
+}
+
+.brotherilia-img {
+	display: none;
+}
+
+.brotherilia-text {
+	display: block;
+}
+
+.steed-key {
+	display: block;
+}
+
+.img-shadow {
+	box-shadow: 0 0 10px 5px #f2eeed;
+	line-height: 0;	
+}
+
+.common-table {
+	color: #444444;
+}

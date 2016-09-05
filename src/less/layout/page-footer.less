@@ -1,0 +1,25 @@
+.page-footer {
+  height: 50px;
+
+  @media @mobile-widths {
+    box-shadow: 0 0 100px 0 @link-active-color;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__vendor-info {
+    margin-right: 20px;
+    text-align: right;
+    font-size: @smaller-font-size;
+
+    @media @mobile-widths {
+      margin-right: 0;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+
+  &__link {
+    .link-common();
+  }
+}

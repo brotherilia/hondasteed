@@ -1,0 +1,144 @@
+.jssor-slider {
+  position: relative;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 555px;
+  height: 255px;
+  overflow: hidden;
+  visibility: hidden;
+
+  @media @mobile-widths {
+    margin: 0 auto;
+  }
+
+  &__screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__filter {
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__loading {
+    position: absolute;
+    display: block;
+    background: url('../img/loading.gif') no-repeat center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slides {
+    cursor: default;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 555px;
+    height: 255px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  &__thumbnavigator {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 555px;
+    height: 25px;
+  }
+
+  &__thumbs-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: @bg-color;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__thumbs-item {
+    cursor: default;
+  }
+
+  &__bullet {
+    position: absolute;
+    bottom: 9px;
+    right: 5px;
+
+    & div {
+      background-color: #808080;
+    }
+
+    & div,
+    & div:hover,
+    & .av {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      filter: alpha(opacity=70);
+      opacity: .7;
+      overflow: hidden;
+      cursor: pointer;
+      border: @bg-color 1px solid;
+    }
+
+    & div:hover,
+    & .av:hover {
+      background-color: #d3d3d3;
+    }
+
+    & .av {
+      background-color: @bg-color;
+      box-shadow: 0 0 7px 2px rgba(255, 0, 0, 1);
+    }
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../img/slider-arrow.png') no-repeat;
+    overflow: hidden;
+
+    &--left {
+      background-position: -10px -40px;
+      top: 0px;
+      left: 8px;
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-position: -130px -40px;
+      }
+    }
+
+    &--right {
+      background-position: -70px -40px;
+      top: 0px;
+      right: 8px;
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-position: -190px -40px;
+      }
+    }
+  }
+}

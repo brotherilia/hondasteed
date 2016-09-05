@@ -1,0 +1,151 @@
+.container() {
+  width: 1000px;
+  margin: 0 auto;
+
+  @media @mobile-widths {
+    width: 100%;
+    min-width: 320px;
+    max-width: 775px;
+  }
+}
+
+.reset-spaces() {
+  margin: 0;
+  padding: 0;
+}
+
+.reset-list() {
+  .reset-spaces();
+  list-style: none;
+}
+
+.link-common() {
+  color: @link-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: @link-hover-color;
+
+    @media @mobile-widths {
+      color: @link-color;
+    }
+  }
+
+  &:active {
+    color: @link-active-color;
+
+    @media @mobile-widths {
+      color: @link-hover-color;
+    }
+  }
+}
+
+.btn-common() {
+  border: none;
+  outline: none;
+  font-size: @menu-font-size;
+  line-height: @menu-line-height;
+  background-color: @link-active-color;
+  background-image: linear-gradient(to top, #333333, @bg-color 20%, @bg-color 80%, #333333 100%);
+  border-radius: 5px;
+  padding-bottom: 2px;
+  text-align: center;
+
+  &:hover {
+    background-image: linear-gradient(to top, #666666, @bg-color 10%, @bg-color 90%, #666666 100%);
+  }
+}
+
+.btn-reset() {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: auto;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.title-common() {
+  .reset-spaces();
+  font-weight: normal;
+  font-family: @title-font-family;
+}
+
+.comment-common() {
+  font-style: italic;
+  font-size: @smaller-font-size;
+}
+
+.pseudo-common() {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+/*
+
+.title-common() {
+  .reset-spaces();
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.subtitle() {
+  .title-common();
+  font-size: @subtitle-font-size;;
+  line-height: @subtitle-font-size;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.subsubtitle() {
+  .title-common();
+  font-size: @subsubtitle-font-size;;
+  line-height: @subsubtitle-font-size;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.comment() {
+  font-style: italic;
+  font-size: @smaller-font-size;
+  text-align: left;
+}
+
+
+.dots() {
+
+  &::after {
+    display: inline-block;
+    content: "...";
+    margin-right: 3px;
+  }
+
+  &:last-child::after {
+    content: "";
+  }
+}
+
+.clearfix() {
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.popup-text() {
+  background-color: @bg-transparent-light-color;
+  text-align: center;
+  padding: 10px;
+  color: @link-color;
+}
+
+
+
+ */

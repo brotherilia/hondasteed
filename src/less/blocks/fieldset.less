@@ -1,0 +1,42 @@
+.fieldset {
+  .reset-spaces();
+  border: 2px solid @link-active-color;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  &__title {
+    margin: 0 auto;
+    font-size: @smaller-font-size;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    .reset-spaces();
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    height: @menu-line-height;
+    line-height: @menu-line-height;
+    background-color: @link-active-color;
+    padding: 0 10px;
+    width: 100%;
+
+    &:focus {
+      background-color: @link-hover-color;
+      color: @bg-color;
+    }
+  }
+
+  &__btn {
+    .link-common();
+    .btn-common();
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%
+  }
+}

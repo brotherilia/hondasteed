@@ -1,0 +1,68 @@
+.to-top-arrow {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.5;
+  left: 20px;
+  bottom: 20px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media @mobile-widths {
+    left: auto;
+    bottom: auto;
+    right: 20px;
+    top: 14px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: @icon-size;
+    height: @icon-size;
+  }
+
+  &__icon-body {
+    display: block;
+    width: @icon-size;
+    height: @icon-size;
+    border: @icon-circle-width solid #ffffff;
+    border-radius: @icon-size;
+
+    &::before {
+      .pseudo-common();
+      width: @icon-size * 0.50;
+      height: @icon-size * 0.50;
+      left: @icon-size * 0.25;
+      bottom: @icon-size * 0.6;
+      border: @icon-size * 0.25 solid #ffffff;
+      border-top: @icon-size * 0.25 solid transparent;
+      border-right: @icon-size * 0.25 solid transparent;
+      border-left: @icon-size * 0.25 solid transparent;
+    }
+
+    &::after {
+      .pseudo-common();
+      width: @icon-size * 0.18;
+      height: @icon-size * 0.45;
+      background-color: #ffffff;
+      top: @icon-size * 0.4;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}

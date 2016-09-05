@@ -1,0 +1,55 @@
+.page-main {
+  border-left: 1px solid @link-active-color;
+  border-bottom: 1px solid @link-active-color;
+  padding-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  flex-grow: 1;
+
+  @media @mobile-widths {
+    border: none;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0 20px;
+  }
+
+  &__title {
+    .title-common();
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    .title-common();
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__subsubtitle {
+    .title-common();
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    .link-common();
+  }
+
+  &__signature {
+    .comment-common();
+  }
+
+  &__info {
+    .comment-common();
+    margin: 20px 0;
+    padding: 5px 10px 5px 25px;
+    border: 1px solid @link-active-color;
+    border-radius: 5px;
+    background: url("../img/info.png") no-repeat 5px 5px;
+  }
+}

@@ -1,0 +1,22 @@
+.color-scheme-button {
+  position: absolute;
+  left: 210px;
+  top: 18px;
+  font-size: 0;
+  line-height: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  animation: rotate 5s;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation: scale .7s;
+    animation-iteration-count: infinite;
+  }
+
+  @media @mobile-widths {
+    display: none;
+  }
+}
+

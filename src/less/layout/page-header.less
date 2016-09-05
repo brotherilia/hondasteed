@@ -1,0 +1,68 @@
+.page-header {
+  height: 230px;
+  background: url("../img/logo.png") no-repeat top;
+
+  @media @mobile-widths {
+    background: none;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    display: none;
+
+    @media @mobile-widths {
+      display: block;
+      text-align: center;
+      margin: 0 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 230px;
+
+    @media @mobile-widths {
+      height: auto;
+    }
+  }
+
+  &__description {
+    display: none;
+
+    @media @mobile-widths {
+      position: relative;
+      display: block;
+      margin-top: 10px;
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      height: 30px;
+      line-height: 30px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-align: center;
+      background-image: linear-gradient(to right, @bg-color 20%, #ffffff 45%, #ffffff 55%, @bg-color 80%);
+      user-select: none;
+
+      &::before {
+        .pseudo-common();
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, @bg-color 5%, #b3b3b3 20%, #b3b3b3 80%, @bg-color 95%);
+      }
+
+      &::after {
+        .pseudo-common();
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, @bg-color 5%, #b3b3b3 20%, #b3b3b3 80%, @bg-color 95%);
+      }
+    }
+  }
+}
