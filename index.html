@@ -17,9 +17,14 @@
       <!--                                                              -->
       <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <header class="page-header">
-        <a class="page-header__link" href="index.html">
-          Honda Steed - Unofficial Russian Page
-        </a>
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
       </header>
       <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <!--                                                              -->
@@ -27,9 +32,15 @@
       <!--                                                              -->
       <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <div class="page-midsection">
-        <div class="page-midsection__left-side">
-          <nav class="menu menu--vert">
-            <ul class="menu__items">
+        <button class="menu-toggle" id="toggle">
+          <i class="menu-toggle__icon">
+            <span class="menu-toggle__icon-body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
               <li class="menu__item menu__item--vert">
                 <a class="menu__link menu__link--submenu">
                   honda steed
@@ -70,11 +81,6 @@
                         учимся ездить
                       </a>
                     </li>
-                    <li class="submenu__item">
-                      <a class="submenu__link" href="articles_art.html">
-                        bikers' art
-                      </a>
-                    </li>
                   </ul>
                 </nav>
               </li>
@@ -93,7 +99,7 @@
           <div class="color-scheme-button js-cssSwitch">
             <img src="img/color-scheme.png" alt="Цветовая схема" width="30" height="30">
           </div>
-          <aside class="page-aside">
+          <aside class="page-aside" id="tools">
             <div class="page-aside__object">
               <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
                 <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
@@ -139,34 +145,19 @@
         <div class="page-midsection__right-side">
           <nav class="menu menu--hor">
             <ul class="menu__items menu__items--hor">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
                   главная
                 </a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="about.html">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
                   о проекте
                 </a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/forumnew/index.php">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
                   форум
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="events.html">
-                  события
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="gallery.html">
-                  галерея
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="steeder.html">
-                  brother ilia
                 </a>
               </li>
             </ul>
@@ -476,9 +467,25 @@
             </div>
             <section class="page-main__section">
               <h2 class="page-main__subtitle">
+                Добро пожаловать на сайт, посвященный мотоциклу <span class="nowrap">Honda Steed!</span>
+              </h2>
+              <p>
+                Количество любителей мотоцикла Honda Steed увеличивается с каждым годом, и связанные с ним вопросы не перестают задаваться. Идея данного проекта - связать воедино на одном ресурсе как можно больше полезной информации по Honda Steed, чтобы человек, особенно кто только что купил Steed и еще ничего толком про него не знает, мог бы зайти на этот сайт и получить ответы на большинство вопросов. Приветствуется участие в Проекте всех, кому это интересно.
+              </p>
+            </section>
+            <section class="page-main__section">
+              <h2 class="page-main__subtitle">
                 Обновления на сайте
               </h2>
               <ul class="common-list">
+                <li class="common-list__item">
+                  <time class="common-list__date" datetime="2016-ХХ-ХХ">
+                    ХХ.ХХ.2016
+                  </time>
+                  <p>
+                    Сайт адаптирован для просмотра на мобильных устройствах. Проведена реструктуризация.
+                  </p>
+                </li>
                 <li class="common-list__item">
                   <time class="common-list__date" datetime="2016-08-25">
                     25.08.2016
@@ -496,14 +503,13 @@
                   </p>
                 </li>
               </ul>
-              <a class="page-main__link" href="upd_hist.html">раньше...</a>
             </section>
             <section class="page-main__section">
               <h2 class="page-main__subtitle">
                 Наш баннер на вашем сайте
               </h2>
               <p>
-                Если вы, будучи администратором какого-либо интернет-ресурса, считаете, что баннеру проекта "Honda Steed - Unofficial Russian Page" самое место на вашем сайте, вы можете разместить его, скопировав предоставленный ниже код (наведите курсор на изображение). Можем также рассмотреть вариант обмена баннерами.
+                Если вы, будучи администратором какого-либо интернет-ресурса, считаете, что баннеру Проекта "Honda Steed - Unofficial Russian Page" самое место на вашем сайте, вы можете разместить его, скопировав предоставленный ниже код (наведите курсор на изображение). Можем также рассмотреть вариант обмена баннерами.
               </p>
               <div class="banner">
                 <div class="banner__img">
@@ -530,7 +536,7 @@
           created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
         </div>
       </footer>
-      <a class="to-top-arrow" href="#top">
+      <a class="to-top-arrow" id="to-top" href="#top">
         <i class="to-top-arrow__icon">
           <span class="to-top-arrow__icon-body"></span>
         </i>
