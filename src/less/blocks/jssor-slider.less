@@ -48,6 +48,12 @@
     height: 255px;
     overflow: hidden;
     border-radius: 5px;
+
+    @media @mobile-widths {
+      border-radius: inherit;
+      border-top-left-radius: @page-main-radius-mobile;
+      border-top-right-radius: @page-main-radius-mobile;
+    }
   }
 
   &__thumbnavigator {
@@ -69,6 +75,10 @@
     opacity: 0.4;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
+    @media @mobile-widths {
+      display: none;
+    }
   }
 
   &__thumbs-item {
@@ -106,6 +116,10 @@
       background-color: @bg-color;
       box-shadow: 0 0 7px 2px rgba(255, 0, 0, 1);
     }
+
+    @media @mobile-widths {
+      display: none;
+    }
   }
 
   &__arrow {
@@ -116,6 +130,10 @@
     cursor: pointer;
     background: url('../img/slider-arrow.png') no-repeat;
     overflow: hidden;
+
+    @media @mobile-widths {
+      display: none;
+    }
 
     &--left {
       background-position: -10px -40px;

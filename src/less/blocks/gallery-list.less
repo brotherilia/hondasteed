@@ -1,0 +1,40 @@
+.gallery-list {
+  .reset-list();
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media @mobile-widths {
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__figure {
+    .reset-spaces();
+  }
+
+  &__description {
+    font-size: @smaller-font-size;
+    max-width: 311px;
+    line-height: 12px;
+
+    &--200 {
+      max-width: 200px;
+    }
+
+    &--300 {
+      max-width: 300px;
+    }
+  }
+
+  &__img {
+
+  }
+
+  &__link {
+    .link-common();
+  }
+}

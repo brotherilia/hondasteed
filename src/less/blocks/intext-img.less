@@ -1,0 +1,21 @@
+.intext-img {
+  line-height: 0;
+  margin-top: 5px;
+
+  &--left {
+    float: left;
+    margin-right: 10px;
+  }
+
+  &--right {
+    float: right;
+    margin-left: 10px;
+  }
+
+  @media @mobile-widths {
+    float: none;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}

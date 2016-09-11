@@ -1,22 +1,37 @@
 .color-scheme-button {
+  outline: 1px solid red;
+  .btn-reset();
   position: absolute;
-  left: 210px;
-  top: 18px;
+  left: 208px;
+  top: 12px;
   font-size: 0;
   line-height: 0;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
   cursor: pointer;
-  animation: rotate 5s;
-  animation-iteration-count: infinite;
 
   &:hover {
-    animation: scale .7s;
-    animation-iteration-count: infinite;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 
   @media @mobile-widths {
-    display: none;
+    position: fixed;
+    left: auto;
+    right: 18px;
+    top: 2px;
+    z-index: 2;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
-

@@ -1,0 +1,126 @@
+.css-icon {
+  width: @icon-size;
+  height: @icon-size;
+  position: relative;
+  display: block;
+
+  &__body {
+    display: block;
+
+    &::before,
+    &::after {
+      .pseudo-common();
+    }
+  }
+
+  /////*** BURGER ***/////
+  &--menu {
+    padding-top: @icon-size * 0.4;
+  }
+
+  &--menu &__body {
+    width: @icon-size;
+    height: @icon-size * 0.2;
+    background-color: @icon-color;
+    border-radius: @icon-size * 0.05;
+
+    &::before {
+      width: @icon-size;
+      height: @icon-size * 0.2;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 100%;
+      background-color: @icon-color;
+      top: @icon-size * 0.1;
+    }
+
+    &::after {
+      width: @icon-size;
+      height: @icon-size * 0.2;
+      background-color: @icon-color;
+      bottom: @icon-size * 0.1;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+    }
+  }
+
+  /////*** UP-ARROW IN CIRCLE ***/////
+  &--up-arrow &__body {
+    width: @icon-size;
+    height: @icon-size;
+    border: @icon-circle-width solid @icon-color;
+    border-radius: @icon-size;
+
+    &::before {
+      width: @icon-size * 0.50;
+      height: @icon-size * 0.50;
+      left: @icon-size * 0.25;
+      bottom: @icon-size * 0.6;
+      border: @icon-size * 0.25 solid @icon-color;
+      border-top: @icon-size * 0.25 solid transparent;
+      border-right: @icon-size * 0.25 solid transparent;
+      border-left: @icon-size * 0.25 solid transparent;
+    }
+
+    &::after {
+      width: @icon-size * 0.18;
+      height: @icon-size * 0.45;
+      background-color: @icon-color;
+      top: @icon-size * 0.4;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  /////*** SUN ***/////
+  &--sun {
+    width: @icon-size * 1.25;
+    height: @icon-size * 1.25;
+  }
+
+  &--sun &__body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: @icon-size;
+    height: @icon-size;
+    border: @icon-circle-width * 1.8 dotted @bg-color;
+    border-radius: @icon-size;
+    background-color: @icon-color;
+
+    &::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: @icon-size * 0.8;
+      height: @icon-size * 0.8;
+      border: @icon-circle-width * 2 solid @bg-color;
+      border-radius: @icon-size;
+    }
+  }
+
+  /////*** MOON ***/////
+  &--moon {
+    width: @icon-size * 1.25;
+    height: @icon-size * 1.25;
+  }
+
+  &--moon &__body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: @icon-size;
+    height: @icon-size;
+    border-radius: @icon-size;
+    background-color: @icon-color;
+
+    &::before {
+      bottom: @icon-size * 0.16;
+      right: @icon-size * 0.16;
+      width: @icon-size;
+      height: @icon-size;
+      border-radius: @icon-size;
+      background-color: @bg-color;
+    }
+  }
+}

@@ -6,7 +6,7 @@
     <title>Honda Steed - Unofficial Russian Page</title>
     <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
     <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
     <link rel="icon" type="image/png" href="favicon.ico">
   </head>
   <body>
@@ -33,8 +33,13 @@
       <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <div class="page-midsection">
         <button class="menu-toggle" id="toggle">
-          <i class="menu-toggle__icon">
-            <span class="menu-toggle__icon-body"></span>
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
           </i>
         </button>
         <div class="page-midsection__left-side" id="popup">
@@ -96,14 +101,21 @@
               </li>
             </ul>
           </nav>
-          <div class="color-scheme-button js-cssSwitch">
-            <img src="img/color-scheme.png" alt="Цветовая схема" width="30" height="30">
-          </div>
           <aside class="page-aside" id="tools">
             <div class="page-aside__object">
               <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
                 <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
               </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
             </div>
             <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
               <fieldset class="fieldset">
@@ -129,16 +141,6 @@
               <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
                 <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
               </a>
-            </div>
-            <div class="page-aside__object">
-              <div class="social-likes social-likes_single" data-single-title="поделиться">
-                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
-                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
-                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
-                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
-              </div>
             </div>
           </aside>
         </div>

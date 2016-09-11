@@ -1,5 +1,27 @@
+/////*** MEDIA ***/////
+@mobile-widths: e("(max-width: 1023px)");
+
+/////*** FONTS ***/////
+@base-font-family: "PT Sans", "Tahoma", sans-serif;
+@title-font-family: "Didact Gothic", "Candara", sans-serif;
+@base-font-size: 13px;
+@base-line-height: 18px;
+@menu-font-size: 15px;
+@menu-line-height: 23px;
+@smaller-font-size: 12px;
+@smallest-font-size: 10px;
+
+////** COLORS **////
+@bg-color: #000000;
+@transparent-color: rgba(255, 255, 255, 0.5);
+@transparent-dark-color: rgba(0, 0, 0, 0.8);
+
+/////*** ICONS ***/////
+@icon-size: 24px;
+@icon-circle-width: @icon-size / 15;
+@icon-color: #ffffff;
+
 @import "fonts";
-@import "variab";
 @import "global";
 @import "mixins";
 @import "keyframes";
@@ -9,6 +31,7 @@
 @import "layout/page-midsection";
 @import "layout/page-footer";
 
+@import "blocks/css-icon";
 @import "blocks/color-scheme-button";
 @import "blocks/menu";
 @import "blocks/submenu";
@@ -16,26 +39,15 @@
 @import "blocks/page-aside";
 @import "blocks/page-main";
 @import "blocks/common-list";
+@import "blocks/gallery-list";
+@import "blocks/common-table";
+@import "blocks/contents";
 @import "blocks/banner";
 @import "blocks/to-top-arrow";
 @import "blocks/menu-scroll";
 @import "blocks/menu-toggle";
 @import "blocks/fieldset";
 @import "blocks/jssor-slider";
-
-/*
-
-
-
-@import "blocks/blockquote";
 @import "blocks/intext-img";
 @import "blocks/img-link";
-@import "blocks/common-list";
-@import "blocks/gallery-list";
-@import "blocks/to-top-arrow";
 @import "blocks/img-popup";
-
-
- */
-
-//@import "old";

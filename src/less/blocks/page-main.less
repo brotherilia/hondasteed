@@ -1,16 +1,40 @@
 .page-main {
-  border-left: 1px solid @link-active-color;
-  border-bottom: 1px solid @link-active-color;
-  padding-left: 20px;
+  background-color: @page-main-bg-color;
+  border-left: @page-main-border;
+  border-bottom: @page-main-border;
+  border-radius: @page-main-radius;
+  box-shadow: @page-main-shadow;
   margin-right: 20px;
-  padding-bottom: 15px;
+  padding: @page-main-padding;
   flex-grow: 1;
 
   @media @mobile-widths {
     border: none;
-    padding: 0;
-    padding-bottom: 30px;
-    margin: 0 20px;
+    padding: @page-main-padding-mobile;
+    margin: @page-main-margin-mobile;
+    border-top-left-radius: @page-main-radius-mobile;
+    border-top-right-radius: @page-main-radius-mobile;
+    border-bottom-left-radius: @page-main-radius-mobile;
+    border-bottom-right-radius: @page-main-radius-mobile;
+  }
+
+  &--index {
+
+    @media @mobile-widths {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__section {
+
+    &--index {
+
+      @media @mobile-widths {
+        padding: 0 20px;
+      }
+    }
   }
 
   &__title {
@@ -18,22 +42,22 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 20px;
+
+    @media @mobile-widths {
+      text-align: center;
+    }
   }
 
-  &__subtitle {
-    .title-common();
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 25px;
-    margin-bottom: 15px;
+  &__sub2title {
+    .sub2title();
   }
 
-  &__subsubtitle {
-    .title-common();
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  &__sub3title {
+    .sub3title();
+  }
+
+  &__sub4title {
+    .sub4title();
   }
 
   &__link {
@@ -48,8 +72,45 @@
     .comment-common();
     margin: 20px 0;
     padding: 5px 10px 5px 25px;
-    border: 1px solid @link-active-color;
+    border: 1px solid @info-border-color;
     border-radius: 5px;
     background: url("../img/info.png") no-repeat 5px 5px;
+  }
+
+  &__info-2 {
+    .comment-common();
+    margin-top: 20px 0;
+    padding: 5px 10px;
+    border-left: 2px solid @info-2-border-color;
+  }
+
+  &__warning {
+    .sub4title();
+  }
+
+  &__clearfix {
+    .clearfix();
+    margin-bottom: 10px;
+  }
+
+  &__columns {
+    display: flex;
+
+    @media @mobile-widths {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    width: 50%;
+
+    @media @mobile-widths {
+      width: auto;
+    }
+  }
+
+  &__text-block {
+    margin-bottom: 20px;
   }
 }

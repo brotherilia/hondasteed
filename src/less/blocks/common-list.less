@@ -2,18 +2,42 @@
   .reset-list();
   margin-bottom: 15px;
 
+  &--ordered {
+    list-style: decimal inside;
+  }
+
+  &--bottom0 {
+    margin-bottom: 0;
+  }
+
   &__title {
-    .title-common();
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    .sub3title();
   }
 
   &__item {
 
     @media @mobile-widths {
       margin-bottom: 10px;
+    }
+  }
+
+  &__item-dt {
+    .reset-spaces();
+    display: inline;
+  }
+
+  &__item-dd {
+    .reset-spaces();
+    .comment-common();
+    display: inline;
+
+    &::before {
+      content: "-";
+    }
+
+    &::after {
+      content: "\A";
+      white-space: pre;
     }
   }
 

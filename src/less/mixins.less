@@ -41,12 +41,34 @@
   }
 }
 
+.link-common--dark() {
+  color: #444444;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2eeed;
+
+    @media @mobile-widths {
+      color: #444444;
+    }
+  }
+
+  &:active {
+    color: #222222;
+
+    @media @mobile-widths {
+      color: #f2eeed;
+    }
+  }
+}
+
 .btn-common() {
   border: none;
   outline: none;
   font-size: @menu-font-size;
   line-height: @menu-line-height;
-  background-color: @link-active-color;
+  background-color: #222222;
   background-image: linear-gradient(to top, #333333, @bg-color 20%, @bg-color 80%, #333333 100%);
   border-radius: 5px;
   padding-bottom: 2px;
@@ -62,6 +84,7 @@
   outline: none;
   background: none;
   border-radius: auto;
+  padding: 0;
 
   &:hover {
     background: none;
@@ -72,6 +95,31 @@
   .reset-spaces();
   font-weight: normal;
   font-family: @title-font-family;
+}
+
+.sub2title() {
+  .title-common();
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.sub3title() {
+  .title-common();
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sub4title() {
+  .title-common();
+  font-style: italic;
+  font-size: 14px;
+  line-height: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .comment-common() {
@@ -85,51 +133,6 @@
   display: block;
 }
 
-/*
-
-.title-common() {
-  .reset-spaces();
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.subtitle() {
-  .title-common();
-  font-size: @subtitle-font-size;;
-  line-height: @subtitle-font-size;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.subsubtitle() {
-  .title-common();
-  font-size: @subsubtitle-font-size;;
-  line-height: @subsubtitle-font-size;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-
-.comment() {
-  font-style: italic;
-  font-size: @smaller-font-size;
-  text-align: left;
-}
-
-
-.dots() {
-
-  &::after {
-    display: inline-block;
-    content: "...";
-    margin-right: 3px;
-  }
-
-  &:last-child::after {
-    content: "";
-  }
-}
-
 .clearfix() {
 
   &::after {
@@ -139,13 +142,16 @@
   }
 }
 
-.popup-text() {
-  background-color: @bg-transparent-light-color;
+.table-td-common() {
+  padding: 3px 5px;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
   text-align: center;
-  padding: 10px;
-  color: @link-color;
 }
 
-
-
- */
+.popup-text() {
+  background-color: @transparent-color;
+  text-align: center;
+  padding: 10px;
+  color: #222222;
+}
