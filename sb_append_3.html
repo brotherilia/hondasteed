@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Приложение 3 (мотохимия)
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Приложение 3 (мотохимия)
+            </h1>
+            <h2 class="page-main__sub2title">
+              Масло (двигатель)
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Моторное масло Motul 5100 4T 10W-40" src="tmp/ugc/img/steedbreed/motoroil_s.jpg" id="tmp/ugc/img/steedbreed/motoroil_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul 5100 4T 10W-40 Technosynthese&reg;, Ester Technology
+                </h3>
+                <p>
+                  Масло Technosynthese® усилено эстеровой основой, для гарантированных противоизносных свойств и обеспечения долговечности коробки скоростей. Улучшенная сопротивляемость масляной пленки при высоких температурах. Сниженное содержание фосфора и серы обеспечивает функционирование и долговечность катализаторов, которые предусмотрены последними нормами по охране окружающей среды.
+                </p>
+                <p>
+                  Еще один из подходящих вариантов: <a class="page-main__link js-img-link" title="Мотохимия" name="Моторное&nbsp;масло&nbsp;Ipone&nbsp;R4000&nbsp;RS&nbsp;10W-40" id="tmp/ugc/img/steedbreed/motoroil1_b.jpg">Ipone R4000 RS 10W-40</a>
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Масло (вилка)
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Масло для вилки Motul Fork Oil Expert 15W" src="tmp/ugc/img/steedbreed/forkoil_s.jpg" id="tmp/ugc/img/steedbreed/forkoil_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Fork Oil Expert 15W Technosynthese&reg;
+                </h3>
+                <p>
+                  Гидравлическое масло для всех типов телескопических вилок. Противоизнашивающее, антикоррозийное, невспенивающееся. Содержит антифрикционную присадку, специально разработанную для улучшения скольжения. Постоянный эффект амортизации при любых температурах достигается благодаря использованию основ Technosynthese&reg;.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Тормозная жидкость
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Тормозная жидкость Motul DOT 4" src="tmp/ugc/img/steedbreed/brakefluid_s.jpg" id="tmp/ugc/img/steedbreed/brakefluid_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul DOT 4 Brake Fluid
+                </h3>
+                <p>
+                  Для всех систем гидравлических тормозных приводов и сцеплений, в которых рекомендовано применение DOT 4. Отличная сопротивляемость и термическая стабильность. Безопасность: «влажная» точка закипания данного продукта повышена до 158° C и превосходит категории DOT 3 (140°C min), что позволяет продлить срок использования.
+                </p>
+                <p>
+                  Агрессивна по отношению к лакам, краскам и коже. В случае контакта с кожей смыть водой. Замена производится один раз в 12 или 24 месяца в соответствии с рекомендациями конструкторов.
+                </p>
+                <p>
+                  Еще один из подходящих вариантов: <a class="page-main__link js-img-link" title="Мотохимия" name="Тормозная&nbsp;жидкость&nbsp;Ipone&nbsp;DOT&nbsp;4" id="tmp/ugc/img/steedbreed/brakefluid1_b.jpg">Ipone DOT 4 Brake Fluid</a>
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Промывка системы охлаждения
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Промывка системы охлаждения" src="tmp/ugc/img/steedbreed/coolsyscleaner_s.jpg" id="tmp/ugc/img/steedbreed/coolsyscleaner_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Жидкости для промывки систем охлаждения во множестве продаются в магазинах автозапчастей.
+                </p>
+                <p>
+                  Целью их использования является очистка системы от накипи и других отложений. Перед покупкой внимательно ознакомьтесь с описанием на предмет совместимости, а перед использованием - с инструкцией по применению.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Антифриз (концентрат)
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Антифриз (концентрат) Motul Inugel Expert Ultra" src="tmp/ugc/img/steedbreed/antifreeze_s.jpg" id="tmp/ugc/img/steedbreed/antifreeze_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Inugel Expert Ultra
+                </h3>
+                <p>
+                  Высококачественная охлаждающая жидкость, концентрат. Требует разбавления дистиллированной водой. Созданный на основе моноэтиленгликоля, MOTUL Inugel Expert Ultra содержит антикоррозийные присадки, усиленные гибридной технологией, адаптированные к легким сплавам, используемым в двигателях. Совместима со всеми охлаждающими жидкостями на основе моноэтиленгликоля.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Антифриз (готовый)
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Антифриз (готовый) Motul Motocool Expert" src="tmp/ugc/img/steedbreed/motocool_s.jpg" id="tmp/ugc/img/steedbreed/motocool_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Motocool Expert
+                </h3>
+                <p>
+                  Охлаждающая жидкость для мотодвигателей, готовая к применению. Создана на основе моно-этилен гликоля. Содержит антикоррозийные присадки, адаптированные к легким сплавам, используемым в мотодвигателях. Совместима с прокладками, патрубками, пластиковыми частями. Очень высокие антивспенивающие свойства.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Очиститель топливной системы
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Очиститель топливной системы Motul" src="tmp/ugc/img/steedbreed/fuelsyscleaner_s.jpg" id="tmp/ugc/img/steedbreed/fuelsyscleaner_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Fuel System Clean Moto
+                </h3>
+                <p>
+                  Используется во всех типах малых бензиновых двигателей, с инжектором или карбюратором, с катализатором и без, работающих на топливе, содержащим свинец и не содержащим свинец. Позволяет эффективно отмыть загрязнения и шлаки, неизбежно образующиеся в процессе работы в топливной системе.
+                </p>
+                <p>
+                  Одна доза MOTUL Fuel System Clean Moto регулярно добавляется непосредственно в топливный бак перед заправкой (при городском режиме езды рекомендовано более частое использование). Топливная система будет полностью отмыта, начиная от топливного бака до камеры сгорания.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Стабилизатор бензина
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Стабилизатор бензина Liqui Moly" src="tmp/ugc/img/steedbreed/benzinstab_s.jpg" id="tmp/ugc/img/steedbreed/benzinstab_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Liqui Moly Benzin-Stabilisator
+                </h3>
+                <p>
+                  Эффективная комбинация присадок в топливо, обеспечивающая защиту от коррозии, образования отложений, старения и окисления бензина. Используется в качестве консерванта топлива для газонокосилок, мотопил, двухколесных транспортных средств и прочих бензиновых 2- и 4-тактных двигателей.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Силиконовая смазка-спрей
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Силиконовая смазка-спрей Liqui Moly" src="tmp/ugc/img/steedbreed/siliconspray_s.jpg" id="tmp/ugc/img/steedbreed/siliconspray_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Liqui Moly Silicon-Spray
+                </h3>
+                <p>
+                  Пригодна для различных целей, в том числе и для защиты резиновых поверхностей от растрескивания при замерзании и прямом попадании солнечных лучей.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Универсальная смазка-спрей
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Универсальная смазка-спрей Motul Multi Protect" src="tmp/ugc/img/steedbreed/multiprotect_s.jpg" id="tmp/ugc/img/steedbreed/multiprotect_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Multi Protect
+                </h3>
+                <p>
+                  Смазывает все механизмы, рычаги, троссы, втулки тормозных суппортов, сцепление, амортизаторы, велосипедные цепи. Не забывать смазывать резинки, высушенные после мойки паром высокого давления. Защищает от коррозии и создает защитную пленку на двигателе, выхлопной системе, раме внедорожного мотоцикла, подвесном лодочном моторе, а также незащищенных металлических узлах. Вытесняет воду и влагу из электропроводки, свечей, стартера. Оказывает антизаклинивающее действие на гайки, кабели, окисленные механические системы.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Литиевая смазка
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Литиевая смазка Motul Tech Grease 300" src="tmp/ugc/img/steedbreed/techgrease300_s.jpg" id="tmp/ugc/img/steedbreed/techgrease300_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Tech Grease 300
+                </h3>
+                <p>
+                  Многофункциональная литиевая смазка с высокими характеристикими. Полусинтетика. NLGI 2. Подходит для смазки двигательных механизмов, шаровых шарниров, шарнирных соединений, подшипников, ступиц, втулок, карданных валов, тросовых соединений и т.д. Очень хорошая сопротивляемость к воздействию воды, коррозии и ржавчины. Хорошо удерживается на поверхности применения. Безопасность и снижение износа техники при использовании смазки.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Универсальный очиститель
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Универсальный очиститель Motul Contact Cleaner" src="tmp/ugc/img/steedbreed/contactcleaner_s.jpg" id="tmp/ugc/img/steedbreed/contactcleaner_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Contact Cleaner
+                </h3>
+                <p>
+                  Супермощный обезжириватель. Применяется для очистки всех деталей и механических систем: тормозов и сцепления (удаление продуктов износа колодок и дисков сцепления). При разборке двигателя. Рычаги, тормозные суппорты, амортизаторы, натяжители цепи и т.д. Также применяется для очистки электрического оборудования.
+                </p>
+                <p>
+                  Очень агрессивен, поэтому перед употреблением на лаках, красках и пластиках предварительно провести испытание на скрытом участке поверхности.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Промывка цепи
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Промывка цепи Motul" src="tmp/ugc/img/steedbreed/chainclean_s.jpg" id="tmp/ugc/img/steedbreed/chainclean_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Chain Clean
+                </h3>
+                <p>
+                  Удаляет все въевшиеся загрязнения: пыль, песок, земля, масло. Композиционный состав без хлора обладает наивысшими обезжиривающими свойствами. Абсолютно совместим с обычными и кольцеобразными втулками O-ring, X-ring, Z-ring. Растворяет очень быстро все следы жира, смазки, и гудрона. Очень быстро испаряется.
+                </p>
+                <p>
+                  Встряхнуть. Распылить на цепь и оставить на 5 минут. Если цепь сильно загрязнена обработать неабразивной щеткой и снова распылить продукт. Смазать цепь Motul Сhain Lube Road.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Смазка цепи
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Смазка цепи Motul Chain Lube Road" src="tmp/ugc/img/steedbreed/chainlube_s.jpg" id="tmp/ugc/img/steedbreed/chainlube_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <h3 class="page-main__sub3title">
+                  Motul Chain Lube Road
+                </h3>
+                <p>
+                  Уменьшает трение и снижает потерю мощности. Увеличивает срок службы цепи. Защищает цепь от влаги и коррозии. Защищает кольцеобразные втулки. Содержит растворитель, позволяющий продукту при нанесении смыть отложения и глубоко проникнуть между звеньями.
+                </p>
+                <p>
+                  Очистить цепь Motul Chain Clean. Встряхнуть. Нанести на внутреннюю часть цепи по всей длине. MOTUL Chain Lube Road прекрасно прилипает к цепи через несколько минут после нанесения.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Набор для чистки и смазки воздушных фильтров K&amp;N
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Набор для чистки и смазки воздушных фильтров K&amp;N" src="tmp/ugc/img/steedbreed/99-5000_s.jpg" id="tmp/ugc/img/steedbreed/99-5000_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Информация на сайте производителя:
+                </p>
+                <ul class="common-list">
+                  <li class="common-list__item">
+                    <a class="common-list__link" href="http://www.knfilters.com/search/product.aspx?Prod=99-5000">99-5000</a> (смазка - спрей)
+                  </li>
+                  <li class="common-list__item">
+                    <a class="common-list__link" href="http://www.knfilters.com/search/product.aspx?Prod=99-5050">99-5050</a> (смазка жидкая)
+                  </li>
+                  <li class="common-list__item">
+                    Инструкция по чистке и смазке <a class="page-main__link" href="http://www.knfilters.com/instructions/18627B_inst.pdf">(PDF)</a>
+                  </li>
+                  <li class="common-list__item">
+                    Инструкция по чистке и смазке <a class="page-main__link" href="http://www.knairfilters.ru/KN_Filter_Clean_RU.htm">(видео)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Полироль для хрома
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Полироль для хрома" src="tmp/ugc/img/steedbreed/chromecleaner_s.jpg" id="tmp/ugc/img/steedbreed/chromecleaner_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Средства для ухода за поверхностями из хрома, алюминия и нержавеющей стали во множестве продаются в магазинах автозапчастей.
+                </p>
+                <p>
+                  Целью их использования является удаление потускнения, пятен ржавчины (если она не слишком запущена), окисления, придание поверхности блеска. Также, благодаря образующейся защитной пленке, эти средства обеспечивают поверхностям долговременную защиту.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Полироль для лакокрасочных покрытий
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Полироль для лакокрасочных покрытий" src="tmp/ugc/img/steedbreed/turtlewax_s.jpg" id="tmp/ugc/img/steedbreed/turtlewax_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Средства для ухода за лакокрасочными покрытиями во множестве продаются в магазинах автозапчастей.
+                </p>
+                <p>
+                  Целью их использования является придание поверхностям блеска, маскировка неглубоких царапин. Также, благодаря образующейся защитной пленке, и заполняя микротрещины, эти средства обеспечивают поверхностям долговременную защиту.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Автоэмаль
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Автоэмаль" src="tmp/ugc/img/steedbreed/enamelmarker_s.jpg" id="tmp/ugc/img/steedbreed/enamelmarker_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Для мелких ремонтов лакокрасочных покрытий. Продаются в магазинах автозапчастей.
+                </p>
+                <p>
+                  Сколы краски и царапины сильно портят внешний вид мотоцикла. Но далеко не всегда есть возможность, да и необходимость, перекрашивать деталь целиком. При умелом пользовании подобным средством можно вполне прилично замаскировать досадные огрехи.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Преобразователь ржавчины
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Преобразователь ржавчины" src="tmp/ugc/img/steedbreed/rustremover_s.jpg" id="tmp/ugc/img/steedbreed/rustremover_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Если коррозия сделала свое грязное дело по полной программе, можно избавиться от ее результатов с помощью преобразователя ржавчины.
+                </p>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title">
+              Фиксатор резьбы
+            </h2>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Мотохимия" alt="Фиксатор резьбы" src="tmp/ugc/img/steedbreed/threadlocker_s.jpg" id="tmp/ugc/img/steedbreed/threadlocker_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Для некоторых винтов подразумевается использование Фиксатора резьбы.
+                </p>
+                <p>
+                  Также, в принципе, его можно использовать в тех случаях, когда после отвинчивания нет возможности заменить одноразовый (не испорченный) винт или гайку.
+                </p>
+              </div>
+            </div>
+            <p class="page-main__info">
+              См. также <a class="page-main__link" href="parts_compare.html">Таблицу соответствия запчастей, мотохимии и инструментов</a>
+            </p>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

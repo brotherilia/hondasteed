@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a class="breadcrumbs__link" href="gallery.html">
+                    Галерея
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Сезон 2010
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Сезон 2010 (галереи на Форуме)
+            </h1>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1521">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-01_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1521">
+                      04.04.2010: Поездка в детдом на Пасху
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1622">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-02_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1622">
+                      14.04.2010: "3 Кабана" - обмываем STЕED-ы
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1644">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-03_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1644">
+                      17.04.2010: Открытие сезона OX HIGHWAY MC
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1683">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-04_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1683">
+                      21.04.2010: Встреча в "Золотой Вобле"
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1764">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-05_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1764">
+                      01.05.2010: Наши посиделки на первомай
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=1971">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-06_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=1971">
+                      30.05.2010: Сергиев Посад и окрестности
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2032">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-07_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2032">
+                      05.06.2010: Владимир, Покров
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2031">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-08_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2031">
+                      09.06.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2107">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-11_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2107">
+                      11-13.06.2010: Медвежий Угол 2010
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2069">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-09_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2069">
+                      12.06.2010: Разведка в стиле Steed-enduro
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2098">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-10_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2098">
+                      16.06.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2124">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-12_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2124">
+                      19.06.2010: Покатушки по Владимирской области
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2159">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-13_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2159">
+                      23.06.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2160">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-14_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2160">
+                      24.06.2010: (мото-)защита
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2187">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-15_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2187">
+                      26.06.2010: (мото-) Малоярославец 2010
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2183">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-16_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2183">
+                      27.06.2010: Торжественный спуск чоппера на асфальт
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2232">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-17_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2232">
+                      02-04.07.2010: День Рождения Форума STEED-o-водов
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2257">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-18_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2257">
+                      04.07.2010: Встреча [Питер]
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2256">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-19_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2256">
+                      07.07.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2305">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-20_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2305">
+                      14.07.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2323">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-21_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2323">
+                      16.07.2010: Покатушки по ночной Москве
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2327">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-22_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2327">
+                      17.07.2010: Концерт Red River Trails, покатушки, Троицк
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2420">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-23_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2420">
+                      24.07.2010: Шашлыкинг у реки
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2531">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-25_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2531">
+                      10.08.2010: CHISToff и питерские стидоводы
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2502">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-24_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2502">
+                      11.08.2010: Встреча в Night Train
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2532">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-26_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2532">
+                      13.08.2010: Стидовод из Уфы, прогулки по Питеру
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2551">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-27_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2551">
+                      18.08.2010: Питер
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2537">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-28_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2537">
+                      20.08.2010: Свадьба Чуги
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <a class="gallery-list__img" href="forumnew/viewtopic.php?t=2760">
+                    <img class="img-link" src="tmp/ugc/img/gallery/gallery17/gallery17-29_s.jpg" width="200" height="150" alt="">
+                  </a>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    <a class="gallery-list__link" href="forumnew/viewtopic.php?t=2760">
+                      02.10.2010: [Питер] Закрытие мотосезона 2010
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a class="breadcrumbs__link" href="gallery.html">
+                    Галерея
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    "Стидопарапланы" (01.08.09)
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              "Стидопарапланы" (01.08.09)
+            </h1>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/001_s.jpg" id="tmp/ugc/img/gallery/gallery13/001.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/002_s.jpg" id="tmp/ugc/img/gallery/gallery13/002.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/003_s.jpg" id="tmp/ugc/img/gallery/gallery13/003.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/004_s.jpg" id="tmp/ugc/img/gallery/gallery13/004.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/005_s.jpg" id="tmp/ugc/img/gallery/gallery13/005.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/006_s.jpg" id="tmp/ugc/img/gallery/gallery13/006.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/007_s.jpg" id="tmp/ugc/img/gallery/gallery13/007.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/008_s.jpg" id="tmp/ugc/img/gallery/gallery13/008.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/009_s.jpg" id="tmp/ugc/img/gallery/gallery13/009.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/010_s.jpg" id="tmp/ugc/img/gallery/gallery13/010.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/011_s.jpg" id="tmp/ugc/img/gallery/gallery13/011.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/012_s.jpg" id="tmp/ugc/img/gallery/gallery13/012.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/013_s.jpg" id="tmp/ugc/img/gallery/gallery13/013.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/014_s.jpg" id="tmp/ugc/img/gallery/gallery13/014.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/015_s.jpg" id="tmp/ugc/img/gallery/gallery13/015.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/016_s.jpg" id="tmp/ugc/img/gallery/gallery13/016.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/017_s.jpg" id="tmp/ugc/img/gallery/gallery13/017.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/018_s.jpg" id="tmp/ugc/img/gallery/gallery13/018.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/019_s.jpg" id="tmp/ugc/img/gallery/gallery13/019.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/020_s.jpg" id="tmp/ugc/img/gallery/gallery13/020.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/021_s.jpg" id="tmp/ugc/img/gallery/gallery13/021.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/022_s.jpg" id="tmp/ugc/img/gallery/gallery13/022.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/023_s.jpg" id="tmp/ugc/img/gallery/gallery13/023.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/024_s.jpg" id="tmp/ugc/img/gallery/gallery13/024.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/025_s.jpg" id="tmp/ugc/img/gallery/gallery13/025.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/026_s.jpg" id="tmp/ugc/img/gallery/gallery13/026.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/027_s.jpg" id="tmp/ugc/img/gallery/gallery13/027.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/028_s.jpg" id="tmp/ugc/img/gallery/gallery13/028.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/029_s.jpg" id="tmp/ugc/img/gallery/gallery13/029.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/030_s.jpg" id="tmp/ugc/img/gallery/gallery13/030.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/031_s.jpg" id="tmp/ugc/img/gallery/gallery13/031.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/032_s.jpg" id="tmp/ugc/img/gallery/gallery13/032.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/033_s.jpg" id="tmp/ugc/img/gallery/gallery13/033.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/034_s.jpg" id="tmp/ugc/img/gallery/gallery13/034.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/035_s.jpg" id="tmp/ugc/img/gallery/gallery13/035.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/036_s.jpg" id="tmp/ugc/img/gallery/gallery13/036.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/037_s.jpg" id="tmp/ugc/img/gallery/gallery13/037.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/038_s.jpg" id="tmp/ugc/img/gallery/gallery13/038.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/039_s.jpg" id="tmp/ugc/img/gallery/gallery13/039.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/040_s.jpg" id="tmp/ugc/img/gallery/gallery13/040.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/041_s.jpg" id="tmp/ugc/img/gallery/gallery13/041.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/042_s.jpg" id="tmp/ugc/img/gallery/gallery13/042.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/043_s.jpg" id="tmp/ugc/img/gallery/gallery13/043.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/044_s.jpg" id="tmp/ugc/img/gallery/gallery13/044.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/045_s.jpg" id="tmp/ugc/img/gallery/gallery13/045.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/046_s.jpg" id="tmp/ugc/img/gallery/gallery13/046.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/047_s.jpg" id="tmp/ugc/img/gallery/gallery13/047.jpg">
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <div class="gallery-list__img">
+                  <img class="img-link js-img-link" title="&quot;Стидопарапланы&quot; (01.08.09)" alt="" src="tmp/ugc/img/gallery/gallery13/048_s.jpg" id="tmp/ugc/img/gallery/gallery13/048.jpg">
+                </div>
+              </li>
+            </ul>
+            <p class="page-main__signature">
+              Авторы фотографий: brother_ilia, Швейк, fima
+            </p>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

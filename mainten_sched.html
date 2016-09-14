@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a class="breadcrumbs__link" href="service.html">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    График проведения технического обслуживания
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              График проведения технического обслуживания
+            </h1>
+            <table class="common-table">
+              <tr>
+                <th class="common-table__th1" rowspan="3" colspan="2">Об&shy;слу&shy;жи&shy;ва&shy;е&shy;мый узел</th>
+                <th class="common-table__th1" colspan="2">При&shy;ме&shy;ча&shy;ния</th>
+                <th class="common-table__th1" colspan="7">Пе&shy;ри&shy;о&shy;дич&shy;ность об&shy;слу&shy;жи&shy;ва&shy;ния</th>
+              </tr>
+              <tr>
+                <th class="common-table__th1" rowspan="2" colspan="2">1</th>
+                <th class="common-table__th1">1</th>
+                <th class="common-table__th1">6</th>
+                <th class="common-table__th1">12</th>
+                <th class="common-table__th1">18</th>
+                <th class="common-table__th1">24</th>
+                <th class="common-table__th1">30</th>
+                <th class="common-table__th1">38,4</th>
+              </tr>
+              <tr>
+                <th class="common-table__th1"></th>
+                <th class="common-table__th1">6</th>
+                <th class="common-table__th1">12</th>
+                <th class="common-table__th1">18</th>
+                <th class="common-table__th1">24</th>
+                <th class="common-table__th1">30</th>
+                <th class="common-table__th1">36</th>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">1</td>
+                <td class="common-table__td common-table__td--title">Топ&shy;ли&shy;воп&shy;ро&shy;вод</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">2</td>
+                <td class="common-table__td common-table__td--title">При&shy;вод дрос&shy;сель&shy;ных за&shy;сло&shy;нок</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              <tr>
+                <td class="common-table__td common-table__td--title">3</td>
+                <td class="common-table__td common-table__td--title">Пус&shy;ко&shy;вое устройст&shy;во кар&shy;бю&shy;ра&shy;то&shy;ра</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">4</td>
+                <td class="common-table__td common-table__td--title">Воз&shy;душ&shy;ный фильтр</td>
+                <td class="common-table__td" colspan="2">2</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">5</td>
+                <td class="common-table__td common-table__td--title">Вен&shy;ти&shy;ля&shy;ция кар&shy;те&shy;ра</td>
+                <td class="common-table__td" colspan="2">3</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">Ч</td>
+                <td class="common-table__td">Ч</td>
+                <td class="common-table__td">Ч</td>
+                <td class="common-table__td">Ч</td>
+                <td class="common-table__td">Ч</td>
+                <td class="common-table__td">Ч</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">6</td>
+                <td class="common-table__td common-table__td--title">Све&shy;чи за&shy;жи&shy;га&shy;ния</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">З</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">7</td>
+                <td class="common-table__td common-table__td--title">За&shy;зо&shy;ры кла&shy;па&shy;нов</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">8</td>
+                <td class="common-table__td common-table__td--title">Мо&shy;тор&shy;ное мас&shy;ло</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">9</td>
+                <td class="common-table__td common-table__td--title">Мас&shy;ля&shy;ный фильтр</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">З</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">10</td>
+                <td class="common-table__td common-table__td--title">Син&shy;х&shy;ро&shy;ни&shy;за&shy;ция кар&shy;бю&shy;ра&shy;то&shy;ров</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">11</td>
+                <td class="common-table__td common-table__td--title">Час&shy;то&shy;та обо&shy;ро&shy;тов хо&shy;лос&shy;то&shy;го хо&shy;да</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">12</td>
+                <td class="common-table__td common-table__td--title">Охлаж&shy;да&shy;ю&shy;щая жид&shy;кость</td>
+                <td class="common-table__td" colspan="2">4</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">13</td>
+                <td class="common-table__td common-table__td--title">Сис&shy;те&shy;ма охлаж&shy;де&shy;ния</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">14</td>
+                <td class="common-table__td common-table__td--title">Сис&shy;те&shy;ма до&shy;жи&shy;га&shy;ния от&shy;ра&shy;бо&shy;тав&shy;ших га&shy;зов</td>
+                <td class="common-table__td">5</td>
+                <td class="common-table__td">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">15</td>
+                <td class="common-table__td common-table__td--title">Цепь</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td" colspan="7">О,С каж&shy;дые 800 км</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">16</td>
+                <td class="common-table__td common-table__td--title">Тор&shy;моз&shy;ная жид&shy;кость</td>
+                <td class="common-table__td" colspan="2">4</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">З</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">З</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">17</td>
+                <td class="common-table__td common-table__td--title">Из&shy;нос тор&shy;моз&shy;ных ко&shy;ло&shy;док</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">18</td>
+                <td class="common-table__td common-table__td--title">Тор&shy;моз&shy;ная сис&shy;те&shy;ма</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">19</td>
+                <td class="common-table__td common-table__td--title">Вы&shy;клю&shy;ча&shy;тель стоп-сиг&shy;на&shy;ла</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">20</td>
+                <td class="common-table__td common-table__td--title">Ре&shy;гу&shy;ли&shy;ров&shy;ка фа&shy;ры</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">21</td>
+                <td class="common-table__td common-table__td--title">При&shy;вод муф&shy;ты сцеп&shy;ле&shy;ния</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">22</td>
+                <td class="common-table__td common-table__td--title">Дат&shy;чик по&shy;ло&shy;же&shy;ния бо&shy;ко&shy;вой под&shy;став&shy;ки</td>
+                <td class="common-table__td" colspan="2"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">23</td>
+                <td class="common-table__td common-table__td--title">Под&shy;вес&shy;ка</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">24</td>
+                <td class="common-table__td common-table__td--title">Вин&shy;ты, гай&shy;ки, за&shy;жи&shy;мы</td>
+                <td class="common-table__td" colspan="2">*</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">25</td>
+                <td class="common-table__td common-table__td--title">Ко&shy;ле&shy;са и ши&shy;ны</td>
+                <td class="common-table__td" colspan="2">**</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td">О</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">26</td>
+                <td class="common-table__td common-table__td--title">Люфт ру&shy;ле&shy;вой ко&shy;лон&shy;ки</td>
+                <td class="common-table__td" colspan="2">**</td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+                <td class="common-table__td"></td>
+                <td class="common-table__td">О</td>
+              </tr>
+            </table>
+            <div class="intext-img">
+              <img src="tmp/ugc/img/steed_n_shadow/steed_parts.jpg" alt="">
+            </div>
+            <p class="page-main__info">
+              Периодичность обслуживания: строка 1 - показания одометра (x1000 км); строка 2 - месяцы. Используется то, что наступит раньше.
+            </p>
+            <div class="page-main__info">
+              <p>
+                Буквы в таблице означают:
+              </p>
+              <ul class="common-list">
+                <li class="common-list__item">
+                  О - осмотреть, очистить, отрегулировать, смазать или заменить по необходимости;
+                </li>
+                <li class="common-list__item">
+                  З - заменить и никак иначе; С - смазать;
+                </li>
+                <li class="common-list__item">
+                  Ч - прочистить.
+                </li>
+              </ul>
+            </div>
+            <div class="page-main__info">
+              <p>
+                Обозначения * и ** в колонке "Примечания":
+              </p>
+              <ul class="common-list">
+                <li class="common-list__item">
+                  * - при обслуживании этого узла могут понадобиться специальные инструменты;
+                </li>
+                <li class="common-list__item">
+                  ** - обслуживание этих узлов и деталей доверьте специалистам.
+                </li>
+              </ul>
+            </div>
+            <div class="page-main__info">
+              <p>
+                Обозначения цифр в колонке "Примечания":
+              </p>
+              <ol class="common-list common-list--ordered">
+                <li class="common-list__item">
+                  если мотоцикл с большим пробегом, или не известно, когда и как его обслуживали предыдущие владельцы, сразу замените моторное масло, масляный и воздушный фильтры, охлаждающую и тормозную жидкости. Смажьте цепь. Осмотрите и при необходимости замените все узлы, указанные в таблице, и считайте, что вы провели обслуживание при пробеге 6400 км. В дальнейшем руководствуйтесь межремонтными интервалами, указанными в таблице;
+                </li>
+                <li class="common-list__item">
+                  обслуживание нужно производить чаще, если мотоцикл эксплуатируется в очень влажной или пыльной местности;
+                </li>
+                <li class="common-list__item">
+                  эту систему прочищайте чаще, если приходится ездить в дождь или с открытым "на полную" газом;
+                </li>
+                <li class="common-list__item">
+                  эти жидкости следует менять через каждые два года или же по показаниям одометра, в зависимости от того, что наступит раньше;
+                </li>
+                <li class="common-list__item">
+                  система установлена только на мотоциклах, выпущенных для Швейцарии. А они в нашей стране большая редкость.
+                </li>
+              </ol>
+            </div>
+            <p>
+              Смотри также:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                <a class="common-list__link" href="articles_serv_4.html">
+                  Описание операций по техническому обслуживанию в статье "Конь" и его "Отражение"
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="manual_cont.html">
+                  Honda VT600C/CD Service Online PDF Manual
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="steedbreed.html">
+                  brother ilia : Практическое стидоводство
+                </a>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

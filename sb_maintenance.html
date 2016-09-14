@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Обслуживание
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Обслуживание
+            </h1>
+            <h2 class="page-main__sub2title" id="lifting">
+              Способы вывешивания мотоцикла
+            </h2>
+            <h3 class="page-main__sub3title">
+              Вывешивание обоих колес с помощью подъемника и стойки
+            </h3>
+            <p class="page-main__info">
+              Устанавливайте посадочное место подъемника таким образом, чтобы не повредить масляный фильтр и проходящие под двигателем шланги.
+            </p>
+            <div class="intext-img intext-img--right">
+              <img class="img-link js-img-link" title="Способы вывешивания мотоцикла" alt="С помощью подъемника и стойки" src="tmp/ugc/img/steedbreed/conservation_2_s.jpg" id="tmp/ugc/img/steedbreed/conservation_2_b.jpg" width="311" height="233">
+            </div>
+            <p>
+              Это простой и эффективный способ. Для него нужно 2 приспособления: элементарный <a class="page-main__link js-img-link" title="Способы вывешивания мотоцикла" name="Мотоциклетный&nbsp;подъемник" id="tmp/ugc/img/steedbreed/jack_b.jpg">мотоциклетный подъемник</a> и автомобильная <a class="page-main__link js-img-link" title="Способы вывешивания мотоцикла" name="Стойка-пирамидка" id="tmp/ugc/img/steedbreed/jack1_b.jpg">стойка-пирамидка</a> с регулируемой высотой.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Выставьте необходимую для вывешивания переднего колеса высоту рамки подъемника.
+              </li>
+              <li class="common-list__item">
+                Установите подъемник под переднюю часть двигателя и вывесьте переднее колесо.
+              </li>
+              <li class="common-list__item">
+                Выставьте необходимую для вывешивания заднего колеса высоту стойки.
+              </li>
+              <li class="common-list__item">
+                Поднимите заднюю часть мотоцикла рукой (она теперь совершенно не тяжелая, вес перемещен на переднюю часть). Подставьте стойку под поперечину маятника.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Как вывесить заднее колесо подручными средствами
+            </h3>
+            <h4 class="page-main__sub4title">
+              Способ 1
+            </h4>
+            <div class="intext-img intext-img--right">
+              <img class="img-link js-img-link" title="Способы вывешивания мотоцикла" alt="Подручными средствами" src="tmp/ugc/img/steedbreed/liftedwheel_s.jpg" id="tmp/ugc/img/steedbreed/liftedwheel_b.jpg" width="311" height="233">
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Установить мотоцикл на боковую подставку.
+              </li>
+              <li class="common-list__item">
+                Подложить что-нибудь под правое плечо маятника, выбрав полностью высоту.
+              </li>
+              <li class="common-list__item">
+                Установить под левое плечо маятника домкрат.
+              </li>
+              <li class="common-list__item">
+                Домкратом приподнять левое плечо маятника, установив мотоцикл в вертикальное положение.
+              </li>
+            </ol>
+            <h4 class="page-main__sub4title">
+              Способ 2
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Установить мотоцикл в вертикальное положение, подложив что-нибудь под боковую подставку.
+              </li>
+              <li class="common-list__item">
+                Установить под оба плеча маятника площадку и под нее домкрат.
+              </li>
+              <li class="common-list__item">
+                Домкратом немного приподнять маятник.
+              </li>
+            </ol>
+            <h2 class="page-main__sub2title" id="winter">
+              Зимняя консервация
+            </h2>
+            <p class="page-main__info">
+              Действия по консервации мотоцикла, описанные ниже, не являются безоговорочным "руководством к действию". В интернете можно найти массу статей на эту тему, в которых процесс консервации отличается от предложенного ниже и является гораздо более сложным. Описанный ниже способ показался мне наиболее приемлемым в моей конкретной ситуации. Снимаю с себя всю ответственность за его правильность и универсальность.
+            </p>
+            <p class="page-main__info">
+              Информацию о химических средствах, используемых при консервации, см. в <a class="page-main__link" href="sb_append_3.html">Приложении 3</a>.
+            </p>
+            <h3 class="page-main__sub3title">
+              Разбор
+            </h3>
+            <p>
+              Самый лучший способ защитить деталь от коррозии и порчи от мороза - это унести ее домой. Потом долгими зимними вечерами можно заниматься полировкой, смазкой и ностальгическим медитативным любованием. В этом деле я остановился где-то на грани паранойи. На фотографии ниже видно, что в итоге осталось в гараже.
+            </p>
+            <p>
+              <strong>Аккумулятор</strong> - это та вещь, которую <a class="page-main__link" href="sb_charging.html#battery">снять</a> и унести домой настоятельно рекомендуется. Два-три раза за зиму следует провести контрольно-тренировочный цикл (полностью разрядить аккумулятор, а затем полностью <a class="page-main__link" href="sb_charging.html#battery">зарядить</a>).
+            </p>
+            <h3 class="page-main__sub3title">
+              Мытье и сушка
+            </h3>
+            <p>
+              Естественно, перед дальнейшей обработкой мотоцикл должен быть чистым и сухим. Когда значительная часть деталей снята, процесс мытья можно провести более тщательно, своими силами и с минимумом воды.
+            </p>
+            <h3 class="page-main__sub3title">
+              Обработка наружных поверхностей полиролями
+            </h3>
+            <p>
+              <strong>Хромированные поверхности</strong> обработать <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Полироль&nbsp;для&nbsp;хрома" id="tmp/ugc/img/steedbreed/chromecleaner_b.jpg">полиролью для хрома</a>. Это поможет удалить начинающую образовываться ржавчину и предотвратит появление новой.
+            </p>
+            <p>
+              <strong>Лакокрасочные поверхности</strong> также обработать <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Полироль&nbsp;для&nbsp;лакокрасочных&nbsp;покрытий" id="tmp/ugc/img/steedbreed/turtlewax_b.jpg">специальной полиролью</a> (можно цветной). Заполняя микротрещины, и не давая попасть в них влаге, эти средства обеспечивают поверхностям долговременную защиту.
+            </p>
+            <h3 class="page-main__sub3title">
+              Защита от коррозии смазками
+            </h3>
+            <p>
+              <strong>Хромированные и металлические поверхности</strong> для дополнительной защиты обработать <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Универсальная&nbsp;смазка-спрей" id="tmp/ugc/img/steedbreed/multiprotect_b.jpg">универсальной смазкой-спреем</a>. Я "пошел дальше" и также "заспреил" и лакокрасочные поверхности.
+            </p>
+            <p>
+              <strong>Покрышки и др. резинки</strong> для предотвращения растрескивания от мороза желательно обработать <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Силиконовая&nbsp;смазка-спрей" id="tmp/ugc/img/steedbreed/siliconspray_b.jpg">силиконовой смазкой-спреем</a>.
+            </p>
+            <p>
+              <strong>Цепь</strong>, чтобы ее ролики и втулки не приржавели друг к другу, звенья не потеряли подвижность, а колечки не рассохлись, следует <a class="page-main__link" href="sb_transmission.html#chainlubr">смазать</a> специальной <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Смазка&nbsp;для&nbsp;цепи" id="tmp/ugc/img/steedbreed/chainlube_b.jpg">смазкой для цепи</a>.
+            </p>
+            <h3 class="page-main__sub3title">
+              Защита системы питания
+            </h3>
+            <p>
+              <strong>Бензобак</strong> следует залить под горловину, предварительно добавив <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Стабилизатор&nbsp;бензина" id="tmp/ugc/img/steedbreed/benzinstab_b.jpg">стабилизатор</a> бензина. Он обеспечит защиту от коррозии, образования отложений, предотвратит старение и окисление бензина.
+            </p>
+            <p>
+              <strong>Защитить систему от появления в ней конденсата</strong> можно, "запечатав впуск и выпуск": на глушители можно надеть пакеты и перетянуть резинками, либо заткнуть отверстия (например, подойдет лампочка от поворотника, обмотанная промасленной тряпкой). Воздушный фильтр <a class="page-main__link" href="sb_fuelsystem.html#airfilter">снять</a>, и также с помощью пленки загерметизировать впуск.
+            </p>
+            <h3 class="page-main__sub3title">
+              Установка на стойки, "упаковка"
+            </h3>
+            <p>
+              Смысл вывешивания мотоцикла на время консервации состоит в том, чтобы разгрузить переднюю и заднюю подвески, а также снять нагрузку с колес и безбоязненно снизить в них давление (примерно до 1 атм). Получается, что идеальный вариант - это поднять мотоцикл под раму в 4-х точках. Это сопряжено с определенными трудностями. Во-первых, сложно найти такие точки приложения, чтобы не повредить приводы и шланги, проходящие рядом с рамой. Площадь этих точек должна быть минимальной, что повлияет на устойчивость. Во-вторых, продольный участок рамы (от переднего края до места крепления маятника) очень короткий, что также повлияет на устойчивость. Компромиссным решением является вывесить переднее колесо мотоцикла, подняв его под двигатель (в передней его части) подъемником, а затем вывесить заднее колесо, поставив на стойку поперечину маятника. Задняя подвеска в этом случае не распрямится, но нагрузка на нее уменьшится значительно. См. фото ниже.
+            </p>
+            <p>
+              Ну вот, теперь остается накрыть мотоцикл чехлом и не трогать его до весенней расконсервации, во время которой, будем надеяться, никаких сюрпризов не произойдет.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" alt="Установка на стойки" src="tmp/ugc/img/steedbreed/conservation_1_s.jpg" id="tmp/ugc/img/steedbreed/conservation_1_b.jpg" width="311" height="233">
+                  </div>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" alt="&quot;Упаковка&quot;" src="tmp/ugc/img/steedbreed/conservation_4_s.jpg" id="tmp/ugc/img/steedbreed/conservation_4_b.jpg" width="311" height="233">
+                  </div>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="spring">
+              Весеннее "оживление". Подготовка к сезону
+            </h2>
+            <p class="page-main__info">
+              Список и последовательнось действий по подготовке мотоцикла к сезону, описанные ниже, показались мне наиболее приемлемыми в моей конкретной ситуации. Снимаю с себя всю ответственность за их правильность и универсальность. Пользуйтесь также <a class="page-main__link" href="manual_cont.html">Руководством по эксплуатации Honda VT600C/CD (1997-98 гг)</a>.
+            </p>
+            <p class="page-main__info">
+              Информацию о средствах обслуживания, запчастях и расходных материалах, химических средствах, используемых при подготовке мотоцикла к сезону, см. в приложениях <a class="page-main__link" href="sb_append_1.html">1</a>, <a class="page-main__link" href="sb_append_2.html">2</a>, <a class="page-main__link" href="sb_append_3.html">3</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+            </p>
+            <p>
+              Наконец-то пришло время открывать сезон. Но сначала предстоит провести ряд мероприятий по "оживлению" мотоцикла. Вы приходите в гараж, расчехляете своего коня и с радостью лицезреете его, чистого и блестящего...
+            </p>
+            <h3 class="page-main__sub3title">
+              Очистка внешних поверхностей
+            </h3>
+            <p>
+              То что мотоцикл так хорошо сохранился за зиму, обусловлено тем, что осенью вы обильно "полили" его смазкой. Теперь излишки смазки необходимо удалить, в первую очередь с двигателя и глушителей, чтобы смазка не горела при первом запуске двигателя. Универсальная смазка-спрей прекрасно стирается тряпками, тем не менее оставляя защитный слой. Это можно рассматривать как первый подход к полировке мотоцикла.
+            </p>
+            <p>
+              Несмотря на предпринятые осенью меры по защите, ржавчина все же может добраться до каких-то мест. В этом случае ее следует удалить с помощью <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Преобразователь&nbsp;ржавчины" id="tmp/ugc/img/steedbreed/rustremover_b.jpg">преобразователя</a>.
+            </p>
+            <p>
+              Пока мотоцикл еще находится в полуразобранном состоянии, также имеет смысл осмотреть его на предмет царапин и сколов краски, до которых потом добраться будет невозможно, и, как вариант, закрасить их <a class="page-main__link js-img-link" title="Зимняя консервация и весеннее &quot;оживление&quot;" name="Автоэмаль" id="tmp/ugc/img/steedbreed/enamelmarker_b.jpg">автоэмалью</a>, после чего отполировать войлочным кругом на дрели.
+            </p>
+            <p>
+              Чтобы на поверхностях поменьше собиралась грязь, следует произвести дополнительную очистку от смазки полиролями (для хрома и для лакокрасочных поверхностей), причем тоже лучше до сборки мотоцикла, по крайней мере обработать те его части, которые потом будут скрыты.
+            </p>
+            <h3 class="page-main__sub3title">
+              Перый запуск двигателя
+            </h3>
+            <p>
+              "Распечатываем" впуск и выпуск, устанавливаем <a class="page-main__link" href="sb_fuelsystem.html#airfilter">воздушный фильтр</a> и <a class="page-main__link" href="sb_charging.html#battery">аккумулятор</a>, который дома предварительно как следует зарядили.
+            </p>
+            <p>
+              Проверяем работу <a class="page-main__link" href="sb_fuelsystem.html#se_valve">привода клапана пускового устройства карбюратора</a> ("подсоса"), при необходимости регулируем его и смазываем.
+            </p>
+            <p>
+              Устанавливаем <a class="page-main__link" href="sb_fuelsystem.html#fuelvalve">топливный кран</a> в положение "ON". Включаем зажигание, убеждаемся в том, что включена нейтральная передача и...
+            </p>
+            <h4 class="page-main__sub4title">
+              Процедура запуска двигателя
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Выжать рычаг сцепления (и не отпускать, пока двигатель не запустится).
+              </li>
+              <li class="common-list__item">
+                Нажать кнопку стартера. "Крутить" 5-6 секунд, как только начнет "схватываться", потихоньку вытащить "подсос".
+              </li>
+              <li class="common-list__item">
+                Если двигатель не запустился, подождать минут 5 и повторить попытку точно таким же образом.
+              </li>
+              <li class="common-list__item">
+                Если после 2-3 попыток двигатель не запустился, открыть полностью газ и нажать стартер. "Покрутить" так секунд 5-6, чтобы продуть цилиндры.
+              </li>
+              <li class="common-list__item">
+                Повторить шаги, описанные в пп. 1-3.
+              </li>
+            </ol>
+            <p>
+              Иногда бывает так, что искра присутствует на всех свечах, аккумулятор бодро крутит стартер, но мотоцикл категорически отказывается заводиться. Скорее всего проблема в том, что за зиму "высохли" карбюраторы. В этом случае можно попробовать выкрутить по одной свече с каждого цилиндра (те, что в свободном доступе) и залить в шахты из шприца по 0,5 мл бензина.
+            </p>
+            <p>
+              В большинстве случаев двигатель запустится без проблем. Стид - очень надежный мотоцикл. И при правильной консервации за зиму с ним ровным счетом ничего не случится.
+            </p>
+            <h3 class="page-main__sub3title">
+              Проверка винтов, гаек
+            </h3>
+            <p>
+              Проверьте и при необходимости подтяните гайки и винты. Поправьте или замените хомуты, крепеж шлангов, жгутов и проводов.
+            </p>
+            <h3 class="page-main__sub3title">
+              Передняя подвеска
+            </h3>
+            <p>
+              Пока мотоцикл еще находится в "подвешенном" состоянии, имеет смысл подумать, не пора ли <a class="page-main__link" href="sb_frontwheel.html#fork">сменить масло в вилке</a>, а также обратить внимание на состояние пыльников, посмотреть, не протекают ли сальники.
+            </p>
+            <h3 class="page-main__sub3title">
+              Смазка цепи
+            </h3>
+            <p>
+              Опять же, пока заднее колесо вывешено, вы можете <a class="page-main__link" href="sb_transmission.html#chainlubr">смазать цепь</a>. Даже если вы делали это при консервации, лишний раз не помешает, за зиму смазка могла потерять свои свойства. Возможно, если осенью вы поленились это сделать, цепь предварительно стоит промыть.
+            </p>
+            <h3 class="page-main__sub3title">
+              Снятие со стоек
+            </h3>
+            <p>
+              Для выполнения дальнейших операций мотоцикл необходимо "спустить на воду". Подкачайте шины до необходимого давления и снимите мотоцикл. Еще раз проверьте давление в шинах, при необходимости приведите в норму.
+            </p>
+            <h3 class="page-main__sub3title">
+              Замена масла, масляного фильтра
+            </h3>
+            <p>
+              Предметом вечного спора является вопрос, когда <a class="page-main__link" href="sb_lubricat.html#oil_change">менять масло</a> - осенью или весной. Решать вам. В идеале - и осенью, и весной. У меня в конце первого сезона масло было практически чистое, поэтому менять я не стал. Весной же решил заменить. Во-первых, вторую замену масла после покупки мотоцикла рекомендуется проводить вне графика обслуживания (примерно через 1000 км), во-вторых, зимой масло претерпевало перепады температур и могло потерять свои свойства, к тому же, у него элементарно вышел срок годности.
+            </p>
+            <h3 class="page-main__sub3title">
+              Замена охлаждающей жидкости
+            </h3>
+            <p>
+              Ситуация очень похожа и с <a class="page-main__link" href="sb_cooling.html#coolant_change">заменой охлаждающей жидкости</a>. Оставлять в зиму в холодном гараже мотоцикл, антифриз в системе охлаждения которого уже не имеет достаточную плотность, опасно. В свою очередь, после зимы в холодном гараже антифриз (наверное) может испортиться. Но как бы то не было, с маслом ситуация более критичная.
+            </p>
+            <h3 class="page-main__sub3title">
+              Гидравлический тормоз
+            </h3>
+            <p>
+              Тормоз - это ваша безопасность, пренебрегать им не следует. <a class="page-main__link" href="sb_hydrabrake.html#fluid">Замена тормозной жидкости</a> при правильном выполнении - операция не сложная и не долгая.
+            </p>
+            <p>
+              Если за зиму поршни тормозного суппорта закисли, их необходимо <a class="page-main__link" href="sb_hydrabrake.html#caliper_off">почистить</a>.
+            </p>
+            <p>
+              Тормозные колодки и диск проверить на предмет изношенности, при необходимости <a class="page-main__link" href="sb_hydrabrake.html#pads">заменить</a>.
+            </p>
+            <p class="page-main__info">
+              Это лишь примерный и далеко не полный набор мероприятий, которые вы можете проделать с мотоциклом весной. Смотрите по ситуации и следуйте <a class="page-main__link" href="sb_maintenance.html#mainten_sched">Графику проведения технического обслуживания</a>.
+            </p>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Рама, седло, крышки
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Рама, седло, крышки
+            </h1>
+            <h2 class="page-main__sub2title" id="steercover">
+              Крышки рулевой колонки
+            </h2>
+            <p class="page-main__info">
+              Снимая и устанавливая крышки, не сломайте зацепы и прорези, не защемите провода, проходящие в вырезах крышек.
+            </p>
+            <h3 class="page-main__sub3title">
+              Снятие
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите крепежный винт, который находится сверху, на стыке правой и левой крышки.
+              </li>
+              <li class="common-list__item">
+                Отсоедините маленькую крышечку спереди, между правой и левой крышкой (под ней находится номер рамы).
+              </li>
+              <li class="common-list__item">
+                По всей длине стыка левой и правой крышки освободите зацепы на одной крышке из прорезей на другой.
+              </li>
+              <li class="common-list__item">
+                Потяните поочередно обе крышки на себя, чтобы штырьки на них выскочили из резиновых колец.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <p>
+              Установка производится в обратном порядке.
+            </p>
+            <p class="page-main__info">
+              Устанавливая крышку, постарайтесь, чтобы штырьки точно попали в резиновые кольца.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышки рулевой колонки" alt="Отверстие винта крепления крышек рулевой колонки" src="tmp/ugc/img/steedbreed/steercoverbolt_s.jpg" id="tmp/ugc/img/steedbreed/steercoverbolt_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отверстие винта крепления крышек рулевой колонки
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышки рулевой колонки" alt="Резиновое кольцо" src="tmp/ugc/img/steedbreed/steercover_1_s.jpg" id="tmp/ugc/img/steedbreed/steercover_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Резиновое кольцо
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышки рулевой колонки" alt="Крышки рулевой колонки" src="tmp/ugc/img/steedbreed/steercover_2_s.jpg" id="tmp/ugc/img/steedbreed/steercover_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крышки рулевой колонки
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="seat">
+              Седло
+            </h2>
+            <h3 class="page-main__sub3title">
+              Снятие
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите 2 крепежных винта. Винты находятся с двух сторон, по бокам, между водительской и пассажирской частью седла.
+              </li>
+              <li class="common-list__item">
+                Сдвиньте седло назад и поднимите.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Подсуньте пластмассовый язычок с передней стороны водительской части седла под пластинку на раме.
+              </li>
+              <li class="common-list__item">
+                Прижимая седло вниз, заведите крюки на заднем крыле в квадратные отверстия во внутренней пластине пассажирской части седла.
+              </li>
+              <li class="common-list__item">
+                Сдвиньте седло, таким образом, чтобы крюки зацепили кромки отверстий на пассажирской части седла, а отверстия для крепежных винтов в седле совпали с отверстиями на крепежных элементах на крыле.
+              </li>
+              <li class="common-list__item">
+                Завинтите 2 крепежных винта.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              В процессе снятия / установки не защемите провода между седлом и рамой.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Седло" alt="Винт крепления седла" src="tmp/ugc/img/steedbreed/seatbolt_s.jpg" id="tmp/ugc/img/steedbreed/seatbolt_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт крепления седла
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Седло" alt="Крюки на заднем крыле" src="tmp/ugc/img/steedbreed/seat_off_s.jpg" id="tmp/ugc/img/steedbreed/seat_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крюки на заднем крыле
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Седло" alt="Седло снято" src="tmp/ugc/img/steedbreed/seat_off_1_s.jpg" id="tmp/ugc/img/steedbreed/seat_off_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Седло снято
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="sidepanels">
+              Боковые крышки
+            </h2>
+            <p class="page-main__info">
+              Снимая и устанавливая крышку, не сломайте язычки в ее верхней части, которые входят в пазы на крыле.
+            </p>
+            <h3 class="page-main__sub3title">
+              Снятие
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Потяните крышку на себя, чтобы штырьки на ней выскочили из резиновых колец на раме.
+              </li>
+              <li class="common-list__item">
+                Вытащите крышку.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Заведите язычки на крышке в пазы на крыле.
+              </li>
+              <li class="common-list__item">
+                Надавите на крышку, чтобы штырьки на ней закрепились в резиновых кольцах на раме.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              Устанавливая крышку, постарайтесь, чтобы штырьки точно попали в резиновые кольца. Их не видно!
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Боковые крышки" alt="Левая боковая крышка" src="tmp/ugc/img/steedbreed/sidepanel_s.jpg" id="tmp/ugc/img/steedbreed/sidepanel_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Левая боковая крышка
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Боковые крышки" alt="Левая боковая крышка снята" src="tmp/ugc/img/steedbreed/sidepanel_off_s.jpg" id="tmp/ugc/img/steedbreed/sidepanel_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Левая боковая крышка снята
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="rearfender">
+              Заднее крыло и подрамник
+            </h2>
+            <h3 class="page-main__sub3title">
+              Снятие и установка заднего крыла
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#sidepanels">
+                  Снимите боковые крышки.
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#seat">
+                  Снимите седло.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Снимите спинку пассажирского сидения (выньте резиновые заглушки, отвинтите 4 винта крепления спинки к крылу).
+              </li>
+              <li class="common-list__item">
+                Отсоедините контакты заднего фонаря от блока контактов.
+              </li>
+              <li class="common-list__item">
+                Освободите кабель заднего фонаря из зажимов и направляющих.
+              </li>
+              <li class="common-list__item">
+                Отвинтите два винта и снимите задний фонарь.
+              </li>
+              <li class="common-list__item">
+                Отвинтите винт крепления бензобака к раме.
+              </li>
+              <li class="common-list__item">
+                Отвинтите два крепежных винта сзади под крылом.
+              </li>
+              <li class="common-list__item">
+                Отвинтите винт и гайку сверху крыла.
+              </li>
+              <li class="common-list__item">
+                Слегка приподнимите бензобак и снимите заднее крыло.
+              </li>
+            </ol>
+            <p>
+              Установка заднего крыла производится в обратном порядке.
+            </p>
+            <h3 class="page-main__sub3title">
+              Снятие и установка подрамника
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Снимите заднее крыло.
+              </li>
+              <li class="common-list__item">
+                Отсоедините контакты фонаря подсветки номера и задних поворотников от блока контактов.
+              </li>
+              <li class="common-list__item">
+                Освободите кабели фонаря подсветки номера и задних поворотников из зажимов и направляющих.
+              </li>
+              <li class="common-list__item">
+                Отвинтите два винта, две верхних гайки со шпилек и снимите подрамник.
+              </li>
+            </ol>
+            <p>
+              Установка подрамника производится в обратном порядке.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Снятие спинки пассажирского сидения" src="tmp/ugc/img/steedbreed/sissybar_off_s.jpg" id="tmp/ugc/img/steedbreed/sissybar_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Снятие спинки пассажирского сидения
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Контакты заднего фонаря отсоединены от блока контактов" src="tmp/ugc/img/steedbreed/rearlightwire_off_s.jpg" id="tmp/ugc/img/steedbreed/rearlightwire_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Контакты заднего фонаря отсоединены от блока контактов
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Кабель заднего фонаря" src="tmp/ugc/img/steedbreed/rearlightwire_s.jpg" id="tmp/ugc/img/steedbreed/rearlightwire_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Кабель заднего фонаря
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Задний фонарь снят" src="tmp/ugc/img/steedbreed/rearlight_off_s.jpg" id="tmp/ugc/img/steedbreed/rearlight_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Задний фонарь снят
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Винт крепления бензобака к раме отвинчен" src="tmp/ugc/img/steedbreed/fueltubetofilter_s.jpg" id="tmp/ugc/img/steedbreed/fueltubetofilter_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт крепления бензобака к раме отвинчен
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Заднее крыло снято" src="tmp/ugc/img/steedbreed/rearfender_off_s.jpg" id="tmp/ugc/img/steedbreed/rearfender_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Заднее крыло снято
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Крепежный винт" src="tmp/ugc/img/steedbreed/subframe_1_s.jpg" id="tmp/ugc/img/steedbreed/subframe_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крепежный винт
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Крепежная шпилька с гайкой" src="tmp/ugc/img/steedbreed/subframe_2_s.jpg" id="tmp/ugc/img/steedbreed/subframe_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крепежная шпилька с гайкой
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Подрамник снят" src="tmp/ugc/img/steedbreed/subframe_3_s.jpg" id="tmp/ugc/img/steedbreed/subframe_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Подрамник снят
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Заднее крыло и подрамник" alt="Подрамник снят" src="tmp/ugc/img/steedbreed/subframe_4_s.jpg" id="tmp/ugc/img/steedbreed/subframe_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Подрамник
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Держатель шлема
+            </h3>
+            <div class="page-main__clearfix">
+              <div class="intext-img intext-img--left">
+                <img class="img-link js-img-link" title="Держатель шлема" alt="Держатель шлема" src="tmp/ugc/img/steedbreed/helmetholder_s.jpg" id="tmp/ugc/img/steedbreed/helmetholder_b.jpg" width="311" height="233">
+              </div>
+              <p>
+                Держатель шлема приварен к раме над задним колесом с левой стороны. Открывается ключом зажигания, защелкивается вручную.
+              </p>
+            </div>
+            <h2 class="page-main__sub2title" id="chainfender">
+              Крышка цепи
+            </h2>
+            <h3 class="page-main__sub3title">
+              Снятие и установка
+            </h3>
+            <p>
+              Для снятия крышки цепи отвинтите 2 крепежных винта и освободите штырек из направляющей. Установка производится в обратной последовательности.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышка цепи" alt="Первый крепежный винт" src="tmp/ugc/img/steedbreed/chainfender_1_s.jpg" id="tmp/ugc/img/steedbreed/chainfender_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Первый крепежный винт
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышка цепи" alt="Второй крепежный винт" src="tmp/ugc/img/steedbreed/chainfender_2_s.jpg" id="tmp/ugc/img/steedbreed/chainfender_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Второй крепежный винт
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышка цепи" alt="Штырек в направляющей" src="tmp/ugc/img/steedbreed/chainfender_3_s.jpg" id="tmp/ugc/img/steedbreed/chainfender_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Штырек в направляющей
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Крышка цепи" alt="Крышка цепи снята" src="tmp/ugc/img/steedbreed/chainfender_4_s.jpg" id="tmp/ugc/img/steedbreed/chainfender_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крышка цепи снята
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Успокоитель цепи
+            </h3>
+            <div class="page-main__clearfix">
+              <div class="intext-img intext-img--left">
+                <img class="img-link js-img-link" title="Успокоитель цепи" alt="Успокоитель цепи" src="tmp/ugc/img/steedbreed/chainprotector_s.jpg" id="tmp/ugc/img/steedbreed/chainprotector_b.jpg">
+              </div>
+              <p>
+                С внутренней стороны крышки цепи на двух винтах крепится успокоитель. В случае износа или повреждения его необходимо заменить. Будьте осторожны, привинчивая его к крышке - винты на нем очень легко сломать, перетянув гайку.
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

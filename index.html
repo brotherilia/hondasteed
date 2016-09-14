@@ -6,7 +6,7 @@
     <title>Honda Steed - Unofficial Russian Page</title>
     <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
     <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style--dark.min.css" id="stylesheet">
     <link rel="icon" type="image/png" href="favicon.ico">
   </head>
   <body>
@@ -33,8 +33,13 @@
       <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <div class="page-midsection">
         <button class="menu-toggle" id="toggle">
-          <i class="menu-toggle__icon">
-            <span class="menu-toggle__icon-body"></span>
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--sun" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
           </i>
         </button>
         <div class="page-midsection__left-side" id="popup">
@@ -96,14 +101,21 @@
               </li>
             </ul>
           </nav>
-          <div class="color-scheme-button js-cssSwitch">
-            <img src="img/color-scheme.png" alt="Цветовая схема" width="30" height="30">
-          </div>
           <aside class="page-aside" id="tools">
             <div class="page-aside__object">
               <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
                 <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
               </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
             </div>
             <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
               <fieldset class="fieldset">
@@ -130,16 +142,6 @@
                 <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
               </a>
             </div>
-            <div class="page-aside__object">
-              <div class="social-likes social-likes_single" data-single-title="поделиться">
-                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
-                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
-                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
-                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
-              </div>
-            </div>
           </aside>
         </div>
         <div class="page-midsection__right-side">
@@ -162,7 +164,7 @@
               </li>
             </ul>
           </nav>
-          <main class="page-main">
+          <main class="page-main page-main--index">
             <div class="jssor-slider" id="jssor_1">
               <div class="jssor-slider__screen" data-u="loading">
                 <div class="jssor-slider__filter"></div>
@@ -465,22 +467,22 @@
               <span class="jssor-slider__arrow jssor-slider__arrow--right" data-u="arrowright" data-autocenter="2"></span>
               <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
             </div>
-            <section class="page-main__section">
-              <h2 class="page-main__subtitle">
+            <section class="page-main__section page-main__section--index">
+              <h2 class="page-main__sub2title">
                 Добро пожаловать на сайт, посвященный мотоциклу <span class="nowrap">Honda Steed!</span>
               </h2>
               <p>
                 Количество любителей мотоцикла Honda Steed увеличивается с каждым годом, и связанные с ним вопросы не перестают задаваться. Идея данного проекта - связать воедино на одном ресурсе как можно больше полезной информации по Honda Steed, чтобы человек, особенно кто только что купил Steed и еще ничего толком про него не знает, мог бы зайти на этот сайт и получить ответы на большинство вопросов. Приветствуется участие в Проекте всех, кому это интересно.
               </p>
             </section>
-            <section class="page-main__section">
-              <h2 class="page-main__subtitle">
+            <section class="page-main__section page-main__section--index">
+              <h2 class="page-main__sub2title">
                 Обновления на сайте
               </h2>
               <ul class="common-list">
                 <li class="common-list__item">
-                  <time class="common-list__date" datetime="2016-ХХ-ХХ">
-                    ХХ.ХХ.2016
+                  <time class="common-list__date" datetime="2016-09-15">
+                    15.09.2016
                   </time>
                   <p>
                     Сайт адаптирован для просмотра на мобильных устройствах. Проведена реструктуризация.
@@ -504,8 +506,8 @@
                 </li>
               </ul>
             </section>
-            <section class="page-main__section">
-              <h2 class="page-main__subtitle">
+            <section class="page-main__section page-main__section--index">
+              <h2 class="page-main__sub2title">
                 Наш баннер на вашем сайте
               </h2>
               <p>
@@ -537,10 +539,15 @@
         </div>
       </footer>
       <a class="to-top-arrow" id="to-top" href="#top">
-        <i class="to-top-arrow__icon">
-          <span class="to-top-arrow__icon-body"></span>
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
         </i>
       </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/script.min.js"></script>

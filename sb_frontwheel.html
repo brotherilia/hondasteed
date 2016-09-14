@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Передняя подвеска, переднее колесо
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Передняя подвеска, переднее колесо
+            </h1>
+            <h2 class="page-main__sub2title" id="frontfender">
+              Переднее крыло (снятие и установка)
+            </h2>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите крепежный винт и отсоедините трос спидометра.
+              </li>
+              <li class="common-list__item">
+                Освободите трос спидометра из направляющих.
+              </li>
+              <li class="common-list__item">
+                Выньте тормозной шланг из зажима.
+              </li>
+              <li class="common-list__item">
+                Отвинтите 4 крепежных винта с внутренней стороны крыла.
+              </li>
+            </ol>
+            <p>
+              Установка производится в обратном порядке.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее крыло (снятие и установка)" alt="Трос спидометра отсоединен" src="tmp/ugc/img/steedbreed/speedomcab_off_s.jpg" id="tmp/ugc/img/steedbreed/speedomcab_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Трос спидометра отсоединен
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее крыло (снятие и установка)" alt="Тормозной шланг в зажиме" src="tmp/ugc/img/steedbreed/frontfender_off_1_s.jpg" id="tmp/ugc/img/steedbreed/frontfender_off_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Тормозной шланг в зажиме
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее крыло (снятие и установка)" alt="Крепежный винт крыла" src="tmp/ugc/img/steedbreed/frontfender_off_2_s.jpg" id="tmp/ugc/img/steedbreed/frontfender_off_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крепежный винт крыла
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="frontwheel">
+              Переднее колесо
+            </h2>
+            <h3 class="page-main__sub3title">
+              Снятие
+            </h3>
+            <div class="page-main__info">
+              <p>
+                Вывешивая колесо, не подставляйте домкрат под масляный фильтр.
+              </p>
+              <p>
+                После того как колесо снято, не выжимайте рычаг переднего тормоза. Это затруднит последующую вставку тормозного диска между колодок.
+              </p>
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_maintenance.html#lifting">
+                  Вывесьте переднее колесо.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Отсоедините трос спидометра от привода.
+              </li>
+              <li class="common-list__item">
+                Снимите заглушки фиксирующих винтов оси.
+              </li>
+              <li class="common-list__item">
+                Ослабьте фиксирующие винты оси.
+              </li>
+              <li class="common-list__item">
+                Внутренним шестигранным ключом на 17 мм ослабьте ось.
+              </li>
+              <li class="common-list__item">
+                Выньте ось и снимите переднее колесо.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Заглушки фиксирующих винтов оси" src="tmp/ugc/img/steedbreed/frontwheel_1_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Заглушки фиксирующих винтов оси
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Заглушки фиксирующих винтов оси сняты" src="tmp/ugc/img/steedbreed/frontwheel_2_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Заглушки фиксирующих винтов оси сняты
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Ослабляем фиксирующие винты оси" src="tmp/ugc/img/steedbreed/frontwheel_3_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Ослабляем фиксирующие винты оси
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Отверстие под шестигранный ключ на 17 мм" src="tmp/ugc/img/steedbreed/frontwheel_4_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отверстие под шестигранный ключ на 17 мм
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Ослабляем ось" src="tmp/ugc/img/steedbreed/frontwheel_5_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_5_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Ослабляем ось
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Переднее колесо снято" src="tmp/ugc/img/steedbreed/frontwheel_6_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_6_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Переднее колесо снято
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <p class="page-main__info">
+              Для смазывания деталей при установке переднего колеса используйте <a class="page-main__link js-img-link" title="Переднее колесо" name="Литиевая&nbsp;смазка" id="tmp/ugc/img/steedbreed/techgrease300_b.jpg">литиевую смазку</a>.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Смажьте правый пыльник и установите втулку.
+              </li>
+              <li class="common-list__item">
+                Смажьте левый пыльник, внутренности привода спидометра и установите привод спидометра.
+              </li>
+              <li class="common-list__item">
+                Установите колесо между перьев. Если тормозной суппорт установлен, будьте осторожны, просовывая тормозной диск между колодками.
+              </li>
+              <li class="common-list__item">
+                Вставьте ось, предварительно смазав ее тонким слоем смазки.
+              </li>
+              <li class="common-list__item">
+                Убедитесь в том, что выступ на левом пере находится перед выступом на приводе спидометра, и они соприкасаются.
+              </li>
+              <li class="common-list__item">
+                Затяните ось внутренним шестигранным ключом на 17 мм.
+              </li>
+              <li class="common-list__item">
+                Снимите мотоцикл с домкрата.
+              </li>
+              <li class="common-list__item">
+                Выжмите передний тормоз, сожмите и разожмите вилку несколько раз, чтобы проверить работу тормоза, и ось могла найти нужное положение.
+              </li>
+              <li class="common-list__item">
+                Завинтите фиксирующие винты оси.
+              </li>
+              <li class="common-list__item">
+                Установите заглушки фиксирующих винтов оси.
+              </li>
+              <li class="common-list__item">
+                Подсоедините трос спидометра к приводу.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Смазываем правый пыльник" src="tmp/ugc/img/steedbreed/frontwheel_7_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_7_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Смазываем правый пыльник
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Втулка установлена" src="tmp/ugc/img/steedbreed/frontwheel_8_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_8_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Втулка установлена
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Смазываем левый пыльник" src="tmp/ugc/img/steedbreed/frontwheel_9_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_9_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Смазываем левый пыльник
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Привод спидометра установлен" src="tmp/ugc/img/steedbreed/frontwheel_10_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_10_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Привод спидометра установлен
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Вставляем ось" src="tmp/ugc/img/steedbreed/frontwheel_12_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_12_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Вставляем ось
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Переднее колесо" alt="Выступы на левом пере и на приводе спидометра" src="tmp/ugc/img/steedbreed/frontwheel_11_s.jpg" id="tmp/ugc/img/steedbreed/frontwheel_11_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Выступы на левом пере и на приводе спидометра
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="fork">
+              Вилка
+            </h2>
+            <h3 class="page-main__sub3title">
+              Снятие
+            </h3>
+            <div class="page-main__info">
+              <p>
+                После того как колесо снято, не выжимайте рычаг переднего тормоза. Это затруднит последующую вставку тормозного диска между колодок.
+              </p>
+              <p>
+                После снятия тормозного суппорта установите его на подставку. Не перекручивайте тормозной шланг.
+              </p>
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frontwheel.html#frontwheel">
+                  Снимите переднее колесо.
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frontwheel.html#frontfender">
+                  Снимите переднее крыло.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Отвинтите крепежные винты тормозного суппорта и снимите суппорт с левого пера вилки.
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_lights_switches.html#tailturnlicense">
+                  Снимите поворотники с вилки
+                </a>
+                <span>
+                  (контакты отсоединять не обязательно).
+                </span>
+              </li>
+              <li class="common-list__item">
+                Снимите заглушку фиксирующего винта пера вилки на верхней траверсе и ослабьте этот винт.
+              </li>
+              <li class="common-list__item">
+                Снимите заглушку фиксирующего винта пера вилки на нижней траверсе и ослабьте этот винт.
+              </li>
+              <li class="common-list__item">
+                Выньте перо из траверс.
+              </li>
+              <li class="common-list__item">
+                Проделайте пункты 5-7 и снимите другое перо.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Вставьте перо в нижнюю и верхнюю траверсы.
+              </li>
+              <li class="common-list__item">
+                Выровняйте край трубы пера с поверхностью верхней траверсы (т.е. пробка пера находится над траверсой).
+              </li>
+              <li class="common-list__item">
+                Затяните фиксирующий винт пера вилки на нижней траверсе.
+              </li>
+              <li class="common-list__item">
+                Затяните фиксирующий винт пера вилки на верхней траверсе.
+              </li>
+              <li class="common-list__item">
+                Установите заглушки фиксирующих винтов пера вилки на нижней и верхней траверсах.
+              </li>
+              <li class="common-list__item">
+                Проделайте пункты 1-5 и установите другое перо.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Отвинчиваем крепежные винты тормозного суппорта" src="tmp/ugc/img/steedbreed/caliper_2_s.jpg" id="tmp/ugc/img/steedbreed/caliper_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отвинчиваем крепежные винты тормозного суппорта
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Заглушка фиксирующего винта на верхней траверсе" src="tmp/ugc/img/steedbreed/fork_1_s.jpg" id="tmp/ugc/img/steedbreed/fork_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Заглушка фиксирующего винта на верхней траверсе
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Винт на крышке левого пера" src="tmp/ugc/img/steedbreed/fork_2_s.jpg" id="tmp/ugc/img/steedbreed/fork_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт на крышке левого пера
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Отвинчиваем фиксирующий винт на верхней траверсе" src="tmp/ugc/img/steedbreed/fork_3_s.jpg" id="tmp/ugc/img/steedbreed/fork_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отвинчиваем фиксирующий винт на верхней траверсе
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Фиксирующий винт на нижней траверсе" src="tmp/ugc/img/steedbreed/fork_4_s.jpg" id="tmp/ugc/img/steedbreed/fork_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Фиксирующий винт на нижней траверсе
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Оба пера вилки сняты" src="tmp/ugc/img/steedbreed/fork_5_s.jpg" id="tmp/ugc/img/steedbreed/fork_5_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Оба пера вилки сняты
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Чистка и замена масла с неполной разборкой
+            </h3>
+            <div class="page-main__info">
+              <p>
+                Информацию о масле для вилки см. в <a class="page-main__link" href="sb_append_3.html">Приложении 3</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+              </p>
+              <p>
+                Замену масла в вилке следует производить в соответствии с <a class="page-main__link" href="mainten_sched_1.html">Графиком проведения технического обслуживания</a>.
+              </p>
+            </div>
+            <p>
+              В принципе, если не планируется замена каких-либо деталей вилки, масло можно заменить без снятия вилки, воспользовавшись сливными винтами в нижней части перьев. Но замена масла cо снятием вилки и ее неполной или полной разборкой позволяет также произвести тщательную промывку деталей вилки, осмотр их состояния, более точно отмерить необходимое количество масла.
+            </p>
+            <div class="page-main__info">
+              <p>
+                Перед снятием пера с траверс ослабьте верхнюю пробку. Если этого не сделать, вывинчивание пробки на снятом пере будет затруднено.
+              </p>
+              <p>
+                Пробка пера вилки находится под давлением. Будьте осторожны при вывинчивании.
+              </p>
+              <p>
+                При сливе масла не потеряйте шайбы, которые вывалятся из пера.
+              </p>
+            </div>
+            <h4 class="page-main__sub4title">
+              Слив старого масла, чистка
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Снимите перо вилки.
+              </li>
+              <li class="common-list__item">
+                Вывинтите пробку.
+              </li>
+              <li class="common-list__item">
+                Выньте трубку-распорку.
+              </li>
+              <li class="common-list__item">
+                Подставьте емкость для слива, переверните перо - из него вывалится шайба и пружина, потечет масло.
+              </li>
+              <li class="common-list__item">
+                Слейте все масло, 8-10 раз сжав и разжав перо.
+              </li>
+              <li class="common-list__item">
+                Протрите (промойте керосином) пробку, распорку, пружину и шайбу.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              Измерьте длину пружины, она должна быть не менее 327,2 мм. Замените пружину при необходимости.
+            </p>
+            <ol class="common-ol" start="7">
+              <li class="common-list__item">
+                Налейте в перо немного керосина, прополощите, слейте и дайте высохнуть.
+              </li>
+              <li class="common-list__item">
+                Проделайте пункты 1-7 для другого пера.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Откручиваем пробку пера" src="tmp/ugc/img/steedbreed/forkoilchange_1_s.jpg" id="tmp/ugc/img/steedbreed/forkoilchange_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Откручиваем пробку пера
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Вынимаем трубку-распорку" src="tmp/ugc/img/steedbreed/forkoilchange_2_s.jpg" id="tmp/ugc/img/steedbreed/forkoilchange_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Вынимаем трубку-распорку
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Сливаем масло" src="tmp/ugc/img/steedbreed/forkoilchange_3_s.jpg" id="tmp/ugc/img/steedbreed/forkoilchange_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Сливаем масло
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Пробка, трубка-распорка, шайба, пружина" src="tmp/ugc/img/steedbreed/forkoilchange_4_s.jpg" id="tmp/ugc/img/steedbreed/forkoilchange_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Пробка, трубка-распорка, шайба, пружина
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h4 class="page-main__sub4title">
+              Заливка свежего масла
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                С помощью мерного стакана отмерьте количество масла для одного пера (для большинства модификаций это 449 см<span class="sup">3</span>).
+              </li>
+              <li class="common-list__item">
+                Залейте половину этого количества в перо.
+              </li>
+              <li class="common-list__item">
+                Несколько раз медленно сожмите и разожмите перо, чтобы удалить воздух.
+              </li>
+              <li class="common-list__item">
+                Залейте оставшуюся половину масла и повторите шаг 3.
+              </li>
+              <li class="common-list__item">
+                Полностью сожмите перо и замерьте расстояние от края трубы до уровня масла. Для большинства модификаций оно равно 111 мм. При необходимости слейте или долейте масло.
+              </li>
+              <li class="common-list__item">
+                Установите пружину меньшим шагом витков вверх.
+              </li>
+              <li class="common-list__item">
+                Установите шайбу и трубку-распорку.
+              </li>
+              <li class="common-list__item">
+                Смажьте маслом для вилки резиновое кольцо на пробке и завинтите ее.
+              </li>
+              <li class="common-list__item">
+                Проделайте пункты 1-8 и для заливки масла в другое перо.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Замена сальников и пыльников
+            </h3>
+            <div class="page-main__info">
+              <p>
+                Информацию об инструментах, необходимых для разборки и сборки вилки, см. в <a class="page-main__link" href="sb_append_1.html">Приложении 1</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+              </p>
+              <p>
+                Замену сальников и пыльников вилки следует производить в соответствии с <a class="page-main__link" href="mainten_sched_1.html">Графиком проведения технического обслуживания</a>.
+              </p>
+            </div>
+            <p>
+              Сальник не дает маслу протекать между внутренней трубой и слайдером при работе вилки. Пыльник защищает стопорное кольцо и сальник от грязи и влаги. Данные детали являются расходными материалами и подлежат своевременной замене.
+            </p>
+            <h4 class="page-main__sub4title">
+              Полная разборка вилки
+            </h4>
+            <div class="page-main__info">
+              <p>
+                Внутренности левого и правого пера немного отличаются. Проводите весь цикл обслуживания поочереди, чтобы не перепутать детали.
+              </p>
+              <p>
+                Разбирайте перья вилки только до такой степени, до которой это необходимо в данной ситуации. Не снимайте без необходимости лишние детали.
+              </p>
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Слейте масло, промойте керосином внутреннюю полость пера и вынутые детали (см. выше).
+              </li>
+              <li class="common-list__item">
+                Аккуратно подденьте ножом или отверткой старый пыльник и снимите его с пера.
+              </li>
+              <li class="common-list__item">
+                Подцепите стопорное кольцо рядом с разрывом и вытащите его из канавки. При наличии на кольце ржавчины удалите ее с помощью <a class="page-main__link js-img-link" title="Вилка" name="Преобразователь&nbsp;ржавчины" id="tmp/ugc/img/steedbreed/rustremover_b.jpg">преобразователя</a>.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              Внутренняя поверхность слайдера мягкая. Будьте очень аккуратны, не повредите ее.
+            </p>
+            <ol class="common-ol" start="4">
+              <li class="common-list__item">
+                Зафиксируйте перо (например в тисках, не перетягивая, через деревянные прокладки) и, удерживая поршень изнутри пера длинным шестигранником (24), отвинтите снизу пера винт, которым поршень крепится снаружи. Выньте этот винт и медную шайбу.
+              </li>
+              <li class="common-list__item">
+                Выньте поршень с возвратной пружиной из пера, промойте.
+              </li>
+              <li class="common-list__item">
+                Уверенными движениями выдерните внутреннюю трубу пера из слайдера.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              Если движение внутренней трубы в слайдере затруднено, возможно пришло время заменить тефлоновые вкладыши. Рабочая поверхность должна быть без задиров. Тефлоновое покрытие должно составлять не менее 1/4 от всей рабочей поверхности вкладыша.
+            </p>
+            <ol class="common-ol" start="7">
+              <li class="common-list__item">
+                Снимите старый сальник, шайбу и неподвижный вкладыш, внутренняя сторона которого покрыта тефлоном. Подвижный вкладыш (на самом краю трубы, с тефлоном наружу) не трогайте.
+              </li>
+              <li class="common-list__item">
+                Протрите трубу, вкладыш, шайбу. Выкиньте старый сальник.
+              </li>
+              <li class="common-list__item">
+                Почистите посадочное место сальника в слайдере. При необходимости используйте для удаления отложений мелкую наждачную бумагу.
+              </li>
+            </ol>
+            <h4 class="page-main__sub4title">
+              Сборка с заменой сальников и пыльников
+            </h4>
+            <p class="page-main__info">
+              Следите за чистотой деталей при сборке. Удаляйте грязь и остатки старого масла. От этого зависит долговечность службы вилки. При использовании керосина протирайте детали насухо или давайте керосину испариться.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Если при разборке из внутренней трубы выпала фторопластовая втулка, установите ее на место.
+              </li>
+              <li class="common-list__item">
+                Смажьте маслом для вилки тефлоновую поверхность подвижного вкладыша на краю трубы, вставьте внутреннюю трубу в слайдер до упора.
+              </li>
+              <li class="common-list__item">
+                Установите на место поршень с возвратной пружиной.
+              </li>
+              <li class="common-list__item">
+                Зафиксируйте перо (например в тисках, не перетягивая, через деревянные прокладки) и, удерживая поршень изнутри пера длинным шестигранником (24), завинтите снизу пера винт, которым поршень крепится снаружи. Медную шайбу при необходимости замените на новую.
+              </li>
+              <li class="common-list__item">
+                Смажьте маслом для вилки тефлоновую поверхность неподвижного вкладыша и наденьте его на трубу (верх и низ определяйте по надписи на вкладыше).
+              </li>
+              <li class="common-list__item">
+                С помощью оправки забейте вкладыш в посадочное место в слайдере (когда вкладыш достигнет нужного положения, звук удара должен измениться).
+              </li>
+              <li class="common-list__item">
+                Наденьте шайбу, осадите ее слегка оправкой.
+              </li>
+              <li class="common-list__item">
+                Смажьте маслом для вилки новый сальник, наденьте его на перо (пружинкой вниз) и с помощью оправки забейте в посадочное место в слайдере. Канавка для стопорного кольца должна полностью открыться.
+              </li>
+              <li class="common-list__item">
+                Аккуратно установите стопорное кольцо в канавку.
+              </li>
+              <li class="common-list__item">
+                Смажьте маслом для вилки новый пыльник, наденьте его на перо и утопите до упора.
+              </li>
+            </ol>
+            <p>
+              Аналогичным образом произведите замену сальника и пыльника в другом пере.
+            </p>
+            <p class="page-main__info">
+              Для дополнительной защиты можно заполнить посадочное место пыльника литиевой смазкой.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Пыльник вынут из посадочного места" src="tmp/ugc/img/steedbreed/forkdustseals_s.jpg" id="tmp/ugc/img/steedbreed/forkdustseals_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Пыльник вынут из посадочного места
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Вынимаем стопорное кольцо" src="tmp/ugc/img/steedbreed/stopperring_s.jpg" id="tmp/ugc/img/steedbreed/stopperring_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Вынимаем стопорное кольцо
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Ключ для фиксации поршня изнутри" src="tmp/ugc/img/steedbreed/bottomholderpipe_s.jpg" id="tmp/ugc/img/steedbreed/bottomholderpipe_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Ключ для фиксации поршня изнутри
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Винт, которым поршень крепится снаружи" src="tmp/ugc/img/steedbreed/socketbolt_s.jpg" id="tmp/ugc/img/steedbreed/socketbolt_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт, которым поршень крепится снаружи
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Поршень с возвратной пружиной вынут" src="tmp/ugc/img/steedbreed/forkpiston_s.jpg" id="tmp/ugc/img/steedbreed/forkpiston_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Поршень с возвратной пружиной вынут
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Внутренняя труба вилки вынута" src="tmp/ugc/img/steedbreed/forksplitted_s.jpg" id="tmp/ugc/img/steedbreed/forksplitted_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Внутренняя труба вилки вынута
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Если вынуть фторопластовые втулки, видно, что трубы отличаются" src="tmp/ugc/img/steedbreed/innerforktube1_s.jpg" id="tmp/ugc/img/steedbreed/innerforktube1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Если вынуть фторопластовые втулки...
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Если вынуть фторопластовые втулки, видно, что трубы отличаются" src="tmp/ugc/img/steedbreed/innerforktube2_s.jpg" id="tmp/ugc/img/steedbreed/innerforktube2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    ...видно, что трубы отличаются
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Перо разбирается до такого состояния" src="tmp/ugc/img/steedbreed/forkparts_s.jpg" id="tmp/ugc/img/steedbreed/forkparts_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Перо разбирается до такого состояния
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Тефлоновые кладыши перед сбором смазываем" src="tmp/ugc/img/steedbreed/oilingbushing_s.jpg" id="tmp/ugc/img/steedbreed/oilingbushing_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Тефлоновые кладыши перед сбором смазываем
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Посадочное место сальника в отложениях" src="tmp/ugc/img/steedbreed/oilsealhousing_s.jpg" id="tmp/ugc/img/steedbreed/oilsealhousing_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Посадочное место сальника в отложениях
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Вилка" alt="Оправка для вкладышей и сальников" src="tmp/ugc/img/steedbreed/forksealdriver_s.jpg" id="tmp/ugc/img/steedbreed/forksealdriver_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Оправка для вкладышей и сальников
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

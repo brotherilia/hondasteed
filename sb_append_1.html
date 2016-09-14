@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Приложение 1 (средства обслуживания)
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Приложение 1 (средства обслуживания)
+            </h1>
+            <h2 class="page-main__sub2title" id="tools">
+              Инструменты
+            </h2>
+            <h3 class="page-main__sub3title">
+              Мотоподъемник
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Мотоподъемник" src="tmp/ugc/img/steedbreed/jack_s.jpg" id="tmp/ugc/img/steedbreed/jack_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Выставить необходимую высоту рамки подъемника (в зависимости от того, на какую высоту требуется вывесить мотоцикл), зафиксировать болтами. Затем подсунуть рамку подъемника в наклоненном виде под двигатель и, опуская рычаг, установить ее вертикально - мотоцикл вывесится в вертикальном положении.
+                </p>
+                <p>
+                  <a class="page-main__link" href="http://www.sorokin.ru/">Сайт производителя</a>
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Стойка-пирамидка
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Стойка-пирамидка" src="tmp/ugc/img/steedbreed/jack1_s.jpg" id="tmp/ugc/img/steedbreed/jack1_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Подобная автомобильная стойка с регулируемой высотой позволяет легко вывесить заднее колесо, а в совокупности с мотоподъемником - оба колеса мотоцикла. Она прекрасно встает под поперечину маятника.
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Зарядное устройство
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Зарядное устройство" src="tmp/ugc/img/steedbreed/charger_s.jpg" id="tmp/ugc/img/steedbreed/charger_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Зарядное устройство должно удовлетворять следующим критериям:
+                </p>
+                <ul class="common-list">
+                  <li class="common-list__item">
+                    рассчитано на аккумуляторы емкостью 8 Ач;
+                  </li>
+                  <li class="common-list__item">
+                    позволяет установить ток зарядки с дискретностью 0,1 А.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Съемник масляного фильтра
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Съемник масляного фильтра" src="tmp/ugc/img/steedbreed/oilwrench1_s.jpg" id="tmp/ugc/img/steedbreed/oilwrench1_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  "Голыми руками" фильтр не возьмешь. Резиновый уплотнитель держит его мертво. Можно конечно пробить фильтр сбоку отверткой и таким рычагом стронуть его с места, но лучше воспользоваться "правильным" съемником для масляного фильтра.
+                </p>
+                <p>
+                  Съемники бывают разных принципов действия. На картинке изображен съемник цепного типа - наверное самый бюджетный вариант, который в принципе можно изготовить самому.
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Свечной ключ
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Свечной ключ" src="tmp/ugc/img/steedbreed/plugkey_s.jpg" id="tmp/ugc/img/steedbreed/plugkey_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  У Steed всего 4 свечи. 2 из них расположены в труднодоступных местах. Поэтому свечной ключ для Steed должен быть достаточной длины, и с достаточно тонкой стенкой. Диаметр ключа - 18 мм. Если из-за длины не удается просунуть рычаг в отверстие, можно воспользоваться <a class="page-main__link js-img-link" title="Средства обслуживания" name="&quot;Трещетка&quot;,&nbsp;головка,&nbsp;свечной&nbsp;ключ" id="tmp/ugc/img/steedbreed/sparkplug_off_4_b.jpg">головкой и "трещеткой"</a>.
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Ключ для фиксации поршня вилки
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Ключ для фиксации поршня вилки" src="tmp/ugc/img/steedbreed/bottomholderpipe_s.jpg" id="tmp/ugc/img/steedbreed/bottomholderpipe_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Данный ключ (шестигранник на 24) служит для фиксации поршня изнутри при полной разборке и сборке вилки.
+                </p>
+                <p>
+                  Данный ключ (шестигранник на 24) служит для фиксации поршня изнутри при полной разборке и сборке вилки. Его можно легко изготовить самому, используя в качестве шестигранника головку болта или гайку М16.
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Оправка для сальника вилки
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Оправка для сальника вилки" src="tmp/ugc/img/steedbreed/forksealdriver_s.jpg" id="tmp/ugc/img/steedbreed/forksealdriver_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  В принципе сальник можно усадить и с помощью трубы диаметром 50 мм. Но данный инструмент более эффективен, к тому же он имеет 2 рабочих поверхности - для усадки сальника и вкладыша.
+                </p>
+              </div>
+            </div>
+            <h3 class="page-main__sub3title">
+              Манометр
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Манометр" src="tmp/ugc/img/steedbreed/manometer_s.jpg" id="tmp/ugc/img/steedbreed/manometer_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  Давление в шинах должно составлять:
+                </p>
+                <dl class="common-list">
+                  <dt class="common-list__item-dt">передняя:</dt>
+                  <dd class="common-list__item-dd">200 кПа;</dd>
+                  <dt class="common-list__item-dt">задняя (нагрузка до 90 кг):</dt>
+                  <dd class="common-list__item-dd">200 кПа;</dd>
+                  <dt class="common-list__item-dt">задняя (нагрузка более 90 кг):</dt>
+                  <dd class="common-list__item-dd">250 кПа.</dd>
+                </dl>
+              </div>
+            </div>
+            <h2 class="page-main__sub2title" id="accessoires">
+              Аксессуары
+            </h2>
+            <h3 class="page-main__sub3title">
+              Чехол
+            </h3>
+            <div class="page-main__columns">
+              <div class="page-main__column">
+                <img class="img-link js-img-link" title="Средства обслуживания" alt="Чехол" src="tmp/ugc/img/steedbreed/conservation_4_s.jpg" id="tmp/ugc/img/steedbreed/conservation_4_b.jpg">
+              </div>
+              <div class="page-main__column">
+                <p>
+                  При выборе чехла следует обратить внимание на следующие характеристики:
+                </p>
+                <ul class="common-list">
+                  <li class="common-list__item">
+                    чехол предназначен для использования под дождем;
+                  </li>
+                  <li class="common-list__item">
+                    наличие вентиляционных отверстий (не пропускают воду, но пропускают воздух);
+                  </li>
+                  <li class="common-list__item">
+                    наличие жароустойчивой ткани в районе выхлопных труб.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="page-main__info">
+              См. также <a class="page-main__link" href="parts_compare.html">Таблицу соответствия запчастей, мотохимии и инструментов</a>
+            </p>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

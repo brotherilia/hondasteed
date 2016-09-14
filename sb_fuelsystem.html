@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Система питания
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Система питания
+            </h1>
+            <h2 class="page-main__sub2title" id="fuelvalve">
+              Топливный кран
+            </h2>
+            <h3 class="page-main__sub3title">
+              Положения топливного крана
+            </h3>
+            <dl class="common-list">
+              <dt class="common-list__item-dt">"OFF"</dt>
+              <dd class="common-list__item-dd">топливо не поступает в карбюратор.</dd>
+              <dt class="common-list__item-dt">"ON"</dt>
+              <dd class="common-list__item-dd">топливо поступает в карбюратор из основного запаса (не с самого дна бака).</dd>
+              <dt class="common-list__item-dt">"RES"</dt>
+              <dd class="common-list__item-dd">топливо поступает в карбюратор из резервного запаса (со дна бака).</dd>
+            </dl>
+            <div class="page-main__info">
+              <p>
+                Переводите кран в положение "OFF", когда не используете мотоцикл или когда это продиктовано условиями обслуживания системы питания.
+              </p>
+              <p>
+                Используйте резервный запас топлива только, если основной запас закончился. После переключения на резервный запас, как можно скорее заправьте бензобак. Не забудьте после заправки опять установить кран в положение "ON".
+              </p>
+            </div>
+            <h3 class="page-main__sub3title">
+              Снятие переключателя топливного крана
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Установите кран в положение "OFF".
+              </li>
+              <li class="common-list__item">
+                Отвинтите крепежный винт в центре переключателя.
+              </li>
+              <li class="common-list__item">
+                Снимите переключатель топливного крана.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Топливный кран" alt="Топливный кран в положении &quot;OFF&quot;" src="tmp/ugc/img/steedbreed/fuelvalve_s.jpg" id="tmp/ugc/img/steedbreed/fuelvalve_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Топливный кран в положении "OFF"
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Топливный кран" alt="Переключатель топливного крана снят, соединение топливного шланга с баком" src="tmp/ugc/img/steedbreed/fuelvalve_off_s.jpg" id="tmp/ugc/img/steedbreed/fuelvalve_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Переключатель топливного крана снят, соединение топливного шланга с баком
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="se_valve">
+              Пусковое устройство карбюратора
+            </h2>
+            <p>
+              Предназначено для обогащения бензовоздушной смеси при запуске двигателя. Открывается клапаном, который управляется приводом. Если ход привода клапана пускового устройства карбюратора затруднен или наоборот слишком плавный (клапан сам возвращается в закрыток положение), следует отрегулировать трение привода регулировочной гайкой. Также не помешает смазать привод и трос.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Пусковое устройство карбюратора" alt="Резиновый кожух снят, регулировочная гайка" src="tmp/ugc/img/steedbreed/chokeknob_s.jpg" id="tmp/ugc/img/steedbreed/chokeknob_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Резиновый кожух снят, регулировочная гайка
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="fueltank">
+              Снятие бензобака
+            </h2>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#seat">
+                  Снимите седло.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Установите топливный кран в положение "OFF".
+              </li>
+              <li class="common-list__item">
+                Снимите переключатель топливного крана.
+              </li>
+              <li class="common-list__item">
+                Отсоедините бензошланг (от бака или от топливного фильтра).
+              </li>
+              <li class="common-list__item">
+                Отвинтите винт крепления бака к раме.
+              </li>
+              <li class="common-list__item">
+                Снимите бак с рамы.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Седло снято. Винт крепления бака к раме" src="tmp/ugc/img/steedbreed/tanktoframebolt_s.jpg" id="tmp/ugc/img/steedbreed/tanktoframebolt_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Седло снято. Винт крепления бака к раме
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Винт крепления бака к раме отвинчен" src="tmp/ugc/img/steedbreed/fueltubetofilter_s.jpg" id="tmp/ugc/img/steedbreed/fueltubetofilter_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт крепления бака к раме отвинчен
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Отсоединяем бензошланг от топливного фильтра" src="tmp/ugc/img/steedbreed/fuelfilter_off_1_s.jpg" id="tmp/ugc/img/steedbreed/fuelfilter_off_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отсоединяем бензошланг...
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Отсоединяем бензошланг от топливного фильтра" src="tmp/ugc/img/steedbreed/fuelfilter_off_2_s.jpg" id="tmp/ugc/img/steedbreed/fuelfilter_off_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    ...от топливного фильтра
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Бензобак снят" src="tmp/ugc/img/steedbreed/fueltank_off_1_s.jpg" id="tmp/ugc/img/steedbreed/fueltank_off_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Бензобак снят
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Снятие бензобака" alt="Бензобак снят" src="tmp/ugc/img/steedbreed/fueltank_off_2_s.jpg" id="tmp/ugc/img/steedbreed/fueltank_off_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Бензобак
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="draining">
+              Замена бензина
+            </h2>
+            <h3 class="page-main__sub3title">
+              Слив бензина из бензобака
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Установите топливный кран в положение "OFF".
+              </li>
+              <li class="common-list__item">
+                Отсоедините бензошланг (от бака или от топливного фильтра).
+              </li>
+              <li class="common-list__item">
+                Подставьте емкость для слива бензина (через трубку к самому крану или к концу шланга).
+              </li>
+              <li class="common-list__item">
+                Откройте крышку бензобака.
+              </li>
+              <li class="common-list__item">
+                Установите топливный кран в положение "RES".
+              </li>
+              <li class="common-list__item">
+                Дождитесь когда бензин перестанет течь из бака.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Слив бензина из карбюраторов
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Наденьте трубку на сливной патрубок.
+              </li>
+              <li class="common-list__item">
+                Подставьте емкость для слива бензина к концу трубки.
+              </li>
+              <li class="common-list__item">
+                Открутите сливной винт на 1/4, 1/2 оборота и дайте стечь бензину.
+              </li>
+              <li class="common-list__item">
+                Закрутите сливной винт.
+              </li>
+            </ol>
+            <h3 class="page-main__sub3title">
+              Заливка свежего бензина
+            </h3>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Подсоедините бензошланг.
+              </li>
+              <li class="common-list__item">
+                Залейте в бак свежий бензин.
+              </li>
+              <li class="common-list__item">
+                Установите топливный кран в положение "ON".
+              </li>
+            </ol>
+            <h2 class="page-main__sub2title" id="fuelfilter">
+              Замена топливного фильтра
+            </h2>
+            <div class="page-main__info">
+              <p>
+                Информацию о топливном фильтре см. в <a class="page-main__link" href="sb_append_2.html">Приложении 2</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+              </p>
+              <p>
+                Осмотр и, при необходимости, замену топливного фильтра следует производить в соответствии с <a class="page-main__link" href="mainten_sched_1.html">Графиком проведения технического обслуживания</a>.
+              </p>
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Установите топливный кран в положение "OFF".
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#seat">
+                  Снимите седло.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Снимите хомут, отсоедините от фильтра шланг, идущий от него к бензонасосу.
+              </li>
+              <li class="common-list__item">
+                Снимите фильтр вместе с резиновым держателем с металлической пластины.
+              </li>
+              <li class="common-list__item">
+                Снимите хомут, отсоедините от фильтра шланг, идущий к нему от бензобака.
+              </li>
+              <li class="common-list__item">
+                Снимите с фильтра резиновую прокладку.
+              </li>
+              <li class="common-list__item">
+                Совершая те же действия в обратном порядке, установите новый фильтр.
+              </li>
+            </ol>
+            <div class="page-main__info">
+              <p>
+                Отсоединяя шланги от фильтра, перекройте каким-либо образом отверстия в них, чтобы избежать вытекания остатков бензина.
+              </p>
+              <p>
+                Устанавливая фильтр и резиновую прокладку, убедитесь, что обозначение стрелки на фильтре указывает в сторону бензонасоса.
+              </p>
+            </div>
+            <h2 class="page-main__sub2title" id="airfilter">
+              Замена (обслуживание) воздушного фильтра
+            </h2>
+            <p class="page-main__info">
+              Очищающий элемент воздушного фильтра данного типа не подлежит чистке. Его следует менять в соответствии с <a class="page-main__link" href="mainten_sched_1.html">Графиком проведения технического обслуживания</a>. Осмотр и, при необходимости, замену нужно производить чаще, если мотоцикл эксплуатируется в очень влажной или пыльной местности. Фильтр также следует менять при его повреждении и чрезмерном загрязнении.
+            </p>
+            <p class="page-main__info">
+              Информацию о воздушном фильтре см. в <a class="page-main__link" href="sb_append_2.html">Приложении 2</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите винт и снимите крышку воздушного фильтра.
+              </li>
+              <li class="common-list__item">
+                Отвинтите три винта и снимите держатель очищающего элемента фильтра.
+              </li>
+              <li class="common-list__item">
+                Выньте очищающий элемент и замените его на новый.
+              </li>
+              <li class="common-list__item">
+                Установите держатель очищающего элемента фильтра.
+              </li>
+              <li class="common-list__item">
+                Установите крышку воздушного фильтра.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного фильтра" alt="Крышка воздушного фильтра" src="tmp/ugc/img/steedbreed/airfilter_1_s.jpg" id="tmp/ugc/img/steedbreed/airfilter_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крышка воздушного фильтра
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного фильтра" alt="Держатель очищающего элемента" src="tmp/ugc/img/steedbreed/airfilter_2_s.jpg" id="tmp/ugc/img/steedbreed/airfilter_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Держатель очищающего элемента
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного фильтра" alt="Держатель очищающего элемента снят" src="tmp/ugc/img/steedbreed/airfilter_3_s.jpg" id="tmp/ugc/img/steedbreed/airfilter_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Держатель очищающего элемента снят
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного фильтра" alt="Очищающий элемент снят" src="tmp/ugc/img/steedbreed/airfilter_4_s.jpg" id="tmp/ugc/img/steedbreed/airfilter_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Очищающий элемент снят
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Обслуживаемый воздушный фильтр K&amp;N
+            </h3>
+            <div class="page-main__info">
+              <p>
+                Фильтры производства K&amp;N, в отличие от других подлежат обслуживанию - чистке и смазке.
+              </p>
+              <p>
+                Для обслуживания весьма желательно использовать специальные средства производства K&amp;N. Они продаются как отдельно, так и в наборах (чистка и смазка).
+              </p>
+              <p>
+                После обработки фильтра специальным средством, его необходимо промыть под струей воды с несильным напором и дать полностью высохнуть. Только после полной просушки фильтр можно смазывать.
+              </p>
+            </div>
+            <p class="page-main__info">
+              Информацию о воздушном фильтре K&amp;N и средствах его обслуживания см. в <a class="page-main__link" href="sb_append_2.html">Приложении 2</a>, <a class="page-main__link" href="sb_append_3.html">Приложении 3</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного фильтра" alt="Воздушный фильтр K&amp;N HA-6088" src="tmp/ugc/img/steedbreed/kn_airfilter_s.jpg" id="tmp/ugc/img/steedbreed/kn_airfilter_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Воздушный фильтр K&amp;N HA-6088
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="subfilter">
+              Замена (обслуживание) воздушного сабфильтра
+            </h2>
+            <p>
+              Многие владельцы Steed даже не подозревают о том, что помимо основного воздушного фильтра существует сабфильтр, защищающий карбюраторы. Его необходимо периодически проверять на предмет чистоты и изношенности и соответственно менять, чистить, смазывать.
+            </p>
+            <p>
+              Изготовлен он из обычного поролона, так что при отсутствии возможности поставить "родной" сабфильтр, можно вырезать его подобие, например, из губки для мытья посуды. Смазывать лучше специальным маслом для воздушных фильтров, но в принципе можно воспользоваться и обычным моторным маслом.
+            </p>
+            <p class="page-main__info">
+              Информацию о воздушном сабфильтре см. в <a class="page-main__link" href="sb_append_2.html">Приложении 2</a> и в <a class="page-main__link" href="parts_compare.html">Таблице соответствия запчастей, мотохимии и инструментов</a>.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Снимите бак.
+              </li>
+              <li class="common-list__item">
+                Отвинтите два винта, ослабьте хомут на воздуховоде.
+              </li>
+              <li class="common-list__item">
+                Отсоедините воздуховод и дренажную трубку.
+              </li>
+              <li class="common-list__item">
+                Cнимите воздушный фильтр.
+              </li>
+              <li class="common-list__item">
+                Отвинтите винт крышки сабфильтра.
+              </li>
+              <li class="common-list__item">
+                Достаньте фильтрующий элемент, замените его на новый (или промойте и смажьте старый).
+              </li>
+              <li class="common-list__item">
+                Произведите сборку в обратной последовательности.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного сабфильтра" alt="Ослабляем хомут" src="tmp/ugc/img/steedbreed/subfilter_1_s.jpg" id="tmp/ugc/img/steedbreed/subfilter_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Ослабляем хомут
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного сабфильтра" alt="Отвинчиваем 2 винта" src="tmp/ugc/img/steedbreed/subfilter_2_s.jpg" id="tmp/ugc/img/steedbreed/subfilter_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отвинчиваем 2 винта
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного сабфильтра" alt="Отсоединяем дренажную трубку" src="tmp/ugc/img/steedbreed/subfilter_3_s.jpg" id="tmp/ugc/img/steedbreed/subfilter_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Отсоединяем дренажную трубку
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного сабфильтра" alt="Корпус сабфильтра указан стрелкой" src="tmp/ugc/img/steedbreed/subfilter_4_s.jpg" id="tmp/ugc/img/steedbreed/subfilter_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Корпус сабфильтра указан стрелкой
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Замена (обслуживание) воздушного сабфильтра" alt="Фильтрующий элемент сабфильтра" src="tmp/ugc/img/steedbreed/subfilter_s.jpg" id="tmp/ugc/img/steedbreed/subfilter_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Фильтрующий элемент сабфильтра
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

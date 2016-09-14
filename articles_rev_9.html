@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="articles_rev.html" class="breadcrumbs__link">
+                    Статьи : Обзоры
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Конская Тень
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Конская Тень
+            </h1>
+            <p>
+              Этот мотоцикл познакомил многих россиян с миром японской техники, для кого-то став учебной партой, а для кого-то - единственным и любимым на долгие годы.
+            </p>
+            <div class="intext-img">
+              <img src="tmp/ugc/img/articles/articles_rev_9/01.jpg" alt="" width="640" height="414">
+            </div>
+            <h2 class="page-main__sub2title">
+              Рождение долгожителя
+            </h2>
+            <p>
+              Главный "чоппер" Всея Руси - не очень скромно, зато по сути верно. Этот небольшой мотоцикл стал первым "японцем" для тысяч мотоциклистов, и до сих пор в ответ на вопрос: "хочу чоппер, раньше ездил на "Урале" ("Иже"/"Сове"/"Минске" - нужное подчеркнуть), что посоветуете?" наверняка услышишь: "бери "Стида", не пожалеешь". Тот же ответ, скорее всего, ждет выбирающих "первый мотоцикл", "мотоцикл для девушки", "мотоцикл для людей невысокого роста" и "мотоцикл дешево и сердито". Однако, прежде чем лезть в дебри особенностей и технических характеристик, стоит разобраться в табуне "коней" и "теней".
+            </p>
+            <p>
+              В 1988 году компания Honda вывела на американский рынок абсолютно новую модель кастома Honda VT600C Shadow ("Тень") VLX взамен не завоевавших особой популярности в Новом Свете 400, 500, 700 и 750-кубовых вариаций Shadow. А на внутрияпонский рынок вышли модели VT400C и VT600C Steed ("Конь")<span class="sup">1</span>. Поскольку мотоциклы практически идентичны по дизайну и конструкции, уже российские мотоциклисты и мототорговцы смешали в одну кучу "тени" с "конями". Так что только в России можно встретить "четырехсотую Шадовку".
+            </p>
+            <p>
+              В отличие от предшественников, являвших собой, прямо скажем, жалкие попытки создать байк в стиле Harley-Davidson в угоду строптивым американцам, новый Shadow увидел свет после серьезной "работы над ошибками". Каплевидный бензобак, седло ступенькой, море хрома, "170-е" колесо сзади, и - бомба - задняя подвеска а-ля харлеевский hardtail - маятник со спрятанным в недрах рамы моноамортизатором, замаскированный под риджид - сухую раму, - необходимый атрибут всех "тру чопперов". Хондовцы пошли навстречу американскому потребителю в дизайне, но в технической части остались верны себе - полный хайтек начинки явно не соответствовал тогдашним представлениям о "настоящем мотоцикле". Жидкостное охлаждение, по карбюратору и по две свечи зажигания на каждый цилиндр, трехклапанные головки и... четырехступенчатая коробка передач. Конструкторы решили, что эластичности мотора вполне хватит для комфортного передвижения - и не ошиблись (кстати, 400-кубовый собрат оснащен пятиступенчатой коробкой).
+            </p>
+            <p>
+              Пожалуй, VT600 - первый японский кастом, благодушно принятый американцами. Он по сей день безумно популярен во всем мире. За океаном чуть ли не в каждом штате существуют клубы любителей этой модели, нак, впрочем, и в Европе, куда мотоцикл также поставлялся. В России он также прочно занял место в верхушках чартов секонд-хенда.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/02.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Номер рамы набит на рулевой колонке и закрыт пластиковой крышкой, которая легко снимается
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/03.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Номер двигателя набит справа, в основании заднего цилиндра
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/04.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Реле-регулятор открыт всем стихиям, и потому уязвим
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title">
+              Поединок с "Тенью"
+            </h2>
+            <div class="intext-img intext-img--left">
+              <img src="tmp/ugc/img/articles/articles_rev_9/05.jpg" alt="" width="400" height="270">
+            </div>
+            <p>
+              Чем же, помимо внешности, середнячок класса снискал такое к себе отношение, оставив далеко позади и Yamaha Virago, и Suzuki Intruder, и Kawasaki Vulcan?
+            </p>
+            <p>
+              В первую очередь, стоит отметить присущую практически всем Honda и ставшей притчей во языцех "дружелюбность к пилоту". Мотик действительно потрясающе покладист. Несмотря на достаточно длинную базу (1600 мм) вкупе с большим углом наклона вилки (35 град.) и благодаря жесткому "треугольному" маятнику с моноамортизатором, а также невысокому центру тяжести, мотоцикл очень хорошо слушается пилота как на высоких скоростях, так и в пробочной толчее. С ним легко управляются даже начинающие мотоциклисты и, что немаловажно, мотоциклистки. Кстати, о скоростях: паспортная максималка Shadow - около 180 км/ч, Steed - примерно 160, но "крейсерская" скорость для обоих аппаратов не превышает 140 и 120 км/ч соответственно. Сказываются совсем не гоночная геометрия ходовки и невысокая мощность моторов. Несмотря на это, в поворотах "Ви-тишка" ведет себя стабильно и прогнозируемо, позволяя при некоторой сноровке задорно чиркать подножками по асфальту. При этом аппарат прощает очень многие, даже весьма грубые ошибки пилота, а это еще один плюс в копилку.
+            </p>
+            <p>
+              Двигатель "Шадовухи" - особая "песня". О нем впору писать отдельное эссе. Ну какой еще двигатель, скажите на милость, почти в неизменном виде трудится в рамах кастомов (Shadow/Steed), эндуро (XL400/600/650 Transalp и XRV750 Africa Twin), неоклассиков (Bros 400/NTV650), туристов (NT650V Deauville и РС800 Pacific Coast) и родстера (VRX400)! Потрясающая универсальность, феноменальная надежность, завидная эластичность, низкий уровень вибраций, неприхотливость... Перечислять достоинства этого V-твина можно почти бесконечно. "Убить" его можно только целенаправленно. Бывало, что владельцы (по незнанию или в силу лени и разгильдяйства) по несколько лет не меняли масло и свечи, проехав не один десяток тысяч километров, а их верные "Кони" и "Тени" безропотно сносили это издевательство (кстати, многие владельцы "Стидов" и "Шадовух" вообще не знают, что двигатель способен "жрать" масло). Разумеется, это не руководство к действию, а лишь яркая иллюстрация. Наверное, легенда об абсолютной "неубиваемости" японцев была рождена во многом благодаря этому мотоциклу. А уж если "Шадовку" своевременно обслуживать и ухаживать за ней, она будет служить верой и правдой почти вечно.
+            </p>
+            <p>
+              Разумеется, бочка меда традиционно не обходится без ложки дегтя (однако в данном случае мед остался вполне съедобен). Главный предмет нареканий - тормоза. Один 296-мм диск с плавающей двухпоршневой скобой плохо справляется со своими обязанностями, не сильно спасает ситуацию и архаичный задний барабан. Эти узлы не претерпели никаких изменений на протяжении жизни мотоцикла на конвейере, а это без малого 20 лет (с 1988 по 2007)!
+            </p>
+            <p>
+              Еще один минус - достаточно высокая трудоемкость обслуживания. Проблемы - в самой конструкции и компоновке мотоцикла и силового агрегата. Даже вроде бы несложная процедура замены свечей зажигания отнимает полдня: чтобы добраться до свечей, расположенных на торцах головок цилиндров (те, что расположены сбоку цилиндров, легкодоступны), приходится разобрать чуть ли не полмотика. Та же "песня" с заменой охлаждающей жидкости (расширительный бачок запрятан в нижней части рамы, за двигателем) и многими другими регулярными процедурами.<span class="sup">2</span>
+            </p>
+            <p>
+              Пожалуй, единственное слабое место "Шадовки" - реле-регулятор напряжения. Он расположен достаточно низко и постоянно "омывается" водой из луж и из-под колес встречных машин. Да и вообще, "Хонды" конца восьмидесятых - конца девяностых почему-то страдают слабостью этого узла. Правда, замена обходится недорого (чего не скажешь о самой детали), да и запас уязвимых электроприборов у продавцов, как правило, имеется в наличии. Другими же выраженными "врожденными болезнями" мотоцикл не страдает.
+            </p>
+            <p>
+              Благодаря распространенности модели проблем с расходниками и запчастями тоже нет. Фильтры, колодки, цепи, звезды и прочие детали, нуждающиеся в регулярной замене, как правило, есть в мотомагазинах, а случись поломка или падение, на моторазборках всегда можно найти "бэушные" запчасти.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/06.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Внешне двигатели 400 и 600 см<span class="sup">3</span> не отличимы
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/07.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Передние тормоза оставляют желать лучшего
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="intext-img">
+                    <img src="tmp/ugc/img/articles/articles_rev_9/08.jpg" alt="" width="200" height="150">
+                  </div>
+                  <figcaption class="gallery-list__description gallery-list__description--200">
+                    Задний барабан спасает положение лишь благодаря особенностям развесовки мотоцикла
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title">
+              Вечные ценности
+            </h2>
+            <p>
+              Фактор цены часто оказывается решающим в выборе Shadow. Причем на вторичном рынке есть из чего выбрать. Экземпляры первых годов выпуска встретить уже достаточно сложно, а вот аппараты начала 90-х еще в ходу. "Четырехсотку" с пробегом по России, но во вполне бодром состоянии можно купить за 80-110 тыс. руб., "шестисотка" тех же лет обойдется на 10-30 тысяч дороже. За аппараты 2005-2007 годов в среднем просят 230-250 тыс. рублей.
+            </p>
+            <div class="intext-img intext-img--right">
+              <img src="tmp/ugc/img/articles/articles_rev_9/09.jpg" alt="" width="400" height="250">
+            </div>
+            <p>
+              За 19 лет было выпущено множество модификаций, правда, отличия между ними в основном сводятся к разным вариантам окраски. Единственная версия Shadow, достойная особого внимания, - VT600C Shadow VLS. Появившаяся в 1998 году, она выпускалась ограниченными партиями и отличалась от прочих рычажной вилкой переднего колеса (увеличенного с 19 до 21 дюйма) и, как следствие, несколько измененной рамой, а также бензобаком, седлом и некоторыми другими элементами отделки. Найти такой аппарат в продаже достаточно сложно, а уж если где и всплывает эта диковинка, просят за нее процентов на 25-35 больше, чем за "обычные" VLX или VSE.³
+            </p>
+            <p>
+              Нельзя не отметить и того, что чуть ли ни каждый второй аппарат попадает в Россию в изрядно "затюненном" виде. Особенно "грешат" этим именно "Стиды", то есть мотоциклы с японского рынка. И желания выделиться из серой массы себе подобных, и возможностей для реализации своих фантазий у японских чопперистов хватает. Так что найти подходящий аппарат "в стоке" непросто.
+            </p>
+            <p>
+              Как показывает практика, в России VT'шки не часто проживают с одним владельцем дольше 2-3 сезонов, а то и уступают место более мощным аппаратам уже через год. Но причина - вовсе не в том, что мотоцикл плох - отнюдь! Ведь всегда хочется большего, а скромная "Шадовуха" - часто только первый шаг в мир мотоциклов. Покупая Shadow или Steed, можно не опасаться за то, что впоследствии с его продажей наживешь головную боль. Эти модели всегда в ходу и в цене. Благодаря своей надежности и простоте конструкции, а также постоянному росту цен на рынке, через сезон-два продать мотик удастся практически за те же деньги, что были потрачены при покупке. Разумеется, если "конь" не пострадал в схватках с асфальтом. Но отметим один нюанс: довольно старая и маломощная модель пользуется все меньшей популярностью в крупных городах с их высоким уровнем жизни; последние годы наблюдается исход "Стидов" и "Шадовух" в регионы, так что продать мотоцикл получится быстрее, если разместить объявления не только в "центровой" газете или в Интернете, но и в областных изданиях.
+            </p>
+            <p class="page-main__signature">
+              Автор: Павел Курлапов, фото автора и из архива редакции
+            </p>
+            <div class="page-main__info-2">
+              <p>
+                <span class="sup">1</span> - Внутрияпонские модели обозначались индексами NV400C и NV600C.
+              </p>
+              <p>
+                <span class="sup">2</span> - Для замены всех четырех свечей не нужно ничего разбирать. Желательно иметь специальный свечной ключ, но и без него можно обойтись. Замена антифриза не представляет никакой сложности.
+              </p>
+              <p>
+                <span class="sup">3</span> - Модификация с рычажной вилкой называется Steed VLS. Производилась только в 400-кубовом варианте для внутрияпонского рынка. Не является редкой (по крайней мере не более чем модификация VSE), при желании купить сложностей не возникнет. Цена как правило если и отличается, то не сильно, прежде всего за счет того, что эта модификация "не бывает старее" 1998 года.
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

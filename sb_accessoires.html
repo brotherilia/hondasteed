@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="service.html" class="breadcrumbs__link">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a href="steedbreed.html" class="breadcrumbs__link">
+                    Практическое стидоводство
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Аксессуары. Тюнинг. Стайлинг
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Аксессуары. Тюнинг. Стайлинг
+            </h1>
+            <h2 class="page-main__sub2title" id="bows">
+              Дуги безопасности
+            </h2>
+            <div class="intext-img intext-img--right">
+              <img class="img-link js-img-link" title="Дуги безопасности Hepco &amp; Becker" alt="" src="tmp/ugc/img/steedbreed/bows_s.jpg" id="tmp/ugc/img/steedbreed/bows_b.jpg">
+            </div>
+            <p>
+              На картинке представлены дуги для Honda VT600C производства Hepco &amp; Becker. Как и практически любые аксессуары для VT600C, они подходят для Steed.
+            </p>
+            <p>
+              В комплект входят:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                дуги (2 шт);
+              </li>
+              <li class="common-list__item">
+                хомуты (2 шт);
+              </li>
+              <li class="common-list__item">
+                шпилька - замена штатной (1 шт);
+              </li>
+              <li class="common-list__item">
+                втулка - для правой дуги (1 шт);
+              </li>
+              <li class="common-list__item">
+                винт - замена штатного, для правой дуги (1 шт);
+              </li>
+              <li class="common-list__item">
+                гайки для шпильки - замена штатных (2 шт);
+              </li>
+              <li class="common-list__item">
+                гайки для хомутов (4 шт);
+              </li>
+              <li class="common-list__item">
+                шайбы.
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Установка
+            </h3>
+            <p>
+              Крепление дуг производится на штатные места, никакой дополнительной подгонки не требуется. Каждая дуга крепится в 3-х точках:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                верхняя точка - хомутом к раме;
+              </li>
+              <li class="common-list__item">
+                средняя точка - шпилька (винт) крепления двигателя к раме;
+              </li>
+              <li class="common-list__item">
+                нижняя точка - винт на узле управления (рычаг передач, задний тормоз).
+              </li>
+            </ul>
+            <h4 class="page-main__sub4title">
+              Установка левой дуги
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите гайки и замените штатную шпильку, которой двигатель крепится к раме, на шпильку из комплекта.
+              </li>
+              <li class="common-list__item">
+                Отвинтите соответствующий винт на узле рычага переключения передач.
+              </li>
+              <li class="common-list__item">
+                Просуньте один конец хомута между решеткой радиатора и рамой.
+              </li>
+              <li class="common-list__item">
+                Установите дугу на подготовленные места.
+              </li>
+              <li class="common-list__item">
+                Отвинтите второй винт крепления узла рычага переключения передач и шайбами отрегулируйте угол крепления узла.
+              </li>
+              <li class="common-list__item">
+                Подложив шайбы, затяните все винты и гайки из комплекта на шпильке.
+              </li>
+            </ol>
+            <h4 class="page-main__sub4title">
+              Установка правой дуги
+            </h4>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Отвинтите нужный для установки дуги винт (которым двигатель крепится к раме) и замените его на винт из комплекта в сочетании со втулкой.
+              </li>
+              <li class="common-list__item">
+                Отвинтите соответствующий винт на узле заднего тормоза.
+              </li>
+              <li class="common-list__item">
+                Просуньте один конец хомута между решеткой радиатора и рамой.
+              </li>
+              <li class="common-list__item">
+                Установите дугу на подготовленные места.
+              </li>
+              <li class="common-list__item">
+                Отвинтите второй винт крепления узла заднего тормоза и шайбами отрегулируйте угол крепления узла.
+              </li>
+              <li class="common-list__item">
+                Подложив шайбы и втулку, затяните все винты.
+              </li>
+            </ol>
+            <p class="page-main__info">
+              Будьте осторожны, просовывая и затягивая хомуты на раме! Не повредите и правильно расположите проходящие в тех местах шланги системы охлаждения и трос сцепления!
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Дуги безопасности Hepco &amp; Becker" alt="Винт крепления нижней точки левой дуги" src="tmp/ugc/img/steedbreed/bows_install_1_s.jpg" id="tmp/ugc/img/steedbreed/bows_install_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Винт крепления нижней точки левой дуги
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Дуги безопасности Hepco &amp; Becker" alt="Выкручиваем шпильку" src="tmp/ugc/img/steedbreed/bows_install_2_s.jpg" id="tmp/ugc/img/steedbreed/bows_install_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Выкручиваем шпильку
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Дуги безопасности Hepco &amp; Becker" alt="Левая дуга в сборе" src="tmp/ugc/img/steedbreed/bows_install_3_s.jpg" id="tmp/ugc/img/steedbreed/bows_install_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Левая дуга в сборе
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Дуги безопасности Hepco &amp; Becker" alt="Правая дуга в сборе" src="tmp/ugc/img/steedbreed/bows_install_4_s.jpg" id="tmp/ugc/img/steedbreed/bows_install_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Правая дуга в сборе
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="turns">
+              Установка боковых кофров с переносом поворотников
+            </h2>
+            <p>
+              Конструкция Steed в оригинальном варианте позволяет установить боковые кофры только небольшой ширины, так как расстояние между пассажирской подножкой и задним поворотником слишком мало. Эту проблему можно решить с помощью переноса задних поворотников. Далее описан один из возможных вариантов этого процесса.
+            </p>
+            <h3 class="page-main__sub3title">
+              Перенос поворотников (вариант 1)
+            </h3>
+            <p>
+              В этом варианте новым местом крепления поворотников являются отверстия, используемые для крепления светоотражателей, расположенных по бокам фонаря подсветки номера (в большое отвестие входит крепежный винт светоотражателя, в маленькое - фиксирующий штырек). Для того чтобы использовать эти отверстия, необходимо подготовить металлические уголки следующего вида: с одной стороны уголка 2 отверстия (для крепежного винта поворотника и для провода, возможно использование уголка с одним удлинненным отверстием), с другой стороны уголка 2 отверстия (для двух крепежных винтов в отверстия крепления светоотражателя), большое отверстие, как и раньше, для винта светоотражателя, а маленькое отверстие для дополнительного винта. Также необходимо нарастить кабели поворотников примерно на 18 см.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#rearfender">
+                  Снимите заднее крыло.
+                </a>
+              </li>
+              <li class="common-list__item">
+                Отсоедините контакты поворотника от блока контактов.
+              </li>
+              <li class="common-list__item">
+                Освободите кабель поворотника из зажимов и направляющих.
+              </li>
+              <li class="common-list__item">
+                Отвинтите крепежные винты поворотника и снимите поворотник.
+              </li>
+              <li class="common-list__item">
+                Выньте металлическую втулку с двумя отверстиями из гнезда старого крепления поворотника и просуньте провод поворотника в нужное отверстие во втулке.
+              </li>
+              <li class="common-list__item">
+                Снимите светоотражатель.
+              </li>
+              <li class="common-list__item">
+                Закрепите уголок на месте светоотражателя одним (маленьким) винтом.
+              </li>
+              <li class="common-list__item">
+                Установите и закрепите светоотражатель на его прежнем месте, но уже через большое отверстие в уголке и фиксирующим штырьком вниз.
+              </li>
+              <li class="common-list__item">
+                Установите поворотник со втулкой на уголке крепежным винтом к светоотражателю.
+              </li>
+              <li class="common-list__item">
+                Протяните кабель поворотника под гайкой крепежного винта и далее через зажимы и направляющие.
+              </li>
+              <li class="common-list__item">
+                Подсоедините контакты поворотника к блоку контактов.
+              </li>
+              <li class="common-list__item">
+                Проделайте ту же последовательность действий со вторым поворотником.
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_frame_etc.html#rearfender">
+                  Установите заднее крыло.
+                </a>
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 1)" alt="Светоотражатель" src="tmp/ugc/img/steedbreed/reflector_s.jpg" id="tmp/ugc/img/steedbreed/reflector_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Светоотражатель
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 1)" alt="Крыло снято, светоотражатель снят, отверстия для крепления уголка" src="tmp/ugc/img/steedbreed/reflector_off_s.jpg" id="tmp/ugc/img/steedbreed/reflector_off_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крыло снято, светоотражатель снят, отверстия для крепления уголка
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 1)" alt="Поворотник в новом креплении на уголке" src="tmp/ugc/img/steedbreed/oneturnmoved_s.jpg" id="tmp/ugc/img/steedbreed/oneturnmoved_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Поворотник в новом креплении на уголке
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 1)" alt="Поворотники перенесены" src="tmp/ugc/img/steedbreed/turnesmoved_s.jpg" id="tmp/ugc/img/steedbreed/turnesmoved_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Поворотники перенесены
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Перенос поворотников (вариант 2)
+            </h3>
+            <p>
+              Вот на мой взгляд менее "колхозный" вариант, но придется чуть побольше потрудиться.
+            </p>
+            <p>
+              Центральным крепежным элементом является "кубик", отрезанный от алюминиевой трубы с квадратным сечением (размер 4х4 см), и доработанный следующим образом.
+            </p>
+            <p>
+              По сторонам, как на фотографии ниже:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                слева - отверстие(я) для крепления поворотника,
+              </li>
+              <li class="common-list__item">
+                справа - отверстия для крепления светоотражателя и паз для доступа головкой к винтам крепления крыла к подрамнику,
+              </li>
+              <li class="common-list__item">
+                сзади - отверстия для крепления "кубика" к подрамнику (на подрамнике используем старые отверстия для крепления светоотражателя, маленькое лучше рассверлить) и паз для провода.
+              </li>
+            </ul>
+            <p>
+              Для маскировки верхней стороны (где через дырки видны винты и провода) можно изготовить крышку и покрасить ее в нужный цвет.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 2)" alt="&quot;Кубик&quot; из трубы 4х4 см" src="tmp/ugc/img/steedbreed/turnsmovenew-1_s.jpg" id="tmp/ugc/img/steedbreed/turnsmovenew-1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    "Кубик" из трубы 4х4 см
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 2)" alt="Крышка для маскировки &quot;кубиков&quot;" src="tmp/ugc/img/steedbreed/turnsmovenew-2_s.jpg" id="tmp/ugc/img/steedbreed/turnsmovenew-2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Крышка для маскировки "кубиков"
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 2)" alt="Устанавливаем &quot;кубики &quot; и поворотники" src="tmp/ugc/img/steedbreed/turnsmovenew-3_s.jpg" id="tmp/ugc/img/steedbreed/turnsmovenew-3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Устанавливаем "кубики" и поворотники
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Перенос поворотников (вариант 2)" alt="Устанавливаем крыло, крышку и светоотражатели" src="tmp/ugc/img/steedbreed/turnsmovenew-4_s.jpg" id="tmp/ugc/img/steedbreed/turnsmovenew-4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Устанавливаем крыло, крышку и светоотражатели
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h3 class="page-main__sub3title">
+              Установка кофров
+            </h3>
+            <p>
+              Как правило, боковые мягкие кофры устанавливаются с использованием специальных рамок, которые обеспечивают достаточный зазор между кофрами и рамой мотоцикла, а также облегчают процесс крепежа. При этом возможен как вариант крепления обоих кофров в комплексе с перемычкой под седлом, так и вариант раздельного крепления без перемычки. Но далеко не всегда есть возможность купить или изготовить такие рамки. Далее будет описан способ раздельного крепления кофров без рамок с помощью нехитрого самодельного крепежа.
+            </p>
+            <p>
+              Идея данного способа состоит в том, что кофры крепятся на шпильки, которые вкручиваются в отверстия крепления спинки. Отверстия под шпильки просверливаются прямо в задней стенке кофра, которая предварительно усиливается металлическими пластинами. Минус этого способа в том, что кофры безвозвратно утратят "товарный" вид, если только не продавать их вместе с идеей крепежа.
+            </p>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Поочередно вывинтите винты, которыми крепится спинка, и замените их на шпильки большей длины.
+              </li>
+              <li class="common-list__item">
+                Усильте задние стенки кофров, добавив с внешней и внутренней стороны металлические пластины. Скрепите пластины между собой и с задними стенками кофров маленькими болтами.
+              </li>
+              <li class="common-list__item">
+                Сделайте по 2 отверстия под шпильки в задних стенках кофров через пластины.
+              </li>
+              <li class="common-list__item">
+                Сделайте по 2 отверстия под шпильки в седельных перемычках кофров.
+              </li>
+              <li class="common-list__item">
+                Наденьте перемычки кофров через отверстия на шпильки.
+              </li>
+              <li class="common-list__item">
+                Используя удлиненные гайки, зафиксируйте спинку и перемычки кофров.
+              </li>
+              <li class="common-list__item">
+                Наденьте кофры через отверстия в задней спинке на шпильки.
+              </li>
+              <li class="common-list__item">
+                Зафиксируйте кофры на шпильках гайками с внутренней стороны задней стенки.
+              </li>
+            </ol>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Длинные шпильки вместо стандартных винтов" src="tmp/ugc/img/steedbreed/backpacks_inst_1_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_inst_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Длинные шпильки вместо стандартных винтов
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Усиление задней стенки кофра" src="tmp/ugc/img/steedbreed/backpacks_inst_2_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_inst_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Усиление задней стенки кофра
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Фиксация спинки длинными гайками" src="tmp/ugc/img/steedbreed/backpacks_inst_3_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_inst_3_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Фиксация спинки длинными гайками
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Фиксация кофра изнутри" src="tmp/ugc/img/steedbreed/backpacks_inst_4_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_inst_4_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Фиксация кофра изнутри
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Поворотники перенесены, кофры установлены" src="tmp/ugc/img/steedbreed/backpacks_on_r_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_on_r_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Поворотники перенесены...
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка кофров" alt="Поворотники перенесены, кофры установлены" src="tmp/ugc/img/steedbreed/backpacks_on_s.jpg" id="tmp/ugc/img/steedbreed/backpacks_on_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    ...кофры установлены
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <h2 class="page-main__sub2title" id="mudguard">
+              Установка брызговика на переднее крыло
+            </h2>
+            <div class="page-main__clearfix">
+              <div class="intext-img intext-img--left">
+                <img class="img-link js-img-link" title="Установка брызговика на переднее крыло" alt="" src="tmp/ugc/img/steedbreed/mudguard_3_s.jpg" id="tmp/ugc/img/steedbreed/mudguard_3_b.jpg">
+              </div>
+              <p>
+                В мокрую погоду решетка радиатора неизбежно собирает всю грязь, летящую из-под переднего колеса. Эту проблему можно решить, установив на переднее крыло брызговик. В конструкции Steed брызговик не предусмотрен, поэтому сделать его и крепление для него придется самому.
+              </p>
+              <p>
+                Вырезать брызговик можно из автомобильного, придав ему при этом желаемую форму. Самый простой и надежный способ установки брызговика - это привинтить его 3-мя винтами к нижней части переднего крыла. Крыло для этого необходимо <a class="page-main__link" href="sb_frontwheel.html#frontfender">снять</a>. Головки винтов (если они не задуманы как "красивые хромированные", а обычные) можно покрасить <a class="page-main__link js-img-link" title="Установка брызговика на переднее крыло" id="tmp/ugc/img/steedbreed/enamelmarker_b.jpg">автоэмалью</a>.
+              </p>
+            </div>
+            <ol class="common-list common-list--ordered">
+              <li class="common-list__item">
+                Измерьте все расстояния и вырежьте брызговик.
+              </li>
+              <li class="common-list__item">
+                Просверлите 3 отверстия в крыле и брызговике.
+              </li>
+              <li class="common-list__item">
+                Привинтите брызговик.
+              </li>
+            </ol>
+            <div class="page-main__info">
+              <p>
+                Если устанавливается брызговик из мягкого пластика, с внутренней стороны крыла используйте шайбы достаточного диаметра или единую для всех винтов металлическую прокладку.
+              </p>
+              <p>
+                Так как расстояние от крыла до покрышки невелико, винты используйте минимально необходимой длины.
+              </p>
+            </div>
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка брызговика на переднее крыло" alt="Брызговику можно придать необычную форму" src="tmp/ugc/img/steedbreed/mudguard_1_s.jpg" id="tmp/ugc/img/steedbreed/mudguard_1_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Брызговику можно придать необычную форму
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery-list__item">
+                <figure class="gallery-list__figure">
+                  <div class="gallery-list__img">
+                    <img class="img-link js-img-link" title="Установка брызговика на переднее крыло" alt="Брызговик привинчен (вид с внутренней стороны)" src="tmp/ugc/img/steedbreed/mudguard_2_s.jpg" id="tmp/ugc/img/steedbreed/mudguard_2_b.jpg" width="311" height="233">
+                  </div>
+                  <figcaption class="gallery-list__description">
+                    Брызговик привинчен (вид с внутренней стороны)
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>

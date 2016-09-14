@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Honda Steed - Unofficial Russian Page</title>
+    <meta name="description" content="Добро пожаловать на сайт, посвященный мотоциклу Honda Steed! Welcome to Russian Honda Steed community website!">
+    <meta name="keywords" content="honda steed, steed, honda, steed 400, steed 600, honda steed 400, honda steed 600, хонда, стид, 400, 600, хонда стид, хонда стид 400, хонда стид 600, форум хонда, форум хонда стид, форум хонда стид 400, форум хонда стид 600">
+    <link rel="stylesheet" href="css/style--light.min.css" id="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE HEADER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <header class="page-header">
+        <span class="page-header__title">
+          <a class="page-header__link" href="index.html">
+            <img src="img/logo-mobile.png" width="601" height="65" alt="Honda Steed">
+          </a>
+        </span>
+        <span class="page-header__description">
+          Unofficial Russian Page
+        </span>
+      </header>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                       PAGE MIDSECTION                        -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <div class="page-midsection">
+        <button class="menu-toggle" id="toggle">
+          <i class="css-icon css-icon--menu">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <button class="color-scheme-button" id="cssSwitch">
+          <i class="css-icon css-icon--moon" id="cssSwitchIcon">
+            <span class="css-icon__body"></span>
+          </i>
+        </button>
+        <div class="page-midsection__left-side" id="popup">
+          <button class="menu-scroll" id="scroll"></button>
+          <nav class="menu menu--vert" id="menu">
+            <ul class="menu__items menu__items--vert">
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  honda steed
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="overview.html">
+                        обзор
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="service.html">
+                        сервис
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link menu__link--submenu">
+                  статьи
+                </a>
+                <nav class="submenu">
+                  <ul class="submenu__items">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_rev.html">
+                        обзоры
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_serv.html">
+                        обслуживание
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="articles_beg.html">
+                        учимся ездить
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="links.html">
+                  ссылки
+                </a>
+              </li>
+              <li class="menu__item menu__item--vert">
+                <a class="menu__link" href="files.html">
+                  файлы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <aside class="page-aside" id="tools">
+            <div class="page-aside__object">
+              <a class="page-aside__img-link" href="http://www.honda.co.jp/motor/">
+                <img src="img/honda.gif" width="134" height="39" alt="Honda - Come ride with us">
+              </a>
+            </div>
+            <div class="page-aside__object">
+              <div class="social-likes social-likes_single" data-single-title="поделиться">
+                <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+              </div>
+            </div>
+            <form class="page-aside__object" id="Form1" name="frmTraceDetect" action="http://ati.su/Trace/" method="post">
+              <fieldset class="fieldset">
+                <legend class="fieldset__title">
+                  Расстояние между городами
+                </legend>
+                <label class="fieldset__label" for="from">
+                  от:
+                </label>
+                <input class="fieldset__input" id="from" type="text" name="city1">
+                <label class="fieldset__label" for="to">
+                  до:
+                </label>
+                <input class="fieldset__input" id="to" type="text" name="city5">
+                <label class="fieldset__label" for="thru">
+                  через:
+                </label>
+                <input class="fieldset__input" id="thru" type="text" name="city2">
+                <input class="fieldset__btn" type="submit" value="определить" name="submit1">
+              </fieldset>
+            </form>
+            <div class="page-aside__object">
+              <a class="page-aside__weather-informer" href="http://rp5.ru/152492/ru">
+                <img border=0 width=120 height=60 src="http://rp5.ru/informer/120x60x2.php?f=1&id=152492&lang=ru&um=00000">
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="page-midsection__right-side">
+          <nav class="menu menu--hor">
+            <ul class="menu__items menu__items--hor">
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--home" href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--about" href="about.html">
+                  о проекте
+                </a>
+              </li>
+              <li class="menu__item menu__item--hor">
+                <a class="menu__link menu__link--forum" href="/forumnew/index.php">
+                  форум
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <main class="page-main">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item breadcrumbs__item--parent">
+                  <a class="breadcrumbs__link" href="service.html">
+                    Honda Steed : Сервис
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link breadcrumbs__link--active">
+                    Таблица соответствия запчастей, мотохимии и инструментов
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="page-main__title">
+              Таблица соответствия запчастей, мотохимии и инструментов
+            </h1>
+            <p class="page-main__info">
+              Внимание! На страницах этого сайта указываются характеристики, в большинстве своем взятые из <a class="page-main__link" href="manual_cont.html">Руководства по эксплуатации Honda VT600C/CD (1997-98 гг)</a>. Большинство из них подходят и для Steed разных модификаций и годов выпуска. Но в некоторых случаях, за неимением руководства по эксплуатации для конкретной модификации Steed, рекомендуется воспользоваться руководством по эксплуатации Honda VT600C соответствующего года.
+            </p>
+            <table class="common-table">
+              <tr>
+                <th class="common-table__th2" colspan="2">Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы</th>
+                <th class="common-table__th1">Part # (VT600C)</th>
+                <th class="common-table__th1">Но&shy;мер (ка&shy;те&shy;го&shy;рия) по ка&shy;та&shy;ло&shy;гу Louis</th>
+                <th class="common-table__th1">Наи&shy;ме&shy;но&shy;ва&shy;ние<br>(ори&shy;ги&shy;нал или ана&shy;лог)</th>
+                <th class="common-table__th1">Не&shy;об&shy;хо&shy;ди&shy;мое кол-во</th>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Топ&shy;лив&shy;ный фильтр</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Топ&shy;лив&shy;ный фильтр" id="tmp/ugc/img/steedbreed/fuelfilter_1_b.jpg">16900-MG8-003</a></td>
+                <td class="common-table__td">Benzinfilter</td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Мас&shy;ля&shy;ный фильтр</td>
+                <td class="common-table__td">15010-MW0-000</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10050200
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                    <li class="common-list__item">
+                      10050448
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      DELO Diverse Modelle
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Мас&shy;ля&shy;ный фильтр Hiflo Filtro HF303" id="tmp/ugc/img/steedbreed/oilfilter_b.jpg">Hiflo Filtro HF303</a>
+                    </li>
+                    <li class="common-list__item">
+                      Champion 301
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Мас&shy;ля&shy;ный фильтр Vesrah SF 4005 (F301)" id="tmp/ugc/img/steedbreed/oilfilter1_b.jpg">Vesrah SF 4005 (F301)</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Воз&shy;душ&shy;ный фильтр</td>
+                <td class="common-table__td">17205-MR1-000</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10051841
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                    <li class="common-list__item">
+                      10050784
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Воз&shy;душ&shy;ный фильтр DELO" id="tmp/ugc/img/steedbreed/airfilter_b.jpg">Luftfilter DELO</a>
+                    </li>
+                    <li class="common-list__item">
+                      Hiflo Filtro HFA1607
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Воз&shy;душ&shy;ный фильтр K&amp;N (HA-6088)" id="tmp/ugc/img/diary_3/airfilter_1.jpg">K&amp;N (HA-6088)</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Воз&shy;душ&shy;ный саб&shy;фильтр</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Воз&shy;душ&shy;ный саб&shy;фильтр" id="tmp/ugc/img/steedbreed/subfilter_b.jpg">17243-MR1-000</a></td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" rowspan="3">Све&shy;чи</td>
+                <td class="common-table__td common-table__td--title">стан&shy;дарт&shy;ные</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      98069-58916
+                    </li>
+                    <li class="common-list__item">
+                      98069-58926
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10035014
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Све&shy;ча NGK DPR8EA-9" id="tmp/ugc/img/steedbreed/sparkplug_b.jpg">NGK DPR8EA-9</a>
+                    </li>
+                    <li class="common-list__item">
+                      DENSO X24EPR-U9
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">4</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">для хо&shy;лод&shy;но&shy;го кли&shy;ма&shy;та (ни&shy;же 5&deg;C)</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      98069-57916
+                    </li>
+                    <li class="common-list__item">
+                      98069-57926
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10035013
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      NGK DPR7EA-9
+                    </li>
+                    <li class="common-list__item">
+                      DENSO X22EPR-U9
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">4</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">для дол&shy;гой ско&shy;рост&shy;ной ез&shy;ды</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      98069-59916
+                    </li>
+                    <li class="common-list__item">
+                      98069-59926
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10035017
+                    </li>
+                    <li class="common-list__item">
+                      -
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      NGK DPR9EA-9
+                    </li>
+                    <li class="common-list__item">
+                      DENSO X27EPR-U9
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">4</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Саль&shy;ник и пыль&shy;ник вил&shy;ки</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Саль&shy;ник и пыль&shy;ник вил&shy;ки" id="tmp/ugc/img/steedbreed/oildustseals_b.jpg">51490-MR1-671</a></td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      10042054 - 2 пыль&shy;ни&shy;ка
+                    </li>
+                    <li class="common-list__item">
+                      10042180 - 2 саль&shy;ни&shy;ка
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">Seal Set, Fr. Fork</td>
+                <td class="common-table__td">2 ком&shy;плек&shy;та</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Лам&shy;па фа&shy;ры</td>
+                <td class="common-table__td">34901-MC7-601AH</td>
+                <td class="common-table__td">10031031</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Лам&shy;па фа&shy;ры Philips H4 12V 60/55W" id="tmp/ugc/img/steedbreed/headlight_b.jpg">Philips H4 12V 60/55W</a></td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Тор&shy;моз&shy;ной диск</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Тор&shy;моз&shy;ной диск" id="tmp/ugc/img/steedbreed/brakedisk_3_b.jpg">45251-MR1-670</a></td>
+                <td class="common-table__td">10043621</td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">1</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Тор&shy;моз&shy;ные ко&shy;лод&shy;ки</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Тор&shy;моз&shy;ные ко&shy;лод&shy;ки" id="tmp/ugc/img/steedbreed/brakepadsnstuff_b.jpg">06455-MW3-405</a></td>
+                <td class="common-table__td">Bremsbela"ge</td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">1 компл. (2 шт)</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Ак&shy;ку&shy;му&shy;ля&shy;тор</td>
+                <td class="common-table__td">31500-MN4-678</td>
+                <td class="common-table__td">Batterien f. Fahrzeuge</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Ак&shy;ку&shy;му&shy;ля&shy;тор Yuasa YTX9-BS" id="tmp/ugc/img/steedbreed/battery1_b.jpg">Yuasa YTX9-BS</a>
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Рас&shy;ход&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы" name="Ак&shy;ку&shy;му&shy;ля&shy;тор FB FTX9-BS" id="tmp/ugc/img/steedbreed/battery_b.jpg">FB FTX9-BS</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">1</td>
+              </tr>
+            </table>
+            <p>
+              Смотри также:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_append_2.html">
+                  Практическое стидоводство - Приложение 2: Запчасти и расходные материалы
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link js-img-link" title="Расходные материалы" name="Маркировочные метки на свечах зажигания фирмы NGK" id="tmp/ugc/img/steedbreed/ngk.jpg">Маркировочные метки на свечах зажигания фирмы NGK</a>
+              </li>
+            </ul>
+            <table class="common-table">
+              <tr>
+                <th class="common-table__th2" colspan="2">Мо&shy;то&shy;хи&shy;мия</th>
+                <th class="common-table__th1">Ре&shy;ко&shy;мен&shy;до&shy;ва&shy;но в ру&shy;ко&shy;водст&shy;ве для VT600C</th>
+                <th class="common-table__th1">Ана&shy;лог</th>
+                <th class="common-table__th1">Не&shy;об&shy;хо&shy;ди&shy;мый объ&shy;ем</th>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" rowspan="3">Мас&shy;ло (дви&shy;га&shy;тель)</td>
+                <td class="common-table__td common-table__td--title">за&shy;ме&shy;на мас&shy;ла</td>
+                <td class="common-table__td" rowspan="3">Honda GN4 or HP4 4-stroke oil API service classification SF or SG Viscosity: SAE 10W-40</td>
+                <td class="common-table__td" rowspan="3">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Мо&shy;тор&shy;ное мас&shy;ло Motul 5100 4T 10W-40" id="tmp/ugc/img/steedbreed/motoroil_b.jpg">Motul 5100 4T 10W-40 Technosynthese&reg;, Ester Technology</a>
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Мо&shy;тор&shy;ное мас&shy;ло Ipone R4000 RS 10W-40" id="tmp/ugc/img/steedbreed/motoroil1_b.jpg">Ipone R4000 RS 10W-40 по&shy;лу&shy;син&shy;те&shy;ти&shy;ка</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">2.1 л</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">раз&shy;бор&shy;ка дви&shy;га&shy;те&shy;ля</td>
+                <td class="common-table__td">2.8 л</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">сме&shy;на филь&shy;тра</td>
+                <td class="common-table__td">2.25 л</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Мас&shy;ло (вил&shy;ка)</td>
+                <td class="common-table__td">Pro-Honda Suspension Fluid SS-8</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Мас&shy;ло для вил&shy;ки Motul Fork Oil Expert 15W" id="tmp/ugc/img/steedbreed/forkoil_b.jpg">Motul Fork Oil Expert 15W Technosynthese&reg;</a></td>
+                <td class="common-table__td">0,449 л x 2</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" rowspan="2">Охлаж&shy;да&shy;ю&shy;щая жид&shy;кость</td>
+                <td class="common-table__td common-table__td--title">ра&shy;ди&shy;а&shy;тор и дви&shy;га&shy;тель</td>
+                <td class="common-table__td" rowspan="2">ethylene glycol base solution</td>
+                <td class="common-table__td" rowspan="2">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Охлаж&shy;да&shy;ю&shy;щая жид&shy;кость Motul Inugel Expert Ultra (кон&shy;цент&shy;рат)" id="tmp/ugc/img/steedbreed/antifreeze_b.jpg">Motul Inugel Expert Ultra</a> (кон&shy;цент&shy;рат)
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Охлаж&shy;да&shy;ю&shy;щая жид&shy;кость Motul Motocool Expert (го&shy;то&shy;вый к при&shy;ме&shy;не&shy;нию)" id="tmp/ugc/img/steedbreed/motocool_b.jpg">Motul Motocool Expert</a> (го&shy;то&shy;вый к при&shy;ме&shy;не&shy;нию)
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">1.6 л (смесь)</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">рас&shy;ши&shy;ри&shy;тель&shy;ный ба&shy;чок</td>
+                <td class="common-table__td">0.4 л (смесь)</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Тор&shy;моз&shy;ная жид&shy;кость</td>
+                <td class="common-table__td">Honda DOT 4 Brake Fluid</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Тор&shy;моз&shy;ная жид&shy;кость Motul DOT 4" id="tmp/ugc/img/steedbreed/brakefluid_b.jpg">Motul DOT 4 Brake Fluid</a>
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Тор&shy;моз&shy;ная жид&shy;кость Ipone DOT 4" id="tmp/ugc/img/steedbreed/brakefluid1_b.jpg">Ipone DOT 4 Brake Fluid</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">-</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Про&shy;мыв&shy;ка це&shy;пи</td>
+                <td class="common-table__td">спрей для очист&shy;ки це&shy;пи или рас&shy;тво&shy;ри&shy;тель с вы&shy;со&shy;кой точ&shy;кой вос&shy;пла&shy;ме&shy;не&shy;ния</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Про&shy;мыв&shy;ка це&shy;пи Motul" id="tmp/ugc/img/steedbreed/chainclean_b.jpg">Motul Chain Clean</a></td>
+                <td class="common-table__td">-</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Смаз&shy;ка це&shy;пи</td>
+                <td class="common-table__td">Pro Honda Chain Lube<br>(for O-ring chains)</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Смаз&shy;ка це&shy;пи Motul Chain Lube Road" id="tmp/ugc/img/steedbreed/chainlube_b.jpg">Motul Chain Lube Road</a></td>
+                <td class="common-table__td">-</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">Ли&shy;ти&shy;е&shy;вая смаз&shy;ка</td>
+                <td class="common-table__td">Lithium based multi-purpose grease NLGI # 2 or equivalent</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="Ли&shy;ти&shy;е&shy;вая смаз&shy;ка Motul Tech Grease 300" id="tmp/ugc/img/steedbreed/techgrease300_b.jpg">Motul Tech Grease 300</a></td>
+                <td class="common-table__td">-</td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title" colspan="2">На&shy;бор для чист&shy;ки и смаз&shy;ки воз&shy;душ&shy;ных филь&shy;тров K&amp;N</td>
+                <td class="common-table__td">...</td>
+                <td class="common-table__td">
+                  <ul class="common-list common-list--bottom0">
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="На&shy;бор для воз&shy;душ&shy;ных филь&shy;тров K&amp;N (смаз&shy;ка-спрей)" id="tmp/ugc/img/steedbreed/99-5000_b.jpg">99-5000</a> (смаз&shy;ка-спрей)
+                    </li>
+                    <li class="common-list__item">
+                      <a class="common-list__link js-img-link" title="Мо&shy;то&shy;хи&shy;мия" name="На&shy;бор для воз&shy;душ&shy;ных филь&shy;тров K&amp;N (смаз&shy;ка жид&shy;кая)" id="tmp/ugc/img/steedbreed/99-5050_b.jpg">99-5050</a> (смаз&shy;ка жид&shy;кая)
+                    </li>
+                  </ul>
+                </td>
+                <td class="common-table__td">-</td>
+              </tr>
+            </table>
+            <p>
+              Смотри также:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_append_3.html">
+                  Практическое стидоводство - Приложение 3: Мотохимия
+                </a>
+              </li>
+            </ul>
+            <table class="common-table">
+              <tr>
+                <th class="common-table__th2">Ак&shy;сес&shy;су&shy;а&shy;ры</th>
+                <th class="common-table__th1">Но&shy;мер (ка&shy;те&shy;го&shy;рия) по ка&shy;та&shy;ло&shy;гу Louis</th>
+                <th class="common-table__th1">Про&shy;из&shy;во&shy;ди&shy;тель, наи&shy;ме&shy;но&shy;ва&shy;ние</th>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">Ду&shy;ги без&shy;опас&shy;нос&shy;ти</td>
+                <td class="common-table__td">10023252</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Ак&shy;сес&shy;су&shy;а&shy;ры" name="Ду&shy;ги без&shy;опас&shy;нос&shy;ти Hepco &amp; Becker" id="tmp/ugc/img/steedbreed/bows_b.jpg">Hepco &amp; Becker: Motorschutzbugel fur Honda VT600C chrom</a></td>
+              </tr>
+            </table>
+            <table class="common-table">
+              <tr>
+                <th class="common-table__th2">Ин&shy;ст&shy;ру&shy;мен&shy;ты</th>
+                <th class="common-table__th1">Part # (VT600C)</th>
+                <th class="common-table__th1">Клю&shy;че&shy;вые сло&shy;ва по&shy;ис&shy;ка по ка&shy;та&shy;ло&shy;гу Louis</th>
+                <th class="common-table__th1">Наи&shy;ме&shy;но&shy;ва&shy;ние<br>(ори&shy;ги&shy;нал или ана&shy;лог)</th>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">Съем&shy;ник мас&shy;ля&shy;но&shy;го филь&shy;тра</td>
+                <td class="common-table__td">89202-KV0-000</td>
+                <td class="common-table__td">OIL FILTER WRENCH</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Ин&shy;ст&shy;ру&shy;мен&shy;ты" name="Съем&shy;ник мас&shy;ля&shy;но&shy;го филь&shy;тра цеп&shy;ной" id="tmp/ugc/img/steedbreed/oilwrench1_b.jpg">Съем&shy;ник цеп&shy;ной</a></td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">Свеч&shy;ной ключ</td>
+                <td class="common-table__td">89216-MR1-000</td>
+                <td class="common-table__td">SPARK PLUG SOCKET TOOL</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Ин&shy;ст&shy;ру&shy;мен&shy;ты" name="Свеч&shy;ной ключ 18х19" id="tmp/ugc/img/steedbreed/plugkey_b.jpg">Свеч&shy;ной ключ 18х19</a></td>
+              </tr>
+              <tr>
+                <td class="common-table__td common-table__td--title">Оправ&shy;ка для саль&shy;ни&shy;ка вил&shy;ки</td>
+                <td class="common-table__td">07947-4630100</td>
+                <td class="common-table__td">FORK SEAL DRIVER</td>
+                <td class="common-table__td"><a class="common-table__link js-img-link" title="Ин&shy;ст&shy;ру&shy;мен&shy;ты" name="Оправ&shy;ка для саль&shy;ни&shy;ка вил&shy;ки" id="tmp/ugc/img/steedbreed/forksealdriver_b.jpg">Оправ&shy;ка для саль&shy;ни&shy;ка вил&shy;ки</a></td>
+              </tr>
+            </table>
+            <p>
+              Смотри также:
+            </p>
+            <ul class="common-list">
+              <li class="common-list__item">
+                <a class="common-list__link" href="sb_append_1.html">
+                  Практическое стидоводство - Приложение 1: Средства обслуживания
+                </a>
+              </li>
+            </ul>
+            <ul class="common-list">
+              <li class="common-list__item">
+                <a class="common-list__link" href="http://www.ronayers.com/oemparts/#/l/hon/50540e39f870021c54beda1c/1993-vt600c-a-parts">
+                  RON AYERS.COM - каталог оригинальных запчастей с номерами
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="http://www.exist.ru">
+                  EXIST.RU - интернет-магазин, заказ оригинальных запчастей по номерам
+                </a>
+              </li>
+              <li class="common-list__item">
+                <a class="common-list__link" href="http://www.louis.de/">
+                  www.louis.de - Motorrad &amp; Freizeit - каталог, интернет-магазин (Германия)
+                </a>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!--                                                              -->
+      <!--                        PAGE FOOTER                           -->
+      <!--                                                              -->
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <footer class="page-footer">
+        <div class="page-footer__vendor-info">
+          created by : <a class="page-footer__link" href="http://frontend.menshikov.su">brother ilia</a>
+        </div>
+      </footer>
+      <a class="to-top-arrow" id="to-top" href="#top">
+        <i class="css-icon css-icon--up-arrow">
+          <span class="css-icon__body"></span>
+        </i>
+      </a>
+    </div>
+    <div class="img-popup">
+      <div class="img-popup__header"></div>
+      <div class="img-popup__main"></div>
+      <div class="img-popup__footer"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+  </body>
+</html>
