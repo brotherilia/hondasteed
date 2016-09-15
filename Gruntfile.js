@@ -121,28 +121,28 @@ module.exports = function(grunt) {
           "build/articles_beg_2.html": ["build/articles_beg_2.html"],
           "build/articles_beg_3.html": ["build/articles_beg_3.html"],
 
-          "build/articles_serv_0.html": ["build/articles_serv_0.html"], //FIXME
-          "build/articles_serv_1.html": ["build/articles_serv_1.html"], //FIXME
-          "build/articles_serv_2.html": ["build/articles_serv_2.html"], //FIXME
-          "build/articles_serv_3.html": ["build/articles_serv_3.html"], //FIXME
-          "build/articles_serv_4.html": ["build/articles_serv_4.html"], //FIXME
-          "build/articles_serv_5.html": ["build/articles_serv_5.html"], //FIXME
-          "build/articles_serv_6.html": ["build/articles_serv_6.html"], //FIXME
-          "build/articles_serv_7.html": ["build/articles_serv_7.html"], //FIXME
-          "build/articles_serv_8.html": ["build/articles_serv_8.html"], //FIXME
-          "build/articles_serv_9.html": ["build/articles_serv_9.html"], //FIXME
-          "build/articles_serv_10.html": ["build/articles_serv_10.html"], //FIXME
-          "build/articles_serv_11.html": ["build/articles_serv_11.html"], //FIXME
-          "build/articles_serv_12.html": ["build/articles_serv_12.html"], //FIXME
-          "build/articles_serv_13.html": ["build/articles_serv_13.html"], //FIXME
-          "build/articles_serv_14.html": ["build/articles_serv_14.html"], //FIXME
-          "build/articles_serv_15.html": ["build/articles_serv_15.html"], //FIXME
-          "build/articles_serv_16.html": ["build/articles_serv_16.html"], //FIXME
-          "build/articles_serv_17.html": ["build/articles_serv_17.html"], //FIXME
-          "build/articles_serv_18.html": ["build/articles_serv_18.html"], //FIXME
-          "build/articles_serv_19.html": ["build/articles_serv_19.html"], //FIXME
-          "build/articles_serv_20.html": ["build/articles_serv_20.html"], //FIXME
-          "build/articles_serv_21.html": ["build/articles_serv_21.html"], //FIXME
+          "build/articles_serv_0.html": ["build/articles_serv_0.html"],
+          "build/articles_serv_1.html": ["build/articles_serv_1.html"],
+          "build/articles_serv_2.html": ["build/articles_serv_2.html"],
+          "build/articles_serv_3.html": ["build/articles_serv_3.html"],
+          "build/articles_serv_4.html": ["build/articles_serv_4.html"],
+          "build/articles_serv_5.html": ["build/articles_serv_5.html"],
+          "build/articles_serv_6.html": ["build/articles_serv_6.html"],
+          "build/articles_serv_7.html": ["build/articles_serv_7.html"],
+          "build/articles_serv_8.html": ["build/articles_serv_8.html"],
+          "build/articles_serv_9.html": ["build/articles_serv_9.html"],
+          "build/articles_serv_10.html": ["build/articles_serv_10.html"],
+          "build/articles_serv_11.html": ["build/articles_serv_11.html"],
+          "build/articles_serv_12.html": ["build/articles_serv_12.html"],
+          "build/articles_serv_13.html": ["build/articles_serv_13.html"],
+          "build/articles_serv_14.html": ["build/articles_serv_14.html"],
+          "build/articles_serv_15.html": ["build/articles_serv_15.html"],
+          "build/articles_serv_16.html": ["build/articles_serv_16.html"],
+          "build/articles_serv_17.html": ["build/articles_serv_17.html"],
+          "build/articles_serv_18.html": ["build/articles_serv_18.html"],
+          "build/articles_serv_19.html": ["build/articles_serv_19.html"],
+          "build/articles_serv_20.html": ["build/articles_serv_20.html"],
+          "build/articles_serv_21.html": ["build/articles_serv_21.html"],
 
           "build/articles_rev_1.html": ["build/articles_rev_1.html"],
           "build/articles_rev_2.html": ["build/articles_rev_2.html"],
@@ -209,14 +209,14 @@ module.exports = function(grunt) {
     //*** Конкатенация CSS ***//
     concat: {
       css: {
-        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/style--dark.css" ],
+        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/fonts.css", "build/css/style--dark.css" ],
         dest: "build/css/style--dark.css",
         options: {
           separator: "\n\r/***** CONCATENATION HERE! *****/\n\r"
         }
       },
       csslight: {
-        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/style--light.css" ],
+        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/fonts.css", "build/css/style--light.css" ],
         dest: "build/css/style--light.css",
         options: {
           separator: "\n\r/***** CONCATENATION HERE! *****/\n\r"

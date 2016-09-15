@@ -24,6 +24,10 @@
   text-decoration: none;
   cursor: pointer;
 
+  @media @mobile-widths {
+    cursor: default;
+  }
+
   &:hover {
     color: @link-hover-color;
 
@@ -45,6 +49,10 @@
   color: #444444;
   text-decoration: none;
   cursor: pointer;
+
+  @media @mobile-widths {
+    cursor: default;
+  }
 
   &:hover {
     color: #f2eeed;
@@ -73,6 +81,10 @@
   border-radius: 5px;
   padding-bottom: 2px;
   text-align: center;
+
+  @media @mobile-widths {
+    cursor: default;
+  }
 
   &:hover {
     background-image: linear-gradient(to top, #666666, @bg-color 10%, @bg-color 90%, #666666 100%);
@@ -150,8 +162,13 @@
 }
 
 .popup-text() {
-  background-color: @transparent-color;
+  background-image: linear-gradient(to right,
+    @transparent-color,
+    @transparent-dark-color 30%,
+    @transparent-dark-color 70%,
+    @transparent-color 100%
+  );
   text-align: center;
   padding: 10px;
-  color: #222222;
+  color: #f2eeed;
 }

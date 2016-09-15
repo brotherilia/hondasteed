@@ -1,0 +1,27 @@
+.intext-figure {
+  .reset-spaces();
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  &--left {
+    float: left;
+    margin-right: 10px;
+  }
+
+  &--right {
+    float: right;
+    margin-left: 10px;
+  }
+
+  @media @mobile-widths {
+    float: none;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: @smaller-font-size;
+    line-height: 12px;
+  }
+}

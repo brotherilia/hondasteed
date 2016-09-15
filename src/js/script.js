@@ -18,22 +18,6 @@ $(document).ready(function(){
     }
   });
 
-/*
-  $(window).resize(function(){
-    var displayMode  = $("#popup").css("position");
-    if (displayMode == "fixed"){
-      $("#popup").hide();
-      $("#toggle").css({"transform":"none"});
-      $("#menu").css({"display":"block"});
-      $("#tools").css({"display":"none"});
-      $("#scroll").css({"transform":"rotate(225deg)"}).css({"top":"0"});
-    }
-    else {
-      $("#popup").show();
-    }
-  });
-*/
-
   $("#scroll").click(function(event){
     var displayStatus  = $("#menu").css("display");
     event.preventDefault();
@@ -57,7 +41,7 @@ $(document).ready(function(){
     var popupTitle = $(this).attr("title");
     var popupAlt = $(this).attr("alt");
     var popupName = $(this).attr("name");
-    $(".img-popup__main").css({"background-image": "url('../"+popupBgr+"')"});
+    $(".img-popup").css({"background-image": "url('../"+popupBgr+"')"});
     if (popupTitle){
       $(".img-popup__header").text(popupTitle).css({"display": "block"});
     }
@@ -113,4 +97,18 @@ $(document).ready(function(){
       $("#cssSwitchIcon").attr("class", "css-icon css-icon--sun");
     }
   });
+
+// Открытие списка "Хронология развития по дням рождения"
+
+  $("#event-list").hide();
+  $("#event-list-link").click(function(event){
+    event.preventDefault();
+    if ($("#event-list").css("display") == "none"){
+      $("#event-list").show();
+    }
+    else {
+      $("#event-list").hide();
+    }
+  });
+
 });
