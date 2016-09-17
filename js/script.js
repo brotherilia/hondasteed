@@ -57,7 +57,7 @@ $(document).ready(function(){
     var popupTitle = $(this).attr("title");
     var popupAlt = $(this).attr("alt");
     var popupName = $(this).attr("name");
-    $(".img-popup__main").css({"background-image": "url('../"+popupBgr+"')"});
+    $(".img-popup").css({"background-image": "url('../"+popupBgr+"')"});
     if (popupTitle){
       $(".img-popup__header").text(popupTitle).css({"display": "block"});
     }
