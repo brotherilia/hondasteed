@@ -2145,6 +2145,8 @@ img {
     right: 20px;
     bottom: auto;
     left: auto;
+
+    cursor: default;
   }
   .to-top-arrow:hover {
     opacity: 0.5;
