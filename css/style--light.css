@@ -965,7 +965,7 @@ img {
 .breadcrumbs__link--active {
   color: #444444;
 
-  cursor: inherit;
+  cursor: default;
 }
 .breadcrumbs__link--active:hover,
 .breadcrumbs__link--active:active {
@@ -1678,7 +1678,7 @@ img {
   position: relative;
 
   box-shadow: none;
-  cursor: inherit;
+  cursor: default;
   opacity: 0.3;
 }
 .img-link--dsbl:hover,
@@ -1754,6 +1754,8 @@ img {
   }
   .page-header__link {
     height: auto;
+
+    cursor: default;
   }
   .page-header__description {
     position: relative;
@@ -1839,6 +1841,9 @@ img {
     line-height: 50px;
     text-align: center;
   }
+  .page-footer__link {
+    cursor: default;
+  }
   .page-footer__link:hover {
     color: #444444;
   }
@@ -1851,6 +1856,8 @@ img {
     right: 18px;
     left: auto;
     z-index: 2;
+
+    cursor: default;
   }
   .color-scheme-button:hover {
     opacity: 0.5;
@@ -1887,6 +1894,9 @@ img {
     width: 90%;
     max-width: 350px;
     margin: 0 auto;
+  }
+  .menu__item {
+    cursor: default;
   }
   .menu__item--vert {
     background-image: -webkit-linear-gradient(bottom, #666666, #000000 10%, #000000 90%, #666666 100%);
@@ -1929,6 +1939,9 @@ img {
   .menu__item--hor:active {
     opacity: 1;
   }
+  .menu__link {
+    cursor: default;
+  }
   .menu__link:hover {
     color: #444444;
   }
@@ -1947,7 +1960,7 @@ img {
   .menu__link--submenu {
     color: #444444;
 
-    cursor: inherit;
+    cursor: default;
   }
   .submenu {
     position: static;
@@ -1962,6 +1975,9 @@ img {
 
     -webkit-transform: none;
             transform: none;
+  }
+  .submenu__link {
+    cursor: default;
   }
   .submenu__link:hover {
     color: #444444;
@@ -1995,6 +2011,9 @@ img {
   }
   .breadcrumbs__item {
     text-align: center;
+  }
+  .breadcrumbs__link {
+    cursor: default;
   }
   .breadcrumbs__link:hover {
     color: #9a2f25;
@@ -2032,6 +2051,9 @@ img {
   .page-aside__img-link {
     display: none;
   }
+  .page-aside__weather-informer {
+    cursor: default;
+  }
   .page-main {
     margin: 0;
     padding: 20px 20px 30px 20px;
@@ -2052,6 +2074,9 @@ img {
   }
   .page-main__title {
     text-align: center;
+  }
+  .page-main__link {
+    cursor: default;
   }
   .page-main__link:hover {
     color: #9a2f25;
@@ -2076,11 +2101,17 @@ img {
   .common-list__item {
     margin-bottom: 10px;
   }
+  .common-list__link {
+    cursor: default;
+  }
   .common-list__link:hover {
     color: #9a2f25;
   }
   .common-list__link:active {
     color: #999999;
+  }
+  .gallery-list__link {
+    cursor: default;
   }
   .gallery-list__link:hover {
     color: #9a2f25;
@@ -2091,11 +2122,17 @@ img {
   .common-table--small-font {
     font-size: 9px;
   }
+  .common-table__link {
+    cursor: default;
+  }
   .common-table__link:hover {
     color: #9a2f25;
   }
   .common-table__link:active {
     color: #999999;
+  }
+  .contents__link {
+    cursor: default;
   }
   .contents__link:hover {
     color: #9a2f25;
@@ -2135,6 +2172,7 @@ img {
     outline: none;
     -webkit-transform: rotate(225deg);
             transform: rotate(225deg);
+    cursor: default;
     opacity: 0.5;
   }
   .menu-scroll:hover {
@@ -2156,6 +2194,7 @@ img {
     border: none;
     border-radius: auto;
     outline: none;
+    cursor: default;
     opacity: 0.5;
   }
   .menu-toggle:hover {
@@ -2164,11 +2203,20 @@ img {
   .menu-toggle:active {
     opacity: 1;
   }
+  .fieldset__btn {
+    cursor: default;
+  }
   .fieldset__btn:hover {
     color: #444444;
   }
   .fieldset__btn:active {
     color: #f2eeed;
+  }
+  .fieldset__btn {
+    cursor: default;
+  }
+  .fieldset__btn {
+    cursor: default !important;
   }
   .jssor-slider {
     margin: 0 auto;
@@ -2200,6 +2248,9 @@ img {
     margin-bottom: 10px;
 
     text-align: center;
+  }
+  .img-link {
+    cursor: default;
   }
   .img-link:hover {
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.2);
