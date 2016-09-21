@@ -35,31 +35,102 @@ $(document).ready(function(){
 
   // Всплывающее окно с изображением
 
-  $(".js-img-link").click(function(event){
-    event.preventDefault();
-    var popupBgr = $(this).attr("id");
-    var popupTitle = $(this).attr("title");
-    var popupAlt = $(this).attr("alt");
-    var popupName = $(this).attr("name");
-    $(".img-popup").css({"background-image": "url('../"+popupBgr+"')"});
+  var popupLink = $(".js-img-link");
+  var firstPopupLink = popupLink.first();
+  var lastPopupLink = popupLink.last();
+  var firstPopupIdx = popupLink.index(firstPopupLink);
+  var lastPopupIdx = popupLink.index(lastPopupLink);
+  var lastSlideNumber = lastPopupIdx + 1;
+  var popupIdx;
+  var popupBgr;
+  var popupBlock = $(".popup");
+  var popupOldSlide = $(".js-old-slide");
+  var popupNewSlide = $(".js-new-slide");
+  var popupHeader = $(".popup__header");
+  var popupFooter = $(".popup__footer");
+  var popupPrev = $(".js-prev-img");
+  var popupNext = $(".js-next-img");
+  var slideDuration = 400;
+
+  var setupSlide = function(){
+    var popupCurrent = popupLink.eq(popupIdx);
+    var popupTitle = popupCurrent.attr("title");
+    var popupAlt = popupCurrent.attr("alt");
+    var popupName = popupCurrent.attr("name");
+    var currentSlideNumber = popupIdx + 1;
+    var popupCounter = currentSlideNumber+" из "+lastSlideNumber;
+    popupBgr = popupCurrent.attr("id");
+    popupNewSlide.css({"background-image": "url('../"+popupBgr+"')"});
     if (popupTitle){
-      $(".img-popup__header").text(popupTitle).css({"display": "block"});
+      popupHeader.text(popupTitle).css({"opacity": "1"});
     }
     else {
-      $(".img-popup__header").css({"display": "none"});
+      popupHeader.css({"opacity": "0"});
     }
     if (popupAlt){
-      $(".img-popup__footer").text(popupAlt).css({"display": "block"});
+      popupFooter.text(popupCounter+": "+popupAlt);
     }
     else if (popupName){
-      $(".img-popup__footer").text(popupName).css({"display": "block"});
+      popupFooter.text(popupCounter+": "+popupName);
     }
     else {
-      $(".img-popup__footer").css({"display": "none"});
+      popupFooter.text(popupCounter);
     }
-    $(".img-popup").fadeIn().css({"display": "flex"});
+  }
+
+  var prevSlide = function(){
+    popupOldSlide.css({"left": "0", "background-image": "url('../"+popupBgr+"')", "opacity": "1"});
+    popupNewSlide.css({"left": "-100%", "opacity": "0"});
+    if (popupIdx == firstPopupIdx){
+      popupIdx = lastPopupIdx;
+    }
+    else {
+      popupIdx--;
+    }
+    $(setupSlide);
+    popupOldSlide.animate({"left": "100%", "opacity" : "0"}, slideDuration);
+    popupNewSlide.animate({"left": "0", "opacity" : "1"}, slideDuration);
+  }
+
+  var nextSlide = function(){
+    popupOldSlide.css({"left": "0", "background-image": "url('../"+popupBgr+"')", "opacity": "1"});
+    popupNewSlide.css({"left": "100%", "opacity": "0"});
+    if (popupIdx == lastPopupIdx){
+      popupIdx = firstPopupIdx;
+    }
+    else {
+      popupIdx++;
+    }
+    $(setupSlide);
+    popupOldSlide.animate({"left": "-100%", "opacity" : "0"}, slideDuration);
+    popupNewSlide.animate({"left": "0", "opacity" : "1"}, slideDuration);
+  }
+
+  popupLink.click(function(event){
+    popupIdx = popupLink.index(this);
+    $(setupSlide);
+    popupBlock.fadeIn().css({"display": "flex"});
   });
-  $(".img-popup").click(function(event){
+
+  popupPrev.click(function(event){
+    event.stopImmediatePropagation();
+    $(prevSlide);
+  });
+
+  popupBlock.on("swiperight",function(event){
+    $(prevSlide);
+  });
+
+  popupNext.click(function(event){
+    event.stopImmediatePropagation();
+    $(nextSlide);
+  });
+
+  popupBlock.on("swipeleft",function(event){
+    $(nextSlide);
+  });
+
+  popupBlock.click(function(event){
     $(this).fadeOut();
   });
 
