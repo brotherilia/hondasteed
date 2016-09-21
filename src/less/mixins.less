@@ -168,7 +168,15 @@
     @transparent-dark-color 70%,
     @transparent-color 100%
   );
+  box-shadow: 0 0 1px 1px #999999;
   text-align: center;
   padding: 10px;
   color: #f2eeed;
+}
+
+.circle() {
+  width: @icon-size;
+  height: @icon-size;
+  border: @icon-circle-width solid @icon-color;
+  border-radius: @icon-size;
 }

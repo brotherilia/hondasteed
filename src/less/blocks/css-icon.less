@@ -72,6 +72,38 @@
     }
   }
 
+  /////*** TO-RIGHT-TRIANGLE IN CIRCLE ***/////
+  &--to-right-triangle &__body {
+    .circle();
+
+    &::before {
+      width: @icon-size * 0.50;
+      height: @icon-size * 0.50;
+      bottom: @icon-size * 0.24;
+      left: @icon-size * 0.4;
+      border: @icon-size * 0.25 solid @icon-color;
+      border-top: @icon-size * 0.25 solid transparent;
+      border-bottom: @icon-size * 0.25 solid transparent;
+      border-right: @icon-size * 0.25 solid transparent;
+    }
+  }
+
+  /////*** TO-LEFT-TRIANGLE IN CIRCLE ***/////
+  &--to-left-triangle &__body {
+    .circle();
+
+    &::before {
+      width: @icon-size * 0.50;
+      height: @icon-size * 0.50;
+      bottom: @icon-size * 0.24;
+      right: @icon-size * 0.4;
+      border: @icon-size * 0.25 solid @icon-color;
+      border-top: @icon-size * 0.25 solid transparent;
+      border-left: @icon-size * 0.25 solid transparent;
+      border-bottom: @icon-size * 0.25 solid transparent;
+    }
+  }
+
   /////*** SUN ***/////
   &--sun {
     width: @icon-size * 1.25;
