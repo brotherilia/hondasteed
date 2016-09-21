@@ -109,7 +109,7 @@ $(document).ready(function(){
   popupLink.click(function(event){
     popupIdx = popupLink.index(this);
     $(setupSlide);
-    popupBlock.fadeIn().css({"display": "flex"});
+    popupBlock.fadeIn().css({"display": "block"});
   });
 
   popupPrev.click(function(event){
