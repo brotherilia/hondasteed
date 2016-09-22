@@ -209,14 +209,14 @@ module.exports = function(grunt) {
     //*** Конкатенация CSS ***//
     concat: {
       css: {
-        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/fonts.css", "build/css/style--dark.css" ],
+        src: [ "build/css/normalize.css", "build/css/fonts.css", "build/css/style--dark.css" ],
         dest: "build/css/style--dark.css",
         options: {
           separator: "\n\r/***** CONCATENATION HERE! *****/\n\r"
         }
       },
       csslight: {
-        src: [ "build/css/normalize.css", "build/css/social-likes.css", "build/css/fonts.css", "build/css/style--light.css" ],
+        src: [ "build/css/normalize.css", "build/css/fonts.css", "build/css/style--light.css" ],
         dest: "build/css/style--light.css",
         options: {
           separator: "\n\r/***** CONCATENATION HERE! *****/\n\r"

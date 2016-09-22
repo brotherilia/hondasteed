@@ -112,23 +112,13 @@
 
   &--sun &__body {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: @icon-size;
-    height: @icon-size;
-    border: @icon-circle-width * 1.8 dotted @bg-color;
+    bottom: @icon-size / 12;
+    right: @icon-size / 6;
+    width: @icon-size * 0.7;
+    height: @icon-size * 0.7;
     border-radius: @icon-size;
     background-color: @icon-color;
-
-    &::before {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width: @icon-size * 0.8;
-      height: @icon-size * 0.8;
-      border: @icon-circle-width * 2 solid @bg-color;
-      border-radius: @icon-size;
-    }
+    box-shadow: inset 0 0 @icon-size / 24 0 @bg-color, 0 0 @icon-size / 12 @icon-size / 12 @bg-color, 0 0 @icon-size / 4 @icon-size / 8 @icon-color;
   }
 
   /////*** MOON ***/////

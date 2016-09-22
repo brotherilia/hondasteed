@@ -1,0 +1,66 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 555px;
+  max-height: 255px;
+  overflow: hidden;
+
+  @media @mobile-widths {
+    margin: 0 auto;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @media @mobile-widths {
+      border-radius: inherit;
+      border-top-left-radius: @page-main-radius-mobile;
+      border-top-right-radius: @page-main-radius-mobile;
+      cursor: default;
+    }
+  }
+
+  &__btn {
+    .btn-reset();
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 1;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+
+    @media @mobile-widths {
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
+    &--prev {
+      left: 20px;
+    }
+
+    &--next {
+      right: 20px;
+    }
+  }
+}

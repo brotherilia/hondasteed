@@ -33,6 +33,97 @@ $(document).ready(function(){
     }
   });
 
+  // Слайдер на первой странице
+
+  var slider = $(".slider");
+  var sliderOldSlide = $(".jssld-old-slide");
+  var sliderNewSlide = $(".jssld-new-slide");
+  var sliderButtons = $(".slider__btn");
+  var sliderPrevButton = $(".jssld-prev-img");
+  var sliderNextButton = $(".jssld-next-img");
+  var slideCounter = 1;
+  var slideLastNumber = 70;
+  var setSliderHeight = function(){
+    var sliderCurrentWidth = slider.css("width");
+    var sliderCurrentHeight = parseFloat(sliderCurrentWidth) * 0.45947;
+    slider.css({"height": sliderCurrentHeight});
+  }
+
+  $(setSliderHeight);
+  sliderNewSlide.css({"background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')"});
+
+  var sliderPrevSlide = function(){
+    sliderOldSlide.css({"left": "0", "background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "1"});
+    if (slideCounter == 1){
+      slideCounter = slideLastNumber;
+    }
+    else {
+      slideCounter--;
+    }
+  }
+
+  var sliderNextSlide = function(){
+    sliderOldSlide.css({"left": "0", "background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "1"});
+    if (slideCounter == slideLastNumber){
+      slideCounter = 1;
+    }
+    else {
+      slideCounter++;
+    }
+  }
+
+  var sliderFadeInSlide = function(){
+    sliderNewSlide.css({"background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "0"});
+    sliderOldSlide.animate({"opacity" : "0"}, 1500);
+    sliderNewSlide.animate({"opacity" : "1"}, 1500);
+  }
+
+  var sliderSwipeInNextSlide = function(){
+    sliderNewSlide.css({"left": "100%", "background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "0"});
+    sliderOldSlide.animate({"left": "-100%", "opacity" : "0"}, 400);
+    sliderNewSlide.animate({"left": "0", "opacity" : "1"}, 400);
+  }
+
+  var sliderSwipeInPrevSlide = function(){
+    sliderNewSlide.css({"left": "-100%", "background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "0"});
+    sliderOldSlide.animate({"left": "100%", "opacity" : "0"}, 400);
+    sliderNewSlide.animate({"left": "0", "opacity" : "1"}, 400);
+  }
+
+  var slideAutoChange = setInterval (function(){
+    $(sliderNextSlide);
+    $(sliderFadeInSlide);
+  }, 3000);
+
+  sliderNewSlide.click(function(event){
+    sliderButtons.delay(400).fadeIn(300);
+    clearInterval(slideAutoChange);
+  });
+
+  sliderPrevButton.click(function(event){
+    $(sliderPrevSlide);
+    $(sliderSwipeInPrevSlide);
+  });
+
+  sliderNextButton.click(function(event){
+    $(sliderNextSlide);
+    $(sliderSwipeInNextSlide);
+  });
+
+  sliderNewSlide.on("swiperight",function(event){
+    $(sliderPrevSlide);
+    $(sliderSwipeInPrevSlide);
+  });
+
+  sliderNewSlide.on("swipeleft",function(event){
+    $(sliderNextSlide);
+    $(sliderSwipeInNextSlide);
+  });
+
+  $(window).resize(function(){
+    $(setSliderHeight);
+  });
+
   // Всплывающее окно с изображением
 
   var popupLink = $(".js-img-link");
@@ -118,6 +209,7 @@ $(document).ready(function(){
   });
 
   popupBlock.on("swiperight",function(event){
+    event.stopImmediatePropagation();
     $(prevSlide);
   });
 
@@ -127,6 +219,7 @@ $(document).ready(function(){
   });
 
   popupBlock.on("swipeleft",function(event){
+    event.stopImmediatePropagation();
     $(nextSlide);
   });
 
@@ -169,6 +262,14 @@ $(document).ready(function(){
     }
   });
 
+// Особенности первой страницы
+
+  var curentPage = document.location.pathname;
+  if ((curentPage == "/index.html") || (curentPage == "/")){
+    $("#stylesheet").attr("href", "css/style--dark.min.css");
+    $("#cssSwitchIcon").attr("class", "css-icon css-icon--sun");
+  }
+
 // Открытие списка "Хронология развития по дням рождения"
 
   $("#event-list").hide();
@@ -181,5 +282,4 @@ $(document).ready(function(){
       $("#event-list").hide();
     }
   });
-
 });
