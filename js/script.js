@@ -38,6 +38,7 @@ $(document).ready(function(){
   var slider = $(".slider");
   var sliderOldSlide = $(".jssld-old-slide");
   var sliderNewSlide = $(".jssld-new-slide");
+  var sliderButtons = $(".slider__btn");
   var sliderPrevButton = $(".jssld-prev-img");
   var sliderNextButton = $(".jssld-next-img");
   var slideCounter = 1;
@@ -76,6 +77,15 @@ $(document).ready(function(){
     sliderOldSlide.animate({"opacity" : "0"}, slideDuration);
     sliderNewSlide.animate({"opacity" : "1"}, slideDuration);
   }
+
+  var slideAutoChange = setInterval (function(){
+    $(sliderNextSlide);
+  }, 3000);
+
+  sliderNewSlide.click(function(event){
+    sliderButtons.delay(400).fadeIn(300);
+    clearInterval(slideAutoChange);
+  });
 
   sliderPrevButton.click(function(event){
     $(sliderPrevSlide);
@@ -238,7 +248,7 @@ $(document).ready(function(){
 // Особенности первой страницы
 
   var curentPage = document.location.pathname;
-  if (curentPage == "/index.html"){
+  if ((curentPage == "/index.html") || (curentPage == "/")){
     $("#stylesheet").attr("href", "css/style--dark.min.css");
     $("#cssSwitchIcon").attr("class", "css-icon css-icon--sun");
   }

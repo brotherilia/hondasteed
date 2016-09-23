@@ -656,7 +656,7 @@ img {
   width: 24px;
   height: 24px;
 
-  border: 1.6px solid #ffffff;
+  border: 2.4px solid #ffffff;
   border-radius: 24px;
 }
 .css-icon--up-arrow .css-icon__body::before {
@@ -686,7 +686,7 @@ img {
   width: 24px;
   height: 24px;
 
-  border: 1.6px solid #ffffff;
+  border: 2.4px solid #ffffff;
   border-radius: 24px;
 }
 .css-icon--to-right-triangle .css-icon__body::before {
@@ -705,7 +705,7 @@ img {
   width: 24px;
   height: 24px;
 
-  border: 1.6px solid #ffffff;
+  border: 2.4px solid #ffffff;
   border-radius: 24px;
 }
 .css-icon--to-left-triangle .css-icon__body::before {
@@ -733,7 +733,7 @@ img {
   height: 24px;
 
   background-color: #ffffff;
-  border: 2.88px dotted #000000;
+  border: 4.32px dotted #000000;
   border-radius: 24px;
 }
 .css-icon--sun .css-icon__body::before {
@@ -743,7 +743,7 @@ img {
   width: 19.2px;
   height: 19.2px;
 
-  border: 3.2px solid #000000;
+  border: 4.8px solid #000000;
   border-radius: 24px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1548,6 +1548,7 @@ img {
   top: 50%;
   z-index: 1;
 
+  display: none;
   padding: 0;
 
   background: none;
