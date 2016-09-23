@@ -1518,6 +1518,7 @@ img {
   width: 100%;
   max-width: 555px;
   max-height: 255px;
+  overflow: hidden;
 }
 .slider__img {
   position: absolute;
