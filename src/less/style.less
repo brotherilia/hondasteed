@@ -16,12 +16,6 @@
 @transparent-color: rgba(255, 255, 255, 0.5);
 @transparent-dark-color: rgba(0, 0, 0, 0.8);
 
-/////*** ICONS ***/////
-@icon-size: 24px;
-@icon-dbl-size: 48px;
-@icon-circle-width: @icon-size / 10;
-@icon-color: #ffffff;
-
 @import "global";
 @import "mixins";
 @import "keyframes";
@@ -31,7 +25,6 @@
 @import "layout/page-midsection";
 @import "layout/page-footer";
 
-@import "blocks/css-icon";
 @import "blocks/color-scheme-button";
 @import "blocks/menu";
 @import "blocks/submenu";
@@ -44,11 +37,15 @@
 @import "blocks/contents";
 @import "blocks/banner";
 @import "blocks/to-top-arrow";
-@import "blocks/menu-scroll";
 @import "blocks/menu-toggle";
 @import "blocks/fieldset";
+@import "blocks/popup";
 @import "blocks/slider";
+@import "blocks/slider-button";
 @import "blocks/intext-img";
 @import "blocks/intext-figure";
 @import "blocks/img-link";
-@import "blocks/popup";
+
+@import "css-icon/variab";
+@import "css-icon/mixins";
+@import "css-icon/css-icon";

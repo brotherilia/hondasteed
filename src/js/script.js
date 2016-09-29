@@ -14,7 +14,7 @@ $(document).ready(function(){
       $("#popup").hide();
       $("#menu").css({"display":"block"});
       $("#tools").css({"display":"none"});
-      $("#scroll").css({"transform":"rotate(225deg)"}).css({"top":"-5px"});
+      $("#menuScroll").removeClass("css-icon css-icon--prev").addClass("css-icon css-icon--next");
     }
   });
 
@@ -22,12 +22,12 @@ $(document).ready(function(){
     var displayStatus  = $("#menu").css("display");
     event.preventDefault();
     if (displayStatus == "block"){
-      $(this).css({"transform":"rotate(45deg)"}).css({"top":"15px"});
+      $("#menuScroll").removeClass("css-icon css-icon--next").addClass("css-icon css-icon--prev");
       $("#menu").hide();
       $("#tools").fadeIn();
     }
     else {
-      $(this).css({"transform":"rotate(225deg)"}).css({"top":"-5px"});
+      $("#menuScroll").removeClass("css-icon css-icon--prev").addClass("css-icon css-icon--next");
       $("#tools").hide();
       $("#menu").fadeIn();
     }
@@ -38,9 +38,9 @@ $(document).ready(function(){
   var slider = $(".slider");
   var sliderOldSlide = $(".jssld-old-slide");
   var sliderNewSlide = $(".jssld-new-slide");
-  var sliderButtons = $(".slider__btn");
-  var sliderPrevButton = $(".jssld-prev-img");
-  var sliderNextButton = $(".jssld-next-img");
+  var sliderButtons = $(".jssld-btn");
+  var sliderPrevButton = $(".jssld-prev-btn");
+  var sliderNextButton = $(".jssld-next-btn");
   var slideCounter = 1;
   var slideLastNumber = 70;
   var setSliderHeight = function(){
@@ -51,6 +51,7 @@ $(document).ready(function(){
 
   $(setSliderHeight);
   sliderNewSlide.css({"background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')"});
+  sliderButtons.hide();
 
   var sliderPrevSlide = function(){
     sliderOldSlide.css({"left": "0", "background-image": "url('../tmp/ugc/img/slider/"+slideCounter+".jpg')", "opacity": "1"});

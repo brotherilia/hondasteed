@@ -3,16 +3,21 @@
 
   @media @mobile-widths {
     .btn-reset();
+    .icon-size();
     display: block;
     position: fixed;
-    left: 22px;
-    top: 9px;
+    left: 20px;
+    top: 10px;
     opacity: 0.5;
     z-index: 3;
     cursor: default;
 
     &:active {
       opacity: 1;
+    }
+
+    &--scroll {
+      left: 70px;
     }
   }
 }

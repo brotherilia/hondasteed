@@ -38,6 +38,7 @@
 
       @media @mobile-widths {
         justify-content: center;
+        align-items: flex-start;
       }
     }
 
@@ -104,13 +105,11 @@
       flex-grow: 1;
 
       @media @mobile-widths {
+        .icon-size();
         .btn-reset();
         flex-grow: 0;
-        width: 16px;
-        height: 16px;
         padding: 0;
-        margin: 0 25px;
-        text-indent: -3000px;
+        margin: 10px 15px 0 15px;
         opacity: 0.5;
 
         &:active {
@@ -125,25 +124,29 @@
     display: block;
     height: 100%;
 
-    &--tools {
-      display: none;
+    &--home,
+    &--about,
+    &--forum {
+
+      & .css-icon {
+        display: none;
+      }
+
+      @media @mobile-widths {
+        position: relative;
+        .reset-spaces();
+        .icon-size();
+        text-indent: -5000px;
+
+        & .css-icon {
+          display: block;
+        }
+      }
     }
 
-    @media @mobile-widths {
+    &--submenu {
 
-      &--home {
-        background: url("../img/home.svg") no-repeat top left;
-      }
-
-      &--about {
-        background: url("../img/info.svg") no-repeat top left;
-      }
-
-      &--forum {
-        background: url("../img/organization.svg") no-repeat top left;
-      }
-
-      &--submenu {
+      @media @mobile-widths {
         color: @mobile-text-color;
         cursor: default;
       }

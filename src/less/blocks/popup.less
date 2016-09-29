@@ -49,40 +49,4 @@
       cursor: default;
     }
   }
-
-  &__btn {
-    .btn-reset();
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    z-index: 5;
-
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &:active {
-      opacity: 0.2;
-    }
-
-    @media @mobile-widths {
-      cursor: default;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &:active {
-        opacity: 0.5;
-      }
-    }
-
-    &--prev {
-      left: 20px;
-    }
-
-    &--next {
-      right: 20px;
-    }
-  }
 }
