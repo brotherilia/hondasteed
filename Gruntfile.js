@@ -172,6 +172,15 @@ module.exports = function(grunt) {
       }
     },
 
+    //*** Сборка CSS из SCSS ***//
+    sass: {
+      dist: {
+        files: {
+          "simplicity_steed/theme/stylesheet.css": "simplicity_steed/theme/stylesheet.scss"
+        }
+      }
+    },
+
     //*** Обработка CSS: префиксование и "упаковка" медиа-запросов ***//
     postcss: {
       options: {
@@ -307,8 +316,16 @@ module.exports = function(grunt) {
     //*** Очистка директории на "боевом" сервере ***//
     secret: grunt.file.readJSON("authssh.json"),
     sshexec: {
-      clean: {
+      cleanmain: {
         command: ["cd hondasteed.org.ru/www; rm -rf css img js fonts; rm -f *.html favicon.ico"],
+        options: {
+          host: "<%= secret.host %>",
+          username: "<%= secret.username %>",
+          password: "<%= secret.password %>"
+        }
+      },
+      cleanforum: {
+        command: ["cd hondasteed.org.ru/www/forumnew/styles/simplicity_steed; rm -rf *"],
         options: {
           host: "<%= secret.host %>",
           username: "<%= secret.username %>",
@@ -324,12 +341,20 @@ module.exports = function(grunt) {
         username: "<%= secret.username %>",
         password: "<%= secret.password %>",
       },
-      masterhost: {
+      main: {
         files: [{
             cwd: "build/",
             src: ["**/*", "!tmp/**/*"],
             filter: "isFile",
             dest: "hondasteed.org.ru/www"
+        }]
+      },
+      forum: {
+        files: [{
+            cwd: "simplicity_steed/",
+            src: ["**/*"],
+            filter: "isFile",
+            dest: "hondasteed.org.ru/www/forumnew/styles/simplicity_steed"
         }]
       }
     }
@@ -357,7 +382,13 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("deploy", [
-    "sshexec",
-    "scp"
+    "sshexec:cleanmain",
+    "scp:main"
+  ]);
+
+  grunt.registerTask("forum", [
+    "sass",
+    "sshexec:cleanforum",
+    "scp:forum"
   ]);
 };

@@ -1,0 +1,228 @@
+//
+//	Add your custom code to this file
+//
+//	This file requires SASS compiler.
+//	You can find instructions here: http://www.artodia.com/phpbb-31-tutorials/compile-theme/
+//
+
+.steed-wrapper {
+  min-width: 280px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #f2eeed;
+}
+
+.steed-header {
+  height: 230px;
+
+  background: url("/img/logo.png") no-repeat top;
+}
+.steed-header__title {
+  display: none;
+}
+.steed-header__link {
+  display: block;
+  height: 230px;
+}
+.steed-header__description {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .steed-header {
+    height: auto;
+    /* padding-top: 70px; */
+    padding-top: 20px;
+
+    background: none;
+    background-color: #000000;
+    color: #777777;
+  }
+  .steed-header__title {
+    display: block;
+    margin: 0 20px;
+
+    text-align: center;
+  }
+  .steed-header__link {
+    height: auto;
+
+    cursor: default;
+  }
+
+  .steed-header__link img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .steed-header__description {
+    position: relative;
+
+    display: block;
+    height: 30px;
+    margin-top: 10px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    background-image: -webkit-linear-gradient(left, #000000 20%, #ffffff 45%, #ffffff 55%, #000000 80%);
+    background-image:         linear-gradient(to right, #000000 20%, #ffffff 45%, #ffffff 55%, #000000 80%);
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .steed-header__description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-image: -webkit-linear-gradient(left, #000000 5%, #b3b3b3 20%, #b3b3b3 80%, #000000 95%);
+    background-image:         linear-gradient(to right, #000000 5%, #b3b3b3 20%, #b3b3b3 80%, #000000 95%);
+  }
+  .steed-header__description::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-image: -webkit-linear-gradient(left, #000000 5%, #b3b3b3 20%, #b3b3b3 80%, #000000 95%);
+    background-image:         linear-gradient(to right, #000000 5%, #b3b3b3 20%, #b3b3b3 80%, #000000 95%);
+  }
+}
+
+.steed-menu {
+  color: #ffffff;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  background-color: #000000;
+  padding-left: 243px;
+}
+
+@media (max-width: 1023px) {
+  .steed-menu {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.steed-menu a:link,
+.steed-menu a:visited {
+  color: #666666;
+}
+
+.steed-menu a:active {
+  color: #444444;
+}
+
+.steed-menu a:hover {
+  color: #f2eeed;
+}
+
+.steed-forumtop {
+  height: 10px;
+  background-color: #000000;
+}
+
+.steed-forumtop__inner {
+  height: 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f2eeed;
+}
+
+/*** violence :) ***/
+
+html, body {
+  background-color: #000000 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-tabs,
+.header,
+.panel > .inner > h3:first-child,
+.panel > h3:first-child,
+table.table1 thead th {
+    background-color: #a3938f !important;
+}
+
+.nav-breadcrumbs,
+.panel-container .panel,
+.notification_list li.bg3 {
+    background-color: #f2eeed !important;
+}
+
+.notification_list li.bg3 strong {
+    color: #333333 !important;
+}
+
+.button,
+.button1,
+.button2,
+#navigation #active-subsection a,
+.pagination li.active span {
+    background-color: #704743 !important;
+    border-color: #704743 !important;
+}
+
+#navigation #active-subsection a:hover {
+    background-color: #666666 !important;
+}
+
+select {
+    font-size: 10px !important;
+}
+
+.icon-link + .list-inner > a.forumtitle,
+.icon-link + .list-inner > a.topictitle,
+.pm_unread .topictitle,
+a.subforum.unread {
+    color: #9a2f25 !important;
+    font-weight: bold;
+}
+
+.icon-link + .list-inner > a.forumtitle:hover,
+.icon-link + .list-inner > a.topictitle:hover,
+.pm_unread .topictitle:hover,
+a.subforum.unread:hover {
+    color: #666666 !important;
+}
+
+h3 {
+  color: #333333 !important;
+}
+
+h3 a,
+a.time {
+  color: #631e18 !important;
+}
+
+h3 a:hover {
+  color: #666666 !important;
+}
+
+.online-ribbon {
+  display: none !important;
+}
